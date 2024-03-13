@@ -1,0 +1,13 @@
+Requirments :
+   cchemilib (see github)
+   OpenBabel232(included in iGVPT2 package)
+
+To install igvpt2  :
+1) Edit cleancchemi.sh and compcchemi.sh and set the directory where cchemilib is installed
+2) type :
+ ./cleancchemi.sh  
+ ./compcchemi.sh 
+
+igvpt2 is a binary file. 
+You can run it by : ./igvpt2
+You can copy cchemi in any directory : /usr/local/bin, $HOME/bin, ... for example

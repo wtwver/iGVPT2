@@ -1,0 +1,9 @@
+ls *QFF*.gab > xx
+nn=$(ls *QFF_*.gab | grep -c gab )
+echo number of gab files = $nn
+nm=$(ls *QFF_*.ici | grep -c ici )
+echo number of ici files = $nm
+echo files with problem:
+awk '{printf("grep Debye -H -A 1 %s | tail -1| grep 0000000000\n",$1,$1);}' xx > xxx
+chmod u+x xxx
+./xxx

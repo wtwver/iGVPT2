@@ -1,0 +1,8 @@
+#!/bin/sh
+#PBS -j oe
+#PBS -N xMakeQFF2MRVPT2
+#PBS -l walltime=500:0:0
+#PBS -o xMakeQFF2MRVPT2.pbsout
+#PBS -q new
+cd /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP
+time /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xMakeQFF2MRVPT2 >/home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xMakeQFF2MRVPT2.log 2>/home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xMakeQFF2MRVPT2.err

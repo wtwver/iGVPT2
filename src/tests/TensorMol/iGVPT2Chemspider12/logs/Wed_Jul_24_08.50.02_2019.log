@@ -1,0 +1,1256 @@
+2019-07-24 08:50:02,524 - TensorMol - INFO - Searching for Installed Optional Packages...
+2019-07-24 08:50:02,525 - TensorMol - INFO - Pyscf is not installed -- no ab-initio sampling
+2019-07-24 08:50:02,526 - TensorMol - DEBUG - MolEmb has been found.
+2019-07-24 08:50:02,526 - TensorMol - DEBUG - Tensorflow version 1.13.1 has been found
+2019-07-24 08:50:02,526 - TensorMol - DEBUG - Found 8 CPUs to thread over... 
+2019-07-24 08:50:02,526 - TensorMol - DEBUG - TensorMol ready...
+2019-07-24 08:50:02,526 - TensorMol - DEBUG - TMPARAMS----------
+2019-07-24 08:50:02,526 - TensorMol - DEBUG - GIT_REVISION:
+CheckLevel:1
+PrintTMTimer:False
+MAX_ATOMIC_NUMBER:10
+RBFS:[[ 0.35000000  0.35000000]
+ [ 0.70000000  0.35000000]
+ [ 1.05000000  0.35000000]
+ [ 1.40000000  0.35000000]
+ [ 1.75000000  0.35000000]
+ [ 2.10000000  0.35000000]
+ [ 2.45000000  0.35000000]
+ [ 2.80000000  0.35000000]
+ [ 3.15000000  0.35000000]
+ [ 3.50000000  0.35000000]
+ [ 3.85000000  0.35000000]
+ [ 4.20000000  0.35000000]
+ [ 4.55000000  0.35000000]
+ [ 4.90000000  0.35000000]]
+ANES:[ 2.20000000  1.00000000  1.00000000  1.00000000  1.00000000  2.55000000
+  3.04000000  3.44000000]
+SRBF:[[ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]]
+SH_LMAX:4
+SH_NRAD:14
+SH_ORTH:1
+SH_rot_invar:False
+SH_MAXNR:14
+AN1_r_Rc:4.6
+AN1_a_Rc:3.1
+AN1_eta:4.0
+AN1_zeta:8.0
+AN1_num_r_Rs:32
+AN1_num_a_Rs:8
+AN1_num_a_As:8
+AN1_r_Rs:[ 0.00000000  0.14375000  0.28750000  0.43125000  0.57500000  0.71875000
+  0.86250000  1.00625000  1.15000000  1.29375000  1.43750000  1.58125000
+  1.72500000  1.86875000  2.01250000  2.15625000  2.30000000  2.44375000
+  2.58750000  2.73125000  2.87500000  3.01875000  3.16250000  3.30625000
+  3.45000000  3.59375000  3.73750000  3.88125000  4.02500000  4.16875000
+  4.31250000  4.45625000]
+AN1_a_Rs:[ 0.00000000  0.38750000  0.77500000  1.16250000  1.55000000  1.93750000
+  2.32500000  2.71250000]
+AN1_a_As:[ 0.00000000  0.78539816  1.57079633  2.35619449  3.14159265  3.92699082
+  4.71238898  5.49778714]
+GradScalar:0.05
+DipoleScalar:1.0
+RotateSet:0
+TransformSet:1
+NModePts:10
+NDistorts:5
+GoK:0.05
+dig_ngrid:20
+dig_SamplingType:Smooth
+BlurRadius:0.05
+Classify:False
+Embedded_Charge_Order:2
+MBE_ORDER:3
+MonitorSet:None
+NetNameSuffix:
+NeuronType:relu
+tf_prec:tf.float64
+learning_rate:0.001
+learning_rate_dipole:0.0001
+learning_rate_energy:1e-05
+momentum:0.9
+max_steps:1001
+batch_size:1000
+test_freq:10
+HiddenLayers:[200, 200, 200]
+hidden1:512
+hidden2:512
+hidden3:512
+GradWeight:0.01
+TestRatio:0.2
+Profiling:False
+max_checkpoints:1
+KeepProb:0.7
+weight_decay:0.001
+ConvFilter:[32, 64]
+ConvKernelSize:[[8, 1], [4, 1]]
+ConvStrides:[[8, 1], [4, 1]]
+sigmoid_alpha:100.0
+EnergyScalar:1.0
+DipoleScaler:1.0
+InNormRoutine:None
+OutNormRoutine:None
+RandomizeData:True
+MxTimePerElement:36000
+MxMemPerElement:16000
+ChopTo:None
+RotAvOutputs:1
+OctahedralAveraging:0
+train_gradients:True
+train_dipole:True
+train_quadrupole:False
+train_rotation:True
+OptMaxCycles:50
+OptThresh:0.0001
+OptMaxStep:0.1
+OptStepSize:0.1
+OptMomentum:0.5
+OptMomentumDecay:0.8
+OptPrintLvl:1
+OptLatticeStep:0.05
+GSSearchAlpha:0.05
+SDStep:0.05
+MaxBFGS:7
+NebSolver:Verlet
+NebNumBeads:18
+NebK:0.07
+NebKMax:1.0
+NebClimbingImage:True
+DiisSize:20
+RemoveInvariant:True
+MDMaxStep:20000
+MDdt:0.2
+MDTemp:300.0
+MDV0:Random
+MDThermostat:None
+MDLogTrajectory:True
+MDUpdateCharges:True
+MDIrForceMin:False
+MDAnnealT0:20.0
+MDAnnealTF:300.0
+MDAnnealKickBack:1.0
+MDAnnealSteps:1000
+MDFieldVec:[ 1.00000000  0.00000000  0.00000000]
+MDFieldAmp:0.0
+MDFieldFreq:0.8333333333333334
+MDFieldTau:1.2
+MDFieldT0:3.0
+MetaBumpTime:15.0
+MetaBowlK:0.0
+MetaMaxBumps:500
+MetaMDBumpHeight:0.05
+MetaMDBumpWidth:0.1
+AddEcc:True
+OPR12:Poly
+Poly_Width:4.6
+Elu_Width:4.6
+EEOn:True
+EESwitchFunc:CosLR
+EEVdw:True
+EEOrder:2
+EEdr:1.0
+EECutoff:5.0
+EECutoffOn:4.4
+EECutoffOff:15.0
+Erf_Width:0.2
+DSFAlpha:0.18
+tm_root:.
+sets_dir:./datasets/
+networks_directory:./networks/
+output_root:.
+results_dir:./results/
+dens_dir:./densities/
+log_dir:./logs/
+Qchem_RIMP2_Block:$rem
+   jobtype   sp
+   method   rimp2
+   MAX_SCF_CYCLES  200
+   basis   cc-pvtz
+   aux_basis rimp2-cc-pvtz
+   symmetry   false
+   INCFOCK 0
+   thresh 12
+   SCF_CONVERGENCE 12
+$end
+
+
+2019-07-24 08:50:02,529 - TensorMol - DEBUG - TMPARAMS~~~~~~~~~~
+2019-07-24 08:50:02,539 - TensorMol - DEBUG - TMTimed NeighborList::init[0.0, 0]
+2019-07-24 08:50:02,539 - TensorMol - DEBUG - TMTimed NeighborList::BuildPairs[0.0, 0]
+2019-07-24 08:50:02,539 - TensorMol - DEBUG - TMTimed NLSetUpdate[0.0, 0]
+2019-07-24 08:50:02,539 - TensorMol - DEBUG - TMTimed SetbuildPairsAndTriples[0.0, 0]
+2019-07-24 08:50:02,539 - TensorMol - DEBUG - TMTimed buildPairsWithBothEleIndex[0.0, 0]
+2019-07-24 08:50:02,539 - TensorMol - DEBUG - TMTimed buildPairsAndTriplesWithEleIndexPeriodic[0.0, 0]
+2019-07-24 08:50:02,554 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-24 08:50:02,555 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-24 08:50:02,555 - TensorMol - DEBUG - TMTimed energy_inference[0.0, 0]
+2019-07-24 08:50:02,555 - TensorMol - DEBUG - TMTimed EvalPrepare[0.0, 0]
+2019-07-24 08:50:02,555 - TensorMol - DEBUG - TMTimed energy_inference[0.0, 0]
+2019-07-24 08:50:02,555 - TensorMol - DEBUG - TMTimed dipole_inference[0.0, 0]
+2019-07-24 08:50:02,558 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-24 08:50:02,559 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-24 08:50:02,560 - TensorMol - DEBUG - TMTimed EvalBPDirectEEUpdateSingle[0.0, 0]
+2019-07-24 08:50:02,561 - TensorMol - DEBUG - TMTimed EvalBPDirectEEUpdateSinglePeriodic[0.0, 0]
+2019-07-24 08:50:02,561 - TensorMol - DEBUG - TMTimed TFMolMangePrepare[0.0, 0]
+2019-07-24 08:50:02,575 - TensorMol - DEBUG - TensorMol import complete.
+2019-07-24 08:50:02,576 - TensorMol - INFO - Saving set to: Test.pdb 
+2019-07-24 08:50:02,580 - TensorMol - INFO - Loaded, 1 molecules 29 Atoms total [1 6 7 8] Types 
+2019-07-24 08:50:02,580 - TensorMol - INFO - TensorMolData.type: mol
+2019-07-24 08:50:02,580 - TensorMol - INFO - TensorMolData.dig.name: ANI1_Sym_Direct
+2019-07-24 08:50:02,580 - TensorMol - INFO - NMols in TensorMolData.set: 1
+2019-07-24 08:50:02,795 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:03,010 - TensorMol - INFO - raised network: ./networks/Mol_chemspider12_clean_maxatom35_ANI1_Sym_Direct_RawBP_EE_ChargeEncode_Update_vdw_DSF_elu_Normalize_Dropout_act_sigmoid100
+2019-07-24 08:50:03,010 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:03,010 - TensorMol - INFO - MolInstance.inshape None MolInstance.outshape None
+2019-07-24 08:50:03,011 - TensorMol - DEBUG - Raised Instance: Mol_chemspider12_clean_maxatom35_ANI1_Sym_Direct_RawBP_Grad
+2019-07-24 08:50:03,022 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:11,973 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:14,985 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:14,985 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:15,256 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:15,256 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:15,521 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:15,521 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:15,774 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:15,774 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:16,005 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:16,006 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:16,261 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:16,262 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:16,494 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:16,494 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:16,764 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:16,764 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:16,986 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:16,986 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:17,217 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:17,217 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:17,469 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:17,469 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:17,712 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:17,712 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:17,937 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:17,938 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:18,196 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:18,197 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:18,432 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:18,433 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:18,669 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:18,670 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:18,916 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:18,917 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:19,161 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:19,162 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:19,422 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:19,422 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:19,644 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:19,645 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:19,880 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:19,881 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:20,131 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:20,131 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:20,369 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:20,370 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:20,626 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:20,626 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:20,852 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:20,852 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:21,100 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:21,100 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:21,343 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:21,343 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:21,572 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:21,572 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:21,789 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:21,789 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:22,029 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:22,029 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:22,275 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:22,276 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:22,510 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:22,511 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:22,751 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:22,751 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:22,984 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:22,984 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:23,226 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:23,226 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:23,463 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:23,463 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:23,709 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:23,709 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:23,942 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:23,942 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:24,168 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:24,169 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:24,401 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:24,401 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:24,645 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:24,645 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:24,870 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:24,870 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:25,091 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:25,091 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:25,319 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:25,319 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:25,567 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:25,568 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:25,798 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:25,799 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:26,034 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:26,034 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:26,284 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:26,284 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:26,521 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:26,521 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:26,772 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:26,772 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:27,029 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:27,029 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:27,284 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:27,285 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:27,517 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:27,517 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:27,744 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:27,744 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:27,988 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:27,988 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:28,238 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:28,238 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:28,463 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:28,463 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:28,683 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:28,683 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:28,900 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:28,900 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:29,142 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:29,142 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:29,385 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:29,386 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:29,619 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:29,619 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:29,870 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:29,870 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:30,104 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:30,105 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:30,339 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:30,339 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:30,576 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:30,576 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:30,806 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:30,806 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:31,047 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:31,047 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:31,295 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:31,296 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:31,533 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:31,534 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:31,750 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:31,750 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:31,987 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:31,988 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:32,213 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:32,213 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:32,456 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:32,456 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:32,691 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:32,691 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:32,923 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:32,924 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:33,153 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:33,153 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:33,377 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:33,378 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:33,601 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:33,602 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:33,819 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:33,820 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:34,037 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:34,037 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:34,283 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:34,284 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:34,536 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:34,536 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:34,779 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:34,780 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:35,022 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:35,023 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:35,248 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:35,248 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:35,477 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:35,477 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:35,694 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:35,695 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:35,951 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:35,952 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:36,213 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:36,213 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:36,451 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:36,451 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:36,721 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:36,722 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:36,957 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:36,957 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:37,193 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:37,194 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:37,426 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:37,426 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:37,678 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:37,678 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:37,932 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:37,932 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:38,173 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:38,173 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:38,423 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:38,424 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:38,673 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:38,673 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:38,901 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:38,901 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:39,122 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:39,123 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:39,345 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:39,346 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:39,573 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:39,573 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:39,791 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:39,792 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:40,017 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:40,017 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:40,240 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:40,240 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:40,467 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:40,467 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:40,684 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:40,685 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:40,921 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:40,921 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:41,171 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:41,171 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:41,407 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:41,407 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:41,642 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:41,642 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:41,868 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:41,868 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:42,082 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:42,083 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:42,332 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:42,332 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:42,589 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:42,589 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:42,840 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:42,840 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:43,091 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:43,091 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:43,338 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:43,339 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:43,571 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:43,571 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:43,789 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:43,789 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:44,002 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:44,002 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:44,243 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:44,243 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:44,482 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:44,483 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:44,740 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:44,740 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:45,003 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:45,003 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:45,224 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:45,225 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:45,482 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:45,483 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:45,729 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:45,729 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:45,949 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:45,950 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:46,178 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:46,179 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:46,407 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:46,407 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:46,631 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:46,632 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:46,885 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:46,885 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:47,154 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:47,155 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:47,421 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:47,424 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:47,657 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:47,657 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:47,911 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:47,912 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:48,188 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:48,188 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:48,438 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:48,438 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:48,669 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:48,669 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:48,949 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:48,949 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:49,200 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:49,200 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:49,454 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:49,454 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:49,693 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:49,693 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:49,948 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:49,948 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:50,212 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:50,213 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:50,476 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:50,476 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:50,749 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:50,749 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:51,006 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:51,006 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:51,280 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:51,280 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:51,535 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:51,535 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:51,779 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:51,780 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:52,042 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:52,043 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:52,303 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:52,303 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:52,527 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:52,528 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:52,790 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:52,790 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:53,027 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:53,027 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:53,290 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:53,290 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:53,548 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:53,548 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:53,817 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:53,817 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:54,057 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:54,057 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:54,305 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:54,305 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:54,527 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:54,527 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:54,743 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:54,743 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:54,961 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:54,961 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:55,186 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:55,186 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:55,403 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:55,403 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:55,622 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:55,622 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:55,860 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:55,860 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:56,088 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:56,089 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:56,341 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:56,341 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:56,584 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:56,584 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:56,832 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:56,833 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:57,075 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:57,075 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:57,317 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:57,318 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:57,559 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:57,560 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:57,792 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:57,792 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:58,044 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:58,045 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:58,288 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:58,288 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:58,543 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:58,543 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:58,780 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:58,780 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:59,030 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:59,030 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:59,266 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:59,266 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:59,502 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:59,503 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:59,729 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:59,729 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:50:59,977 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:50:59,978 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:00,214 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:00,214 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:00,466 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:00,467 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:00,718 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:00,718 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:00,948 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:00,948 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:01,196 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:01,197 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:01,427 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:01,428 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:01,658 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:01,659 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:01,902 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:01,902 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:02,148 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:02,149 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:02,384 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:02,384 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:02,608 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:02,609 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:02,865 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:02,865 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:03,120 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:03,120 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:03,359 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:03,359 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:03,583 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:03,583 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:03,817 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:03,818 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:04,051 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:04,052 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:04,306 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:04,306 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:04,555 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:04,555 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:04,798 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:04,798 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:05,043 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:05,043 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:05,291 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:05,291 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:05,526 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:05,526 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:05,769 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:05,769 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:06,002 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:06,002 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:06,260 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:06,260 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:06,514 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:06,514 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:06,757 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:06,758 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:06,997 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:06,998 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:07,246 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:07,246 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:07,478 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:07,478 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:07,723 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:07,723 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:07,961 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:07,961 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:08,201 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:08,202 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:08,453 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:08,453 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:08,691 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:08,691 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:08,919 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:08,919 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:09,163 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:09,163 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:09,402 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:09,402 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:09,629 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:09,629 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:09,869 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:09,869 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:10,102 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:10,103 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:10,340 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:10,340 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:10,561 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:10,561 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:10,807 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:10,807 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:11,061 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:11,061 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:11,295 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:11,295 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:11,531 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:11,531 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:11,787 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:11,787 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:12,045 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:12,045 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:12,274 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:12,274 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:12,498 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:12,498 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:12,756 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:12,756 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:13,000 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:13,000 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:13,220 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:13,221 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:13,432 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:13,432 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:13,667 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:13,667 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:13,881 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:13,881 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:14,112 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:14,112 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:14,363 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:14,364 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:14,600 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:14,600 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:14,856 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:14,856 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:15,115 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:15,115 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:15,356 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:15,356 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:15,577 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:15,577 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:15,817 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:15,817 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:16,037 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:16,037 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:16,275 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:16,275 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:16,509 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:16,509 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:16,744 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:16,744 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:16,991 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:16,991 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:17,220 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:17,220 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:17,476 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:17,476 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:17,688 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:17,688 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:17,917 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:17,918 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:18,163 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:18,163 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:18,399 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:18,399 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:18,622 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:18,622 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:18,864 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:18,865 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:19,104 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:19,104 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:19,348 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:19,349 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:19,590 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:19,590 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:19,837 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:19,838 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:20,057 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:20,058 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:20,307 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:20,307 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:20,559 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:20,559 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:20,788 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:20,789 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:21,017 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:21,017 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:21,264 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:21,264 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:21,514 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:21,514 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:21,766 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:21,767 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:22,024 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:22,025 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:22,276 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:22,277 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:22,518 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:22,518 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:22,765 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:22,765 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:23,023 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:23,024 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:23,278 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:23,279 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:23,540 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:23,540 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:23,791 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:23,791 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:24,042 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:24,043 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:24,278 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:24,278 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:24,521 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:24,524 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:24,780 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:24,780 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:25,014 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:25,015 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:25,272 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:25,272 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:25,522 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:25,522 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:25,755 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:25,755 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:26,011 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:26,012 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:26,266 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:26,266 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:26,523 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:26,524 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:26,759 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:26,760 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:26,991 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:26,991 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:27,239 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:27,240 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:27,461 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:27,461 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:27,702 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:27,702 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:27,937 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:27,937 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:28,193 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:28,193 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:28,437 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:28,437 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:28,677 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:28,677 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:28,927 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:28,928 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:29,170 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:29,171 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:29,430 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:29,431 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:29,685 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:29,686 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:29,935 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:29,935 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:30,160 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:30,161 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:30,420 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:30,420 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:30,649 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:30,649 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:30,878 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:30,878 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:31,111 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:31,111 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:31,343 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:31,343 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:31,589 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:31,590 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:31,848 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:31,848 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:32,112 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:32,112 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:32,369 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:32,369 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:32,628 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:32,629 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:32,927 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:32,928 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:33,200 - TensorMol - INFO - Saving set to: Test.pdb 
+2019-07-24 08:51:33,201 - TensorMol - INFO - Loaded, 1 molecules 29 Atoms total [1 6 7 8] Types 
+2019-07-24 08:51:33,201 - TensorMol - INFO - TensorMolData.type: mol
+2019-07-24 08:51:33,201 - TensorMol - INFO - TensorMolData.dig.name: ANI1_Sym_Direct
+2019-07-24 08:51:33,202 - TensorMol - INFO - NMols in TensorMolData.set: 1
+2019-07-24 08:51:33,409 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:33,615 - TensorMol - INFO - raised network: ./networks/Mol_chemspider12_clean_maxatom35_ANI1_Sym_Direct_RawBP_EE_ChargeEncode_Update_vdw_DSF_elu_Normalize_Dropout_act_sigmoid100
+2019-07-24 08:51:33,615 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:33,615 - TensorMol - INFO - MolInstance.inshape None MolInstance.outshape None
+2019-07-24 08:51:33,615 - TensorMol - DEBUG - Raised Instance: Mol_chemspider12_clean_maxatom35_ANI1_Sym_Direct_RawBP_Grad
+2019-07-24 08:51:33,630 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:42,838 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:45,814 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:45,814 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:46,029 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:46,029 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:46,243 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:46,243 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:46,456 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:46,456 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:46,697 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:46,697 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:46,942 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:46,942 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:47,168 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:47,168 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:47,369 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:47,370 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:47,586 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:47,587 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:47,784 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:47,784 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:48,021 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:48,021 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:48,228 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:48,228 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:48,446 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:48,446 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:48,673 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:48,673 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:48,883 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:48,883 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:49,104 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:49,105 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:49,308 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:49,308 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:49,523 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:49,523 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:49,746 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:49,746 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:49,960 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:49,960 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:50,161 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:50,161 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:50,377 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:50,378 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:50,600 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:50,600 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:50,820 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:50,820 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:51,051 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:51,051 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:51,275 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:51,275 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:51,505 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:51,505 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:51,722 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:51,722 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:51,950 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:51,950 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:52,181 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:52,181 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:52,429 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:52,429 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:52,643 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:52,643 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:52,862 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:52,862 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:53,095 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:53,095 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:53,296 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:53,296 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:53,530 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:53,530 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:53,755 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:53,755 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:53,991 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:53,991 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:54,222 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:54,222 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:54,454 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:54,455 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:54,681 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:54,681 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:54,893 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:54,894 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:55,121 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:55,122 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:55,349 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:55,350 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:55,576 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:55,577 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:55,824 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:55,824 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:56,041 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:56,041 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:56,274 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:56,275 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:56,501 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:56,501 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:56,712 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:56,712 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:56,946 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:56,947 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:57,163 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:57,164 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:57,384 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:57,384 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:57,608 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:57,608 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:57,834 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:57,835 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:58,057 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:58,057 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:58,274 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:58,274 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:58,503 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:58,504 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:58,731 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:58,731 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:58,942 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:58,943 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:59,162 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:59,163 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:59,372 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:59,372 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:59,570 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:59,570 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:51:59,780 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:51:59,781 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:00,006 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:00,006 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:00,224 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:00,224 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:00,450 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:00,450 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:00,687 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:00,687 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:00,906 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:00,906 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:01,114 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:01,114 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:01,322 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:01,322 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:01,535 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:01,535 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:01,739 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:01,740 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:01,969 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:01,969 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:02,181 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:02,181 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:02,403 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:02,403 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:02,621 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:02,621 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:02,837 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:02,837 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:03,043 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:03,044 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:03,255 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:03,255 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:03,467 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:03,467 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:03,711 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:03,711 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:03,923 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:03,923 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:04,151 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:04,151 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:04,375 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:04,376 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:04,594 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:04,594 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:04,807 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:04,807 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:05,022 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:05,022 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:05,261 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:05,261 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:05,485 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:05,485 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:05,715 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:05,715 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:05,947 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:05,947 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:06,162 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:06,162 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:06,381 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:06,381 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:06,595 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:06,595 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:06,797 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:06,798 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:07,008 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:07,009 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:07,240 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:07,240 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:07,467 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:07,467 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:07,692 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:07,692 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:07,900 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:07,900 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:08,109 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:08,109 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:08,344 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:08,345 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:08,543 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:08,543 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:08,771 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:08,772 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:08,994 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:08,994 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:09,204 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:09,204 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:09,426 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:09,426 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:09,645 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:09,645 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:09,860 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:09,861 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:10,074 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:10,075 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:10,299 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:10,299 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:10,539 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:10,539 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:10,757 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:10,758 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:10,982 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:10,983 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:11,178 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:11,178 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:11,374 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:11,374 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:11,595 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:11,595 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:11,796 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:11,796 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:12,016 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:12,017 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:12,226 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:12,226 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:12,442 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:12,443 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:12,649 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:12,649 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:12,856 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:12,856 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:13,063 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:13,063 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:13,265 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:13,265 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:13,465 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:13,465 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:13,671 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:13,671 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:13,870 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:13,870 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:14,089 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:14,089 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:14,290 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:14,290 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:14,505 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:14,506 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:14,710 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:14,710 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:14,912 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:14,912 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:15,115 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:15,115 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:15,319 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:15,319 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:15,523 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:15,523 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:15,752 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:15,752 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:15,951 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:15,951 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:16,146 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:16,146 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:16,353 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:16,354 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:16,554 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:16,554 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:16,750 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:16,750 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:16,964 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:16,964 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:17,197 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:17,197 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:17,423 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:17,423 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:17,635 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:17,635 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:17,835 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:17,835 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:18,062 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:18,062 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:18,287 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:18,288 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:18,514 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:18,514 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:18,728 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:18,728 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:18,941 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:18,941 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:19,164 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:19,164 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:19,384 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:19,384 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:19,617 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:19,618 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:19,833 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:19,833 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:20,053 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:20,054 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:20,278 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:20,278 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:20,492 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:20,492 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:20,714 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:20,714 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:20,930 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:20,930 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:21,146 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:21,147 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:21,369 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:21,370 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:21,582 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:21,582 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:21,791 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:21,792 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:22,013 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:22,013 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:22,237 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:22,237 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:22,451 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:22,451 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:22,662 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:22,662 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:22,866 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:22,866 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:23,069 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:23,069 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:23,274 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:23,275 - TensorMol - DEBUG - nmol: 1
+2019-07-24 08:52:23,518 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-24 08:52:23,518 - TensorMol - DEBUG - nmol: 1

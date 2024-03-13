@@ -1,0 +1,16 @@
+! ================================================================
+! Input file for FireFly
+! ================================================================
+ $SYSTEM MWORDS=20 $END
+ $CONTRL RUNTYP=Optimize $END
+ $STATPT  OptTol=1e-5 NStep=500 $END
+ $CONTRL SCFTYP=RHF $END
+ $CONTRL ICHARG=0  MULT=1 $END
+ $BASIS GBASIS=N31 NGAUSS=6 $END
+ $DATA
+ Molecule specification
+ C1
+ O  8.000000 -0.000000 -0.388000 0.000000
+ H  1.000000 0.751000 0.194000 0.000000
+ H  1.000000 -0.751000 0.194000 0.000000
+ $END

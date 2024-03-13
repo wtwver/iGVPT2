@@ -1,0 +1,46 @@
+ Begin QFF2MR-VPT2 calculation
+====================================================================================================================================
+Only Ibrahim Khalil ; ialikhalil@kku.edu.sa is authorized to use this version of iGVPT2
+====================================================================================================================================
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFFNMRFILES
+model=ORCA
+----------------------------------------------------------
+
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+Freq calc from Hessian = 0.00000 Freq from orca = -102.97234
+Freq calc from Hessian = 0.00000 Freq from orca = -40.64064
+Freq calc from Hessian = 0.00000 Freq from orca = -1.33870
+Freq calc from Hessian = 0.00000 Freq from orca = 3.49853
+Freq calc from Hessian = 0.00000 Freq from orca = 7.21032
+Freq calc from Hessian = 0.00000 Freq from orca = 59.58413
+Freq calc from Hessian = 1616.13000 Freq from orca = 1616.16805
+Freq calc from Hessian = 3785.54000 Freq from orca = 3785.60737
+Freq calc from Hessian = 3892.23000 Freq from orca = 3892.30160
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+ordre = 3
+First derivatives saved in /home/allouche/MySoftwares/CChemI/CChemI-08042019/iGVPT2/tests/HDNN/h2oVFirstDerivatives.txt file
+
+====================================================================================================================================
+Only Ibrahim Khalil ; ialikhalil@kku.edu.sa is authorized to use this version of iGVPT2
+====================================================================================================================================
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFFNMRFROMFILES
+model=ORCA
+----------------------------------------------------------
+
+Reading molecule from /home/allouche/MySoftwares/CChemI/CChemI-08042019/iGVPT2/tests/HDNN/h2oVQFF_0.gab file
+QFF parameters saved in /home/allouche/MySoftwares/CChemI/CChemI-08042019/iGVPT2/tests/HDNN/h2oVQFF.txt file
+

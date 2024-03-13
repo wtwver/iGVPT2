@@ -1,0 +1,5 @@
+OBLIBDIR=/Users/yeren/iGVPT2SRC/OpenBabel232/lib
+RM = rm -f
+MAKE = make
+CCPP = g++ -fPIC -I $(OBLIBDIR)/include
+COMMONCFLAGS = -Wall -O2 $(CLCFLAGS)

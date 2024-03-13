@@ -1,0 +1,442 @@
+cp: impossible d'évaluer « /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/*.gab »: Aucun fichier ou dossier de ce type
+
+
+          MOPAC Job: "/tmp/igvpt2_31013/h2oVQFF_0/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.087s
+user	0m0.024s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_1318/h2oVQFF_10/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.034s
+user	0m0.012s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_17967/h2oVQFF_11/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.033s
+user	0m0.024s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_25220/h2oVQFF_12/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.036s
+user	0m0.020s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_31313/h2oVQFF_13/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.035s
+user	0m0.020s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_2912/h2oVQFF_14/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.033s
+user	0m0.012s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_22030/h2oVQFF_15/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.020s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_20720/h2oVQFF_16/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.031s
+user	0m0.020s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_1829/h2oVQFF_17/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.016s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_14625/h2oVQFF_18/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.028s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_23893/h2oVQFF_19/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.029s
+user	0m0.012s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_32628/h2oVQFF_1/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.028s
+user	0m0.016s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_32760/h2oVQFF_20/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.026s
+user	0m0.008s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_29478/h2oVQFF_21/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.025s
+user	0m0.012s
+sys	0m0.004s
+mkdir: impossible de créer le répertoire « /tmp/igvpt2_12690 »: Le fichier existe
+
+
+          MOPAC Job: "/tmp/igvpt2_12690/h2oVQFF_22/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.016s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_8037/h2oVQFF_23/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.025s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_22001/h2oVQFF_24/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.026s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_8184/h2oVQFF_25/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_25164/h2oVQFF_26/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.008s
+sys	0m0.012s
+
+
+          MOPAC Job: "/tmp/igvpt2_15814/h2oVQFF_27/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.035s
+user	0m0.020s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_6466/h2oVQFF_28/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.012s
+sys	0m0.012s
+
+
+          MOPAC Job: "/tmp/igvpt2_27058/h2oVQFF_29/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.016s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_9665/h2oVQFF_2/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.031s
+user	0m0.016s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_31283/h2oVQFF_30/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.033s
+user	0m0.020s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_1164/h2oVQFF_31/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.028s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_359/h2oVQFF_32/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.026s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_30105/h2oVQFF_33/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.025s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_9690/h2oVQFF_34/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.031s
+user	0m0.012s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_2790/h2oVQFF_35/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.016s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_9287/h2oVQFF_36/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.028s
+user	0m0.012s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_20535/h2oVQFF_37/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.031s
+user	0m0.012s
+sys	0m0.016s
+
+
+          MOPAC Job: "/tmp/igvpt2_7014/h2oVQFF_38/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.016s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_17613/h2oVQFF_39/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.020s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_23359/h2oVQFF_3/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.012s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_6385/h2oVQFF_40/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.027s
+user	0m0.012s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_29407/h2oVQFF_41/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.029s
+user	0m0.012s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_10340/h2oVQFF_42/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.029s
+user	0m0.012s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_4759/h2oVQFF_43/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.029s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_30118/h2oVQFF_44/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.027s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_18920/h2oVQFF_45/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.026s
+user	0m0.008s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_3236/h2oVQFF_46/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.029s
+user	0m0.020s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_4739/h2oVQFF_47/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.026s
+user	0m0.012s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_23283/h2oVQFF_48/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.026s
+user	0m0.008s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_28803/h2oVQFF_49/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.029s
+user	0m0.020s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_30936/h2oVQFF_4/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_9462/h2oVQFF_50/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.031s
+user	0m0.016s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_9070/h2oVQFF_51/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.016s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_21706/h2oVQFF_52/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.020s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_10591/h2oVQFF_53/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.032s
+user	0m0.020s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_3833/h2oVQFF_54/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.028s
+user	0m0.016s
+sys	0m0.000s
+
+
+          MOPAC Job: "/tmp/igvpt2_10062/h2oVQFF_5/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.016s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_26032/h2oVQFF_6/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.030s
+user	0m0.020s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/igvpt2_28437/h2oVQFF_7/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.029s
+user	0m0.012s
+sys	0m0.008s
+
+
+          MOPAC Job: "/tmp/igvpt2_1785/h2oVQFF_8/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.031s
+user	0m0.008s
+sys	0m0.012s
+
+
+          MOPAC Job: "/tmp/igvpt2_13308/h2oVQFF_9/One0.mop" ended normally on Jul 11, 2016, at 16:38.
+
+
+real	0m0.028s
+user	0m0.012s
+sys	0m0.008s

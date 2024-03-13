@@ -1,0 +1,151 @@
+#!/bin/bash
+# requirement : compgrad.x a modified version of testgrad of tinker
+
+DIRSOFT=/home/allouche/Softwares
+export TINKERDIR=${DIRSOFT}/tinker81/source
+BOHRTOANG=0.5291772083
+AUTODEB=2.54158059
+AUTOKCAL=627.509544796
+
+#debug
+#echo "runTinkeriGVPTE "> /home/allouche/tmp/QFFHybridGaussTinker/res.txt
+
+filename=$1 ; [ 0 = $# ] || shift
+outname=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ] || [ -z "$outname" ]
+then
+   clear
+   echo " " 
+   echo "==========================================="
+   echo "                 runTinkeriGVPT2 "
+   echo "-------------------------------------------"
+   echo "Example:"
+   echo "       runTinkeriGVPT2 h2.inp h2.out "
+   echo "==========================================="
+   echo " " 
+   exit 1
+fi
+fileinp=$filename
+filename=${fileinp%.inp}
+filename=${filename%.com}
+
+keyfile=key.txt
+xyzfile=xyz.txt
+
+DEFAULTDIR=`pwd`
+if test ! -s "$fileinp"
+then
+   echo " " 
+   echo "============================================"
+   echo " I cannot find $fileinp file"
+   echo "============================================"
+   echo " " 
+   exit 2
+fi
+if test ! -s "$keyfile"
+then
+   echo " " 
+   echo "============================================"
+   echo " I cannot find $keyfile file"
+   echo "============================================"
+   echo " " 
+   exit 2
+fi
+if test ! -s "$xyzfile"
+then
+   echo " " 
+   echo "============================================"
+   echo " I cannot find $keyfile file"
+   echo "============================================"
+   echo " " 
+   exit 2
+fi
+
+cd $DEFAULTDIR
+#cat $fileinp
+fn=`echo "$filename" | sed "s/.*\///" | sed "s/\..*//"`
+ffn=${fn}_$$
+#echo $fn
+
+fxyz=${ffn}.xyz
+#create xyz file
+awk -v fileinp=$fileinp 'BEGIN{
+	i=0
+	while (getline < fileinp)
+	{ 
+		#printf("%s\n",$0)
+		i++;
+		if(i==1) option=$1
+		if(i>3)
+		{
+			x[i-3]=$9;
+			y[i-3]=$10;
+			z[i-3]=$11;
+		}
+	}
+	i=0
+
+}
+{
+	i++;
+	if(i==1) printf("%s\n",$1);
+	else{ 
+		printf("%s %s ",$1,$2);
+		k=i-1
+		printf("%20s %20s %20s ",x[k],y[k],z[k]);
+		for(k=6;k<=NF;k++) printf("%s ",$k);
+		printf("\n",$k);
+		
+	}
+}
+END{
+}' $xyzfile > $fxyz
+
+fkey=${ffn}.key
+cp key.txt $fkey
+
+# debug
+#cat $fxyz
+#cat $fkey
+
+
+read option <<< $(head -1 $fileinp)
+
+#debug
+#echo option=$option
+
+fout=${ffn}.out
+
+[[ $option -eq 0 ]] && $TINKERDIR/computeenergy.x $fxyz > $fout
+[[ $option -eq 1 ]] && $TINKERDIR/computegrad.x $fxyz > $fout
+
+# debug
+# cat $fout
+
+#Total Potential Energy :                    0.28197950583057 Kcal/mole
+energy=$(grep "Total Potential Energy" $fout | awk -v AUTOKCAL=$AUTOKCAL '{printf("%0.14e\n",$5/AUTOKCAL);}')
+# Dipole X,Y,Z-Components :                      0.18044767916715           -0.79851557442262            1.13018220593050
+read mux muy muz <<< $(grep "Dipole X,Y,Z" $fout | awk -v AUTODEB=$AUTODEB '{ printf("%0.14e %0.14e %0.14e\n", $4/AUTODEB,$5/AUTODEB,$6/AUTODEB);}')
+echo $energy >  $outname
+echo $mux $muy $muz >>  $outname
+
+# Anlyt         1                   0.99631911528401           -7.50868985372781            9.89932045288002             12.46473507651743
+# Anlyt         2                  -0.30699481916089            2.37814639028825           -3.15616888795075              3.96373915916536
+if [ $option -eq 1 ] 
+then
+grep "Anlyt" $fout | awk -v AUTOKCAL=$AUTOKCAL -v BOHRTOANG=$BOHRTOANG '{printf("%0.14e %0.14e %0.14e\n",$3/AUTOKCAL*BOHRTOANG,$4/AUTOKCAL*BOHRTOANG,$5/AUTOKCAL*BOHRTOANG);}' >> $outname
+fi
+
+/bin/rm $fout
+/bin/rm $fxyz
+/bin/rm $fkey
+
+#debug
+#cp $outname /home/allouche/tmp/QFFHybridGaussTinker/res.txt
+
+# debug
+#echo file=$outname
+#cat $outname
+
+

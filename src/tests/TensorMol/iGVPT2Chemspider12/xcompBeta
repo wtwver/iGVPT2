@@ -1,0 +1,8 @@
+#!/bin/bash
+
+paste pCAMBeta pBetaFreq > pp
+#awk '{printf("%s %s %f\n",$1,$2,$1-$2);}' pp
+awk 'function abs(x){return ((x < 0.0) ? -x : x)}
+begin{s=0;n=0;sa=0;max=0;ss=0}{if($1>0)
+{n++;printf("%10.4f %10.4f %10.4f\n",$1,$2,$1-$2);ss+=($1-$2);sa+= abs($1-$2);s+= ($1-$2)*($1-$2); if(max<abs($1-$2))max=abs($1-$2);}}
+END{printf("\nRMSD =%10.4f\nAUE  =%10.4f\nASE = %10.4f\nUMAX =%10.4f\n",sqrt(s/n),sa/n,ss/n,max)}' pp

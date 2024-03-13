@@ -1,0 +1,9 @@
+Warning : I use mmff94 charges
+H  0.0429681 -0.896936 -0.200535 Charge = 0.43
+H  -0.42108 0.469538 -0.669864 Charge = 0.43
+O  0.0238225 0.0269277 0.0548386 Charge = -0.86
+CPU time for initialisation 0.026635 seconds
+CPU time to compute derivatives 0.000352 seconds
+CPU time to compute frequencies and intensities 0.001834 seconds
+
+All time 0.028821 seconds

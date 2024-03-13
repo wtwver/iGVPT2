@@ -1,0 +1,12 @@
+Path=/home/lbarnes/Softwares/DFTB+/parameters/3ob-3-1/
+MaxForceComponent=1.0e-06
+MaxSteps=1000
+SCC=TRUE
+SCCTolerance=1.0e-8
+MaxSCCIterations=1000
+DFTB3=TRUE
+DampXHExponent=4.00
+Mixer=Broyden
+SpinColinear=FALSE
+Fermi=TRUE
+FermiTemp=1.0e-08

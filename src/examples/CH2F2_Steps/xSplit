@@ -1,0 +1,15 @@
+#!/bin/bash
+split -l 100 -d -a 3 xp
+ls x[0-9][0-9][0-9] > tmp1
+awk -v dir=$PWD '{
+printf("echo \"cd %s; export PATH=$HOME/iGVPT2/shell:$PATH\" >> %stmp ; cat %s >> %stmp; mv %stmp %s\n", dir, $1, $1,$1,$1,$1);
+}' tmp1 > xtmp2
+sed -i 's/\$/\\\$/g' xtmp2
+chmod u+x xtmp2
+./xtmp2
+awk '{
+printf("submitMono %s\n", $1);
+}' tmp1 > xrunAll
+chmod u+x xrunAll
+echo see xrunAll
+chmod u+x x*

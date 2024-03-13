@@ -1,0 +1,9 @@
+RunType=OptFreq
+# remove dx for analytical calculation of Hessian & dipole derivatives
+dx=1e-2
+OptimizerType=Quasi
+Model=HDNN
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+h2oB3LYP.out

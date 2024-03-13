@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# Hybrid DFT/MMFF94 calculation
+# Harmonic modes of B2PLYP are already calculated and saved in h2oB2PLYP.out file
+
+# Works on both linux and Mac OS X.
+function read_link() {
+    local path=$1
+        if [ -d $path ] ; then
+        local abspath=$(cd $path; pwd)
+        else
+            local prefix=$(cd $(dirname -- $path) ; pwd)
+            local suffix=$(basename $path)
+            local abspath="$prefix/$suffix"
+        fi
+    echo $abspath
+}
+SCRIPT=$(read_link $0)
+export  DEFDIR=`dirname $SCRIPT`
+echo "DEFDIR=$DEFDIR"
+cd $DEFDIR
+
+export IGVPT2DIR=$HOME/iGVPT2
+export PATH=$IGVPT2DIR/bin:$PATH
+
+filename=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ]
+then
+   clear
+   echo " "
+   echo "Usage Exemple:"
+   echo "       xHybrid 2MR.ici"
+   echo "       fichier de donnees : 2MR.ici"
+   echo "==========================================="
+   echo " "
+   exit 1
+fi
+fileinp=$filename
+filename=${fileinp%.ici}
+filename=${filename%.inp}
+filename=${filename%.com}
+
+echo "Hybrid DFT/MMFF94" >  ${filename}.out
+
+igvpt2 ${filename}.ici >> ${filename}.out 2> ${filename}.err
+
+rm ${filename}One.* 
+#rm ${filename}QFF* 
+
+echo "==========================================================================="
+echo "See ${filename}.out and ${filename}.err files "
+echo "==========================================================================="

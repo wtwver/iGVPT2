@@ -1,0 +1,20 @@
+#!/bin/bash
+
+export IGVPT2DIR=$HOME/iGVPT2
+export PATH=$IGVPT2DIR/bin:$PATH
+export PATH=$IGVPT2DIR/shell:$PATH
+export LD_LIBRARY_PATH=$IGVPT2DIR/lib:$LD_LIBRARY_PATH
+
+fname="step2"
+echo " Begin QFF3MR-VPT2 calculation">  $fname.log
+
+sed -i 's/RunType=GenerateQFFnMRFiles/#RunType=GenerateQFFnMRFiles/g' CH2F2.ici
+sed -i 's/#RunType=ComputeQFFnMRFromFiles/RunType=ComputeQFFnMRFromFiles/g' CH2F2.ici
+
+# generate txt data for VPT2 calculation
+#igvpt2 CH2F2.ici  >>  $fname.log 2>> $fname.err
+igvpt2 CH2F2.ici  
+
+sed -i 's/#RunType=GenerateQFFnMRFiles/RunType=GenerateQFFnMRFiles/g' CH2F2.ici
+sed -i 's/RunType=ComputeQFFnMRFromFiles/#RunType=ComputeQFFnMRFromFiles/g' CH2F2.ici
+

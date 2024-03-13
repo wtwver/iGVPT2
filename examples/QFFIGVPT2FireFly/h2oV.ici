@@ -1,0 +1,14 @@
+#RunType=Gradient
+RunType=GenerateQFFnMRFiles
+#RunType=ComputeQFFnMRFromFiles
+Model=FireFly
+QMKeys=TZV
+GaussianCommand=runFF
+
+QFFnModes=2
+
+dx=0.01
+
+Geometry
+h2oOptFreq.log
+

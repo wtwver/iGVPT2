@@ -1,0 +1,29 @@
+#RunType=HDNNGVPT2
+RunType=N2P2GVPT2
+#RunType=OBGVPT2
+
+VPT2Model=GVPT2
+PropModel=GVPT2
+maxFrequencyDifferenceFermi=200
+MartinCutOff1=1.0
+MartinCutOff2=1.0
+
+#QFFnModes=3
+
+# HighDerivativesMethod : -1(defaul, numeric), 0(analytic, all in memory(V fast)) , 1 (analytic, using disk), 2(analytic, calculated on the fly)
+#HighDerivativesMethod=-1
+
+# analytic
+#QFFnModes=3 : Only three index for energy and two index for dipole derivatives
+QFFnModes=3
+#QFFnModes=4 : for analaytical version : four index for energy & threeIndex for dipole are calculated and used in GVPT2 calculation
+#QFFnModes=4
+HighDerivativesMethod=0
+
+Geometry
+aFreq.out
+
+#h2oB2PLYP.out
+#aFreq.out
+
+

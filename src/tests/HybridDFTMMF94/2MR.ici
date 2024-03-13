@@ -1,0 +1,12 @@
+RunType=HybridMM
+VPT2Model=GVPT2
+PropModel=GVPT2
+maxFrequencyDifferenceFermi=200
+MartinCutOff1=1.0
+MartinCutOff2=1.0
+QFFnModes=2
+mmff94Charges=TRUE
+
+Geometry
+h2oB2PLYP.out
+

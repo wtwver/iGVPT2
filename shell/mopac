@@ -1,0 +1,10 @@
+#!/bin/bash
+fileinput=$1
+filename=${fileinput%.mop}
+export OMP_NUM_THREADS=1
+export MOPAC_LICENSE=/home/$USER/Softwares/MOPAC2016/
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MOPAC_LICENSE
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/allouche/lib
+#echo $LD_LIBRARY_PATH
+$MOPAC_LICENSE/MOPAC2016.exe $filename 
+exit

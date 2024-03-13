@@ -1,0 +1,5 @@
+cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=$HOME/iGVPT2/shell:$PATH
+runiGVPT2 CH2F2QFF_323.ici
+runiGVPT2 CH2F2QFF_412.ici
+runiGVPT2 CH2F2QFF_679.ici
+runiGVPT2 CH2F2QFF_769.ici

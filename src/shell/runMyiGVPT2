@@ -1,0 +1,53 @@
+#!/bin/bash
+fileici=$1 ; [ 0 = $# ] || shift
+if [ -z "$fileici" ]
+then
+   clear
+   echo " " 
+   echo "================================"
+   echo "Usage Exemple: runiGVPT2 h2.ici "
+   echo "================================"
+   echo " " 
+   exit 1
+fi
+
+if [ -z "$PBS_JOBID" ]
+then
+export JID=$RANDOM
+else
+export JID=${PBS_JOBID%.master0}
+fi
+
+if [ -z "$TMPDIR" ]
+then
+export TMPDIR=/tmp
+fi
+
+export OMP_NUM_THREADS=1
+filename=${fileici%.ici}
+DEFAULTDIR=`pwd`
+export  LOG=$DEFAULTDIR/$filename.log
+export IGVPT2TMP=$TMPDIR/cchemi_$JID
+mkdir $IGVPT2TMP
+fn=`echo "$filename" | sed "s/.*\///" | sed "s/\..*//"`
+export IGVPT2TMP=$TMPDIR/cchemi_$JID/$fn
+mkdir $IGVPT2TMP
+
+cd $IGVPT2TMP
+cp $DEFAULTDIR/$fileici .
+cp $DEFAULTDIR/*.gab .
+cp $DEFAULTDIR/*.out .
+cp $DEFAULTDIR/*.ici .
+#echo "run $fileici ......"
+echo "===================" > $LOG
+echo "run $fileici ......" >> $LOG
+echo "===================" >> $LOG
+echo "dir =  $IGVPT2TMP ......" >> $LOG
+#cat  $fileici >> $LOG
+echo "===================" >> $LOG
+time /home/theochem/allouche/bin/cchemi $fileici >>  $LOG
+echo "======================">> $LOG
+#echo "======================"
+cp *gab $DEFAULTDIR/.
+cd 
+/bin/rm -r $IGVPT2TMP

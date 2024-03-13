@@ -1,0 +1,128 @@
+#RunType=Gradient
+#RunType=GenerateQFFnMRFiles
+RunType=ComputeQFFnMRFromFiles
+Model=Generic
+
+# basis and method are defined in runGamessHF, to be changed if necessary
+GenericCommand=runMolproDFLMP2
+
+QFFnModes=2
+
+dx=0.01
+
+#read geom and NM from a gaussian outpout file
+#Geometry
+#h2oHF.out
+
+#read geom and NM from a Gamess output file
+Geometry
+h2o.out
+
+
+#====================================================================================
+# nMR-QFF constants
+# See Yagi et al. J. Chem. Phys. 121, 1383 (2004)
+#====================================================================================
+
+VPT2Model=GVPT2
+# VPT2Model=DCPT2
+# VPT2Model=HDCPT2
+# alphaHDCPT2=1.0
+# betaHDCPT2=5e5
+
+PropModel=GVPT2
+# PropModel=HDCPT2
+# PropModel=DCPT2
+# alphaPropHDCPT2=1.0
+# betaPropHDCPT2=5e5
+# alphaPropHDCPT2=1.0
+# betaPropHDCPT2=5e5
+maxFrequencyDifferenceFermi=200
+MartinCutOff1=1.0
+MartinCutOff2=1.0
+# ZCutOff=0.08
+
+#====================================================================================
+
+nFrequencies=3
+nDim=3
+
+#i Freq(cm-1)  Calc.Freq   dQ(Bohr)  Mass(amu)	Gradient[ H amu^(-1/2) Bohr^(-1)]
+Hessian
+1 1 1629.820000 1630.418256 0.130588 1.082973	0.000000
+2 2 3816.400000 3816.676902 0.086870 1.045121	0.000001
+3 3 3943.610000 3944.161043 0.084004 1.081602	-0.000000
+END
+
+# i	j	k	Reduced values [cm-1]
+Cubic
+1	1	1	   -246.706505
+1	1	2	    315.199473
+1	1	3	      0.000001
+2	2	1	     76.381096
+2	2	2	  -1791.117036
+3	3	1	    258.684852
+3	3	2	  -1805.934697
+3	3	3	      0.000002
+END
+
+# i	j	k	l	Reduced values [cm-1]
+Quartic
+1	1	1	1	    -72.442491
+1	1	1	2	   1622.251011
+1	1	1	3	     -0.000001
+2	2	1	1	   -309.703405
+2	2	2	2	    744.370547
+2	2	2	1	   1863.008449
+2	2	2	3	      0.000000
+3	3	1	1	   -367.609548
+3	3	2	2	    755.188703
+3	3	3	3	    736.733068
+3	3	3	1	     -0.000001
+END
+
+#xyz	i	Values[au cm^1/2]
+First derivatives
+Y	1	      2.972754
+Y	2	     -0.821360
+X	3	      3.042077
+END
+
+#xyz	i	j	Values[au cm]
+Second derivatives
+Y	1	1	     15.600347
+Y	1	2	     -7.102917
+X	1	3	     26.209174
+Y	2	1	     -7.102917
+Y	2	2	      9.593921
+X	2	3	     -4.686416
+X	3	1	     26.209174
+X	3	2	     -4.686416
+Y	3	3	    -13.612465
+END
+
+#xyz	i	j	k	Values[au cm^3/2]
+Cubic derivatives
+Y	1	1	1	    148.110197
+Y	1	1	2	    -62.022219
+Y	1	2	1	    -62.022219
+Y	2	1	1	    -62.022219
+X	1	1	3	    228.444556
+X	1	3	1	    228.444556
+X	3	1	1	    228.444556
+Y	2	2	1	    106.001533
+Y	2	1	2	    106.001533
+Y	1	2	2	    106.001533
+Y	2	2	2	    121.890925
+X	2	2	3	   -115.038207
+X	2	3	2	   -115.038207
+X	3	2	2	   -115.038207
+Y	3	3	1	      1.273661
+Y	3	1	3	      1.273661
+Y	1	3	3	      1.273661
+Y	3	3	2	     66.265855
+Y	3	2	3	     66.265855
+Y	2	3	3	     66.265855
+X	3	3	3	     94.107565
+END
+

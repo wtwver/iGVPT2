@@ -1,0 +1,14 @@
+#RunType=Gradient
+RunType=GenerateQFFnMRFiles
+#RunType=ComputeQFFnMRFromFiles
+Model=Mopac
+QMKeys= PM6  
+MopacCommand=mopac
+
+QFFnModes=2
+
+dx=0.01
+
+Geometry
+h2oB3LYP.log
+

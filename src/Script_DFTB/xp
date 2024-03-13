@@ -1,0 +1,3 @@
+#!/bin/bash 
+make
+./xRun Options.txt inp.ici out.ici

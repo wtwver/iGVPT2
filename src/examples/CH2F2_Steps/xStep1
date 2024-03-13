@@ -1,0 +1,28 @@
+#!/bin/bash
+
+export IGVPT2DIR=$HOME/iGVPT2
+export PATH=$IGVPT2DIR/bin:$PATH
+export PATH=$IGVPT2DIR/shell:$PATH
+export LD_LIBRARY_PATH=$IGVPT2DIR/lib:$LD_LIBRARY_PATH
+
+fname="CH2F2"
+echo " Begin QFF3MR-VPT2 calculation">  $fname.log
+
+rm $fname.err
+
+# generate QFF energies files
+/bin/rm -f CH2F2QFF_*.ici
+/bin/rm -f CH2F2QFF_*.gab
+/bin/rm -f CH2F2QFF_*.log
+igvpt2 CH2F2.ici >> $fname.log 2>>  $fname.err
+
+#echo "cd $DEFDIR" > xp
+#ls CH2F2QFF_* >> xp
+ls CH2F2QFF_* > xp
+
+sed -i 's/CH2F2QFF/runiGVPT2 CH2F2QFF/' xp
+#cat xp
+chmod u+x xp
+
+echo see xp script
+

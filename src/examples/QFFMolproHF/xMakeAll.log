@@ -1,0 +1,29 @@
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFFNMRFILES
+model=GENERIC
+----------------------------------------------------------
+
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+ordre = 2
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFFNMRFROMFILES
+model=GENERIC
+----------------------------------------------------------
+
+Reading molecule from /home/allouche/tmp/QFFMolproHF/h2oVQFF_0.gab file
+QFF parameters saved in /home/allouche/tmp/QFFMolproHF/h2oVQFF.txt file
+

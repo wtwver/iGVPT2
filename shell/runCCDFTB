@@ -1,0 +1,43 @@
+#!/bin/bash
+CURDIR=`dirname $1`
+basn=`basename $1`
+fileinput=$1
+filename=${basn%.hsd}
+export OMP_NUM_THREADS=1
+export OUT=$CURDIR/$filename.out
+echo "DIR=$CURDIR" > $OUT
+mkdir /tmp/$LOGNAME 2> /dev/null
+x=$$
+export TMPD=/tmp/$LOGNAME/${filename}$x
+mkdir $TMPD
+cd $TMPD
+cp $fileinput dftb_in.hsd
+cp $CURDIR/*.txt .
+#/softs/CompChemPackages/DFTB+/bin/dftb+_1.2.2.x86_64-linux >>  $OUT
+/home/$USER/Softwares/DFTB+/bin/dftb+_1.2.2.x86_64-linux >>  $OUT
+echo "=================================================================" >>  $OUT
+echo "TMPD=$TMPD" >> $OUT
+if test -s "$TMPD/geom.out.gen"
+then
+echo "GEOMETRY" >> $OUT
+cat $TMPD/geom.out.gen >> $OUT
+echo "=================================================================" >>  $OUT
+fi
+
+if test -s "$TMPD/hessian.out"
+then
+echo "HESSIAN" >> $OUT
+cat $TMPD/hessian.out >> $OUT
+echo "=================================================================" >>  $OUT
+fi
+
+if test -s "$TMPD/detailed.out"
+then
+echo "DETAILED" >> $OUT
+cat $TMPD/detailed.out >> $OUT
+echo "=================================================================" >>  $OUT
+fi
+
+cd ..
+/bin/rm -r $TMPD
+cd $CURDIR

@@ -1,0 +1,149 @@
+#RunType = Energy
+#RunType = Energy, Optimization, MD, MDConfo, REMDConfo
+#RunType=Optimization
+#RunType=MDConfo
+#RunType=MD
+#RunType=OptFreq
+#RunType=Freq
+#RunType=Energy
+#RunType=Gradient
+#RunType=Optimization
+RunType=OptFreq
+#RunType=Energy
+#RunType=MDConfo
+#OptimizerType=External
+OptimizerType=Quasi
+#OptimizerType=ConjugateGradient
+#OptimizerType=Steep
+#Model = MM , Mopac , Orca or FireFly
+#Model=Mopac
+#Model=Orca
+#Model=HDNN
+#Model=Generic
+#genericCommand=./xTMCChemI
+Model=TM
+tmModule=CChemITMChemSpider
+
+#QMKeys=PM6
+#QMKeys=PM3
+#addH4Corrections=Default
+#addH4Corrections=H4.txt
+#addD3Corrections=TRUE
+#mopacCommand=/home/allouche/Softwares/MOPAC2009/MOPAC2009.exe
+#orcaCommand=orca
+#fireflyCommand=firefly
+
+SeedRandom=999
+
+dx=1e-2
+
+omegaMax = 16000
+Nf=50
+
+#Confo
+gaussianCommand=g03
+fireflyCommand=firefly
+numberOfGeometries=3
+tolEnergy=0.1
+tolDistance=0.1
+ConfoOptMM=TRUE
+#ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM6 GNORM=0.001
+ConfoOptFireFly=FALSE
+# remove # if post processing required
+#mopacKeywordsPost=PM6
+gaussianKeywordsPost=B3LYP/aug-cc-pvdz
+lascmdKeywordsPost=B3LYP/aug-cc-pvdz
+orcaKeywordsPost=AM1 Opt
+fireflyKeywordsPost=GBASIS=PM3
+mopacKeywordsPost=PM6
+#fireflyKeywordsPost=AM1
+
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=TRUE
+#ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldUseVanderWals=TRUE
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=0
+
+#MD
+updateFrequency=1
+#Time in ps
+heatTime = 0.1
+equiTime = 0.1
+runTime = 1.
+coolTime = 0
+timeExchange = 1.0
+heatTemp = 0
+runTemp = 30
+runTempMax = 200
+nTemperatures = 10
+#in fs
+stepSize = 0.5
+#  VERLET = 0, BEEMAN = 1, STOCHASTIC = 2, LANGEVIN = 3, QTB = 4
+integrator = 0
+#  NONE = 0, ANDERSEN = 1, BERENDSEN = 2, BUSSI = 3, NH = 4
+thermostat = 3
+friction=40
+collide = 20
+
+#QuasiNewton
+quasiNewtonMaxIterations = 2000
+quasiNewtonUpdateFrequency = 1
+quasiNewtonEpsilon  = 1e-10
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  25
+
+#ConjugateGradient
+conjugateGradientGradientNorm = 1e-5
+conjugateGradientMaxIterations = 100
+conjugateGradientUpdateFrequency = 1
+conjugateGradientMaxLines = 100
+conjugateGradientInitialStep = 0.001
+conjugateGradientEpsilon  = 1e-4
+# 1 : Hestenes Stiefel,  2 : Fletcher Reeves, 3 : Polak Ribiere, 4 : Wolf Powell
+conjugateGradientMethod = 2
+
+HarmonicVelocityModes=7
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+beta.log
+# Velocities, vx(Ang/AKMA-time) vy(Ang/AKMA-time) vz(Ang/AKMA-time): 1fs = 0.020455 AKMA
+Velocities
+-7.712105045846e-02 -4.199123385764e-02 -7.655473781402e-02
+3.888521352996e-02 2.640171362348e-02 7.572958256487e-02
+4.040411747987e-02 8.823557459044e-02 -1.339577700523e-01
+-2.832024473046e-03 -2.127554776084e-02 1.825553725320e-02
+-7.956496043674e-03 -9.148285513819e-03 7.205016362723e-02
+-4.476889626103e-02 4.407552638542e-02 1.370704743981e-02
+5.126339064175e-02 -6.419959115559e-02 -2.822420700867e-03
+4.514321826231e-02 -2.927392123992e-02 -4.870713494574e-02
+-4.676823432572e-02 1.070205153344e-02 3.362717062247e-02
+6.866912630458e-02 -3.747176165613e-02 -2.862897131538e-02
+-1.667226144893e-02 2.973335989408e-02 6.544888908081e-02
+1.382601590153e-02 1.590139415005e-01 1.496713003730e-01
+-4.008388876127e-02 -5.684909537751e-01 -2.106271927993e-02
+-7.047558178902e-03 1.137444740933e-02 -2.653991476020e-01
+3.646830603054e-01 2.161334844349e-01 1.987582289861e-01
+5.471228671676e-02 6.869485989336e-02 2.600987306009e-02
+-4.735547483619e-01 4.575147777563e-01 -3.338851344704e-01
+3.962763254390e-01 -4.178020916048e-01 -9.279069858628e-02
+-3.131834933682e-01 -5.213169006729e-02 2.672034507323e-01
+-5.540558979446e-02 1.227214097119e-01 -3.245282188153e-01
+-3.662244513659e-01 -1.696728504061e-01 3.749203317345e-03
+4.269562577911e-02 -1.717657405035e-02 2.105508445167e-02
+1.414181291079e-02 7.610240297905e-01 -2.740018477516e-02
+-1.950472684165e-01 -4.861202647326e-01 -2.660178002457e-01
+-2.086895461714e-01 3.637769477299e-01 7.325506700383e-02
+-4.393919245464e-02 1.692610255303e-02 -3.198851222251e-02
+-2.631609010627e-01 -4.467459738019e-01 -1.434323300023e-01
+1.826862152289e-01 -8.254980731428e-02 -1.066560291435e-02
+1.569197312548e-01 2.244129792307e-01 2.419102007312e-01

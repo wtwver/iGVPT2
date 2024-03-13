@@ -1,0 +1,70 @@
+#!/bin/bash
+echo " Begin QFF2MR-VPT2 calculation">  $0.log
+SCRIPT=$(readlink -f $0)
+export  DEFDIR=`dirname $SCRIPT`
+echo "DEFDIR=$DEFDIR"
+cd $DEFDIR
+
+export CCHEMIBINDIR=/home/theochem/allouche/bin
+export CCHEMIBIN=$CCHEMIBINDIR/cchemi
+export PATH=$CCHEMIBINDIR/examples/VPT2/shell:$PATH
+# Opt + Freq => h2oB2BLYP.out
+#runOrca h2oB2PLYP.com $0.log 2>  $0.err
+rm -f $0.err
+
+# generate QFF energies files
+/bin/rm -f h2oVQFF_*.ici
+/bin/rm -f h2oVQFF_*.gab
+/bin/rm -f h2oVQFF_*.log
+$CCHEMIBIN h2oV.ici >> $0.log 2>>  $0.err
+
+#echo "cd $DEFDIR" > xp
+#ls h2oVQFF_* >> xp
+ls h2oVQFF_* > xp
+
+sed -i 's/h2oVQFF/runCChemI h2oVQFF/' xp
+#cat xp
+chmod u+x xp
+
+#parallel
+
+# SLURM
+#module purge
+#module use /softs/modulefiles
+#module load gcc/4.7.3 openmpi/1.7.4/openmpi-gcc47
+#mpirun parallel ./xp >>  $0.log 2>> $0.err
+
+#PBS
+#export LD_LIBRARY_PATH=/softs/openmpi-1.4.3-gcc/lib:$LD_LIBRARY_PATH
+#export PATH=/softs/openmpi-1.4.3-gcc/bin:$PATH
+#export PATH=$HOME/bin:$PATH
+#mpiexec -machinefile $PBS_NODEFILE parallel xp >>  $0.log 2>> $0.err
+
+#single 
+./xp >>  $0.log 2>> $0.err
+
+sed -i 's/RunType=GenerateQFF2MRFiles/#RunType=GenerateQFF2MRFiles/g' h2oV.ici
+sed -i 's/#RunType=ComputeQFF2MRFromFiles/RunType=ComputeQFF2MRFromFiles/g' h2oV.ici
+
+# generate txt data for VPT2 calculation
+$CCHEMIBIN h2oV.ici  >>  $0.log 2>> $0.err
+
+sed -i 's/#RunType=GenerateQFF2MRFiles/RunType=GenerateQFF2MRFiles/g' h2oV.ici
+sed -i 's/RunType=ComputeQFF2MRFromFiles/#RunType=ComputeQFF2MRFromFiles/g' h2oV.ici
+
+# make ici  file for VPT2 calculation
+echo 'RunType=VPT2' > h2oVQFF.ici
+cat h2oVQFF.txt >> h2oVQFF.ici
+
+# generate txt data for VPT2 calculation
+$CCHEMIBIN h2oVQFF.ici  >  $0.out 2>> $0.err
+
+
+#/bin/rm -f xp
+/bin/rm -f xp_*
+/bin/rm -f h2oVQFF_*.ici
+/bin/rm -f h2oVQFF_*.gab
+/bin/rm -f h2oVQFF_*.log
+echo "==========================================================================="
+echo "See $0.out , $0.log and $0.err files "
+echo "==========================================================================="

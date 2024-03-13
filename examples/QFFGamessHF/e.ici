@@ -1,0 +1,14 @@
+RunType=Energy
+#RunType=Gradient
+Model=Generic
+GenericCommand=runGamessHF
+
+QFFnModes=2
+
+dx=0.01
+
+Geometry
+h2oOptFreq.log
+
+#h2oHF.out
+

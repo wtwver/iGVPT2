@@ -1,0 +1,13 @@
+#RunType=Gradient
+RunType=GenerateQFFnMRFiles
+#RunType=ComputeQFFnMRFromFiles
+Model=Orca
+QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+orcaCommand=runOrca
+QFFnModes=2
+
+dx=0.01
+
+Geometry
+h2oB2PLYP.out
+

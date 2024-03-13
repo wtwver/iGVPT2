@@ -1,0 +1,119 @@
+#!/bin/bash
+RUNGAMESS=/home/allouche/Softwares/gamess/rungms
+
+filename=$1 ; [ 0 = $# ] || shift
+outname=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ]
+then
+   clear
+   echo " " 
+   echo "==========================================="
+   echo "                 runGamessHF "
+   echo "-------------------------------------------"
+   echo "Example:"
+   echo "       runGamessHF h2.inp "
+   echo "==========================================="
+   echo " " 
+   exit 1
+fi
+fileinp=$filename
+filename=${fileinp%.inp}
+filename=${filename%.com}
+
+DEFAULTDIR=`pwd`
+if test ! -s "$fileinp"
+then
+   echo " " 
+   echo "============================================"
+   echo " I cannot find $fileinp file"
+   echo "============================================"
+   echo " " 
+   exit 2
+fi
+
+cd $DEFAULTDIR
+#cat $fileinp
+fn=`echo "$filename" | sed "s/.*\///" | sed "s/\..*//"`
+ffn=${fn}_$$
+fn=${ffn}.inp
+echo $fn
+awk 'BEGIN{
+natoms=0;
+}
+{
+i++;
+#printf("i=%d s=%s\n",i,$1);
+if(i==1) 
+{ 
+	option=$1
+	if(option==2) printf(" $CONTRL RUNTYP=Optimize $END\n")
+	else if(option==1) printf(" $CONTRL RUNTYP=GRADIENT $END\n")
+	else printf(" $CONTRL RUNTYP=ENERGY $END\n")
+}
+if(i==3) 
+{ 
+	natoms=$1
+	charge=$2 
+	mult=$3
+	printf(" $CONTRL ICHARG=%d  MULT=%d $END\n",charge,mult)
+	printf(" $STATPT OPTTOL=1.0E-5  $END\n")
+	printf(" $BASIS GBASIS=TZV $END\n")
+	printf(" $DATA\n")
+	printf("Molecule\n")
+	printf("C1\n")
+}
+if(i>3 && i<=natoms+3)
+{
+if($1=="H") z=1.0;
+if($1=="O") z=8.0;
+printf("%s %0.1f %s %s %s\n",$1,z,$9,$10,$11);
+if(i==natoms+3) printf(" $END\n")
+}
+
+}
+END{
+}' $fileinp > $fn
+echo $fn
+cat $fn
+nproc=1
+rm $HOME/scr/$fn*
+$RUNGAMESS $fn 00 $nproc >&  $filename.log
+tmpfile=${ffn}.tmp
+grep 'FINAL RHF ENERGY IS' $filename.log > ${ffn}.tmp
+echo tmp=$tmpfile
+cat $tmpfile
+energy=$(awk '{printf("%s",$5);}' $tmpfile)
+awk 'BEGIN{
+id=0
+AUTODEB=2.54158059
+}
+{
+	if(id==1) { id++; printf("%f\n%f\n%f\n",$1/AUTODEB,$2/AUTODEB,$3/AUTODEB); }  
+	if($0 ~ /(DEBYE)/) { id=1;}
+}' $filename.log > $tmpfile
+
+read mux muy muz <<< $(cat $tmpfile | awk '{ print $1; }')
+echo Mu = $mux $muy $muz
+echo $outname
+echo $energy >  $outname
+echo $mux $muy $muz >>  $outname
+echo 
+awk 'BEGIN{
+id=0
+}
+{
+	if(id==1)
+	{ 
+		if(NF != 5) id++; 
+		else printf("%f %f %f\n",$3,$4,$5);
+	}  
+	if($0 ~ /UNITS ARE HARTREE/) if($0 ~ /BOHR/) { id=1;}
+}' $filename.log >>  $outname
+echo file=$outname
+cat $outname
+
+rm $tmpfile
+rm $fn
+rm $filename.log
+

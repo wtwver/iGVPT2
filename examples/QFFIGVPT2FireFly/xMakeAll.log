@@ -1,0 +1,2009 @@
+Run fireFly
+firefly
+input
+Remove tmp dir : /tmp/h2oOptFreq_30521 
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFFNMRFILES
+model=FIREFLY
+----------------------------------------------------------
+
+Begin redMolecule from gamess output file
+Begin freMole
+numgeom=1 numgeometry=-1
+j=0 t =  O           8.0   0.0000000000  -0.3880000000   0.0000000000
+j=1 t =  H           1.0   0.7510000000   0.1940000000   0.0000000000
+j=2 t =  H           1.0  -0.7510000000   0.1940000000   0.0000000000
+Begin freMole
+numgeom=2 numgeometry=-1
+j=0 t =  O           8.0   0.0000000000  -0.3620118965   0.0000000000
+j=1 t =  H           1.0   0.7714356139   0.1810059483   0.0000000000
+j=2 t =  H           1.0  -0.7714356139   0.1810059483   0.0000000000
+Begin freMole
+numgeom=3 numgeometry=-1
+j=0 t =  O           8.0   0.0000000000  -0.3542706890   0.0000000000
+j=1 t =  H           1.0   0.8046947859   0.1771353445   0.0000000000
+j=2 t =  H           1.0  -0.8046947859   0.1771353445   0.0000000000
+Begin freMole
+numgeom=4 numgeometry=-1
+j=0 t =  O           8.0   0.0000000000  -0.3511619185   0.0000000000
+j=1 t =  H           1.0   0.7904772177   0.1755809593   0.0000000000
+j=2 t =  H           1.0  -0.7904772177   0.1755809593   0.0000000000
+Begin freMole
+numgeom=5 numgeometry=-1
+j=0 t =  O           8.0   0.0000000000  -0.3513274310   0.0000000000
+j=1 t =  H           1.0   0.7901439465   0.1756637155   0.0000000000
+j=2 t =  H           1.0  -0.7901439465   0.1756637155   0.0000000000
+Begin freMole
+numgeom=6 numgeometry=-1
+j=0 t =  O           8.0   0.0000000000  -0.3513234911   0.0000000000
+j=1 t =  H           1.0   0.7901547729   0.1756617455   0.0000000000
+j=2 t =  H           1.0  -0.7901547729   0.1756617455   0.0000000000
+Begin freMole
+numgeom=7 numgeometry=-1
+j=0 t =  O           8.0   0.0000000000  -0.3513234911   0.0000000000
+j=1 t =  H           1.0   0.7901547729   0.1756617455   0.0000000000
+j=2 t =  H           1.0  -0.7901547729   0.1756617455   0.0000000000
+end read molecule
+begin resetTypeConnections
+end resetTypeConnections
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+End redMolecule from gamess output file
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+ordre = 2
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFFNMRFROMFILES
+model=FIREFLY
+----------------------------------------------------------
+
+Reading molecule from /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_0.gab file
+nAtoms = 3
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_1.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1697.060000000000 Mass= 1.092020000000 Q= Qeq + 0.382330973810
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_2.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1697.060000000000 Mass= 1.092020000000 Q= Qeq + 0.254887315873
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_3.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1697.060000000000 Mass= 1.092020000000 Q= Qeq + 0.127443657937
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_4.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1697.060000000000 Mass= 1.092020000000 Q= Qeq - 0.127443657937
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_5.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1697.060000000000 Mass= 1.092020000000 Q= Qeq - 0.254887315873
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_6.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1697.060000000000 Mass= 1.092020000000 Q= Qeq - 0.382330973810
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_7.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3963.400000000000 Mass= 1.036610000000 Q= Qeq + 0.256780315546
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_8.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3963.400000000000 Mass= 1.036610000000 Q= Qeq + 0.171186877031
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_9.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3963.400000000000 Mass= 1.036610000000 Q= Qeq + 0.085593438515
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_10.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3963.400000000000 Mass= 1.036610000000 Q= Qeq - 0.085593438515
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_11.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3963.400000000000 Mass= 1.036610000000 Q= Qeq - 0.171186877031
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_12.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3963.400000000000 Mass= 1.036610000000 Q= Qeq - 0.256780315546
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_13.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 4127.720000000000 Mass= 1.089740000000 Q= Qeq + 0.245406926732
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_14.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 4127.720000000000 Mass= 1.089740000000 Q= Qeq + 0.163604617821
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_15.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 4127.720000000000 Mass= 1.089740000000 Q= Qeq + 0.081802308911
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_16.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 4127.720000000000 Mass= 1.089740000000 Q= Qeq - 0.081802308911
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_17.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 4127.720000000000 Mass= 1.089740000000 Q= Qeq - 0.163604617821
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_18.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 4127.720000000000 Mass= 1.089740000000 Q= Qeq - 0.245406926732
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_19.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.362332946257 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.848167298177 0.263025762883 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.848167298177 0.263025762883 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_20.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.350423491333 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.681057011572 0.168519931906 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.681057011572 0.168519931906 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_21.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.352223490867 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.899252534228 0.182803559094 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.899252534228 0.182803559094 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_22.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.340314035943 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.732142247623 0.088297728117 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.732142247623 0.088297728117 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_23.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.009600880863 -0.356378218795 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.840798604305 0.266584593623 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.688425705444 0.164961101166 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_24.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.009600880863 -0.356378218795 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.688425705444 0.164961101166 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.840798604305 0.266584593623 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_25.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.009600880863 -0.346268763405 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.891883840356 0.186362389834 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.739510941495 0.084738897377 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_26.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.009600880863 -0.346268763405 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.739510941495 0.084738897377 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.891883840356 0.186362389834 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_27.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.358363127949 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.792463869309 0.231523819224 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.792463869309 0.231523819224 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_28.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.348253672559 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.843549105360 0.151301615435 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.843549105360 0.151301615435 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_29.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.354393309641 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.736760440440 0.200021875565 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.736760440440 0.200021875565 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_30.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.344283854251 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.787845676491 0.119799671776 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.787845676491 0.119799671776 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_31.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.368472583338 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.741378633257 0.311746023012 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.741378633257 0.311746023012 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_32.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.338144217170 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.894634341411 0.071079411646 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.894634341411 0.071079411646 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_33.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.364502765030 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.685675204389 0.280244079354 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.685675204389 0.280244079354 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_34.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.000000000000 -0.334174398862 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.838930912543 0.039577467988 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.838930912543 0.039577467988 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_35.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.009600880863 -0.353308400254 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.894192936764 0.242224463558 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.741820037904 0.140600971101 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_36.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.009600880863 -0.353308400254 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.741820037904 0.140600971101 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.894192936764 0.242224463558 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_37.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.009600880863 -0.349338581946 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.838489507896 0.210722519899 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.686116609036 0.109099027442 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_38.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.009600880863 -0.349338581946 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.686116609036 0.109099027442 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.838489507896 0.210722519899 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_39.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.356378218795 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.790007638018 0.232710096137 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.739216671731 0.198835598651 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_40.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.346268763405 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.841092874069 0.152487892349 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.790301907782 0.118613394863 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_41.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.356378218795 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.739216671731 0.198835598651 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.790007638018 0.232710096137 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_42.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.346268763405 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.790301907782 0.118613394863 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.841092874069 0.152487892349 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_43.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.353308400254 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.843401970478 0.208349966072 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.792611004191 0.174475468587 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_44.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.349338581946 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.787698541609 0.176848022413 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.736907575322 0.142973524928 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_45.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.353308400254 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.792611004191 0.174475468587 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.843401970478 0.208349966072 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_46.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.349338581946 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.736907575322 0.142973524928 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.787698541609 0.176848022413 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_47.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.366487674184 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.738922401967 0.312932299926 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.688131435680 0.279057802440 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_48.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.336159308016 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.892178110120 0.072265688560 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.841387143833 0.038391191074 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_49.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.366487674184 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.688131435680 0.279057802440 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.738922401967 0.312932299926 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_50.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.336159308016 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.841387143833 0.038391191074 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.892178110120 0.072265688560 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_51.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.357278218562 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.899105399346 0.239851909731 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.848314433059 0.205977412245 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_52.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 -0.003200293621 -0.345368763638 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.731995112741 0.145346078755 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.681204146454 0.111471581269 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_53.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.357278218562 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.848314433059 0.205977412245 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.899105399346 0.239851909731 0.000000000000 1  1 1
+
+fileName = /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_54.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=FireFly
+
+buffer = QMKeys=TZV
+
+buffer = GaussianCommand=runFF
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  O O O O 0 -0.595912000000 2 1 0.003200293621 -0.345368763638 0.000000000000 2  2 1 3 1
+
+buffer =  H H H H 0 0.297956000000 2 1 0.681204146454 0.111471581269 0.000000000000 1  1 1
+
+buffer =  H H H H 0 0.297956000000 2 1 -0.731995112741 0.145346078755 0.000000000000 1  1 1
+
+numberOfFrequencies = 3
+Begin initNMRQFF0 nf = 3
+End initgrad
+End initNMRQFF0
+Reading molecule from /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF_0.gab file
+Begin free
+End free
+Energ computeQFFDerivativesEnergies
+Energ computeQFFDerivativesDipoles
+QFF parameters saved in /home/allouche/tmp/QFFIGVPT2FireFly/h2oVQFF.txt file
+

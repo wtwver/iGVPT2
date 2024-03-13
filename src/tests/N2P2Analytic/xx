@@ -1,0 +1,4 @@
+cd ../..
+./compigvpt2.sh
+cd -
+../../igvpt2 N2P2.ici

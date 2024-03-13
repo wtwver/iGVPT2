@@ -1,0 +1,144 @@
+#!/bin/bash
+###################################################################
+#                                                                 #
+###################################################################
+
+queue=$1 ; [ 0 = $# ] || shift
+filename=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ] || [ -z "$queue" ]
+then
+   clear
+   echo " " 
+   echo "==========================================="
+   echo "                 submitParallel "
+   echo " Pour toutes questions contacter : "
+   echo " A.R. Allouche allouche@lasim.univ-lyon1.fr"
+   echo "==========================================="
+   echo "     Queue       # proc"
+   echo "     =========   ======"
+   echo "     new      	  1"
+   echo "     ibm      	  1"
+   echo "     old      	  1"
+   echo "     new2     	  2"
+   echo "     new4     	  4"
+   echo "     new6     	  6"
+   echo "     new8     	  8"
+   echo "     new12    	 12"
+   echo "     new16    	 16"
+   echo "     new20    	 20"
+   echo "     new24    	 24"
+   echo "     new48    	 48"
+   echo "     new72    	 72"
+   echo "     new96    	 96"
+   echo "     old2     	  2"
+   echo "     old4     	  4"
+   echo "     old6     	  6"
+   echo "     old8     	  8"
+   echo "     ibm2     	  2"
+   echo "     ibm4     	  4"
+   echo "     ibm6     	  6"
+   echo "     ibm8     	  8"
+   echo "     ibm16    	 16"
+   echo "     ibm24    	 24"
+   echo "     ibm32    	 32"
+   echo "     ibm40      40"
+   echo "     ibm48    	 48"
+   echo "-------------------------------------------"
+   echo "Vous devez fournir :"
+   echo " - Le nom de la queue :"
+   echo " - Le nom du fichier"
+   echo "-------------------------------------------"
+   echo "Exemple:"
+   echo "       submiParPBS new2 xwater "
+   echo "       fichier de donnees : xMakeAll"
+   echo "       Queue   : new2"
+   echo "==========================================="
+   echo " " 
+   exit 1
+fi
+filecom=$filename
+filename=${filecom%.com}
+
+nnodes=1
+[ $queue = "new" ]   && queue="new" && underqueue="new" && nnodes=1 && npn=1
+[ $queue = "ibm" ]   && queue="ibm" && underqueue="ibm" && nnodes=1 && npn=1
+[ $queue = "old" ]   && queue="old" && underqueue="old" && nnodes=1 && npn=1
+[ $queue = "new2" ]  && queue="new" && underqueue="2"   && nnodes=1 && npn=2
+[ $queue = "new4" ]  && queue="new" && underqueue="4"   && nnodes=1 && npn=4
+[ $queue = "new6" ]  && queue="new" && underqueue="6"   && nnodes=1 && npn=6
+[ $queue = "new8" ]  && queue="new" && underqueue="8"   && nnodes=1 && npn=8
+[ $queue = "new12" ] && queue="new" && underqueue="12"  && nnodes=1 && npn=12
+[ $queue = "new16" ] && queue="new" && underqueue="16"  && nnodes=1 && npn=16
+[ $queue = "new20" ] && queue="new" && underqueue="20"  && nnodes=1 && npn=20
+[ $queue = "new24" ] && queue="new" && underqueue="24"  && nnodes=1 && npn=24
+[ $queue = "new48" ] && queue="new" && underqueue="24"  && nnodes=2 && npn=24
+[ $queue = "new72" ] && queue="new" && underqueue="24"  && nnodes=3 && npn=24
+[ $queue = "new96" ] && queue="new" && underqueue="24"  && nnodes=4 && npn=24
+[ $queue = "old2" ]  && queue="old" && underqueue="2"   && nnodes=1 && npn=2
+[ $queue = "old4" ]  && queue="old" && underqueue="4"   && nnodes=1 && npn=4
+[ $queue = "old6" ]  && queue="old" && underqueue="6"   && nnodes=1 && npn=6
+[ $queue = "old8" ]  && queue="old" && underqueue="6"   && nnodes=1 && npn=8
+[ $queue = "ibm2" ]  && queue="ibm" && underqueue="2"   && nnodes=1 && npn=2
+[ $queue = "ibm4" ]  && queue="ibm" && underqueue="4"   && nnodes=1 && npn=4
+[ $queue = "ibm6" ]  && queue="ibm" && underqueue="6"   && nnodes=1 && npn=6
+[ $queue = "ibm8" ]  && queue="ibm" && underqueue="8"   && nnodes=1 && npn=8
+[ $queue = "ibm16" ] && queue="ibm" && underqueue="8"   && nnodes=2 && npn=8
+[ $queue = "ibm24" ] && queue="ibm" && underqueue="8"   && nnodes=3 && npn=8
+[ $queue = "ibm32" ] && queue="ibm" && underqueue="8"   && nnodes=4 && npn=8
+[ $queue = "ibm40" ] && queue="ibm" && underqueue="8"   && nnodes=5 && npn=8
+[ $queue = "ibm48" ] && queue="ibm" && underqueue="8"   && nnodes=6 && npn=8
+
+nprocs=$(( npn * nnodes ))
+
+echo "nprocs = $nprocs"
+echo "nnodes = $nnodes"
+echo "npn    = $npn"
+
+DEFAULTDIR=`pwd`
+if test ! -s "$filecom"
+then
+   echo " " 
+   echo "============================================"
+   echo "le fichier $filecom est introuvable(ou vide)"
+   echo "============================================"
+   echo " " 
+   exit 2
+fi
+
+endof=EOF
+cat > $filename.sh <<EOF
+#!/bin/bash
+cd $DEFAULTDIR
+
+node=\`uname -n\`
+
+export LD_LIBRARY_PATH=/softs/openmpi-1.4.3-gcc/lib:$LD_LIBRARY_PATH
+export PATH=/softs/openmpi-1.4.3-gcc/bin:$PATH
+$filecom > "$DEFAULTDIR/$filename.txt"
+
+EOF
+
+if [ $nprocs != "1" ]
+then
+qsub -o $DEFAULTDIR -e $DEFAULTDIR -q $queue  -l nodes=$nnodes:ppn=$npn  -l walltime=10000:0:0 $filename.sh
+else
+qsub -o $DEFAULTDIR -e $DEFAULTDIR -q $queue   -l walltime=10000:0:0 $filename.sh
+fi
+
+
+echo " " 
+echo "==================================================================="
+echo " " 
+echo "Un fichier $filename.sh a ete cree pour lancer le calcul"
+echo "Ne pas effacer ce fichier avant la fin du calcul"
+echo " " 
+echo "-------------------------------------------------------------------"
+echo " " 
+echo "pour avoir des informations sur vos job taper : qstat "
+echo " " 
+echo "pour detruire un job taper : qdel JobID"
+echo "   JobID est le Job-Id fourni par qstat" 
+echo " " 
+echo "==================================================================="
+echo " " 

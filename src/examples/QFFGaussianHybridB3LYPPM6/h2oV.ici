@@ -1,0 +1,14 @@
+#RunType=Gradient
+RunType=GenerateQFFnMRFiles
+#RunType=ComputeQFFnMRFromFiles
+Model=Gaussian
+QMKeys= PM6  SCF(XQC,Tight) Symmetry=None
+GaussianCommand=runG09
+
+QFFnModes=2
+
+dx=0.01
+
+Geometry
+h2oB3LYP.log
+

@@ -1,0 +1,28 @@
+#!/bin/bash
+filename=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ]
+then
+   clear
+   echo " " 
+   echo "Usage Exemple:"
+   echo "       runG09 h2.com "
+   echo "       fichier de donnees : h2.com"
+   echo "==========================================="
+   echo " " 
+   exit 1
+fi
+filecom=$filename
+filename=${filecom%.com}
+
+
+export g09root=/home/$USER/Softwares/G09DSrc-Corr5
+. $g09root/g09/bsd/g09.profile
+. $g09root/g09/bsd/gau-unlimit
+export GAUSS_SCRDIR=/tmp/$LOGNAME/$RANDOM
+mkdir /tmp/$LOGNAME
+mkdir $GAUSS_SCRDIR
+echo Begin $filename
+$g09root/g09/g09 <$filecom>$filename.log
+echo End $filename
+/bin/rm -r $GAUSS_SCRDIR

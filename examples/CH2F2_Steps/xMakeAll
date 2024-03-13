@@ -1,0 +1,89 @@
+#!/bin/bash
+echo " Begin QFF2MR-VPT2 calculation">  $0.log
+
+# SCRIPT=$(readlink -f $0) works only under linux
+
+# Works on both linux and Mac OS X.
+function read_link() {
+    local path=$1
+        if [ -d $path ] ; then
+        local abspath=$(cd $path; pwd)
+        else
+            local prefix=$(cd $(dirname -- $path) ; pwd)
+            local suffix=$(basename $path)
+            local abspath="$prefix/$suffix"
+        fi
+    echo $abspath
+}
+SCRIPT=$(read_link $0)
+
+export  DEFDIR=`dirname $SCRIPT`
+echo "DEFDIR=$DEFDIR"
+cd $DEFDIR
+
+export IGVPT2DIR=$HOME/iGVPT2
+export PATH=$IGVPT2DIR/bin:$PATH
+export PATH=$IGVPT2DIR/shell:$PATH
+
+rm $0.err
+
+# Opt + Freq => h2oB2BLYP.out, runOrca append the .hess at .out file
+#runOrca h2oB2PLYP.com >$0.log 2>  $0.err
+#rm -f $0.err
+
+# generate QFF energies files
+/bin/rm -f CH2F2QFF_*.ici
+/bin/rm -f CH2F2QFF_*.gab
+/bin/rm -f CH2F2QFF_*.log
+igvpt2 CH2F2.ici >> $0.log 2>>  $0.err
+
+#echo "cd $DEFDIR" > xp
+#ls CH2F2QFF_* >> xp
+ls CH2F2QFF_* > xp
+
+sed -i 's/CH2F2QFF/runiGVPT2 CH2F2QFF/' xp
+#cat xp
+chmod u+x xp
+
+#parallel
+
+# SLURM
+#module purge
+#module use /softs/modulefiles
+#module load gcc/4.7.3 openmpi/1.7.4/openmpi-gcc47
+#mpirun parallel ./xp >>  $0.log 2>> $0.err
+
+#PBS
+#export LD_LIBRARY_PATH=/softs/openmpi-1.4.3-gcc/lib:$LD_LIBRARY_PATH
+#export PATH=/softs/openmpi-1.4.3-gcc/bin:$PATH
+#export PATH=$HOME/bin:$PATH
+#mpiexec -machinefile $PBS_NODEFILE parallel xp >>  $0.log 2>> $0.err
+
+#single 
+./xp >>  $0.log 2>> $0.err
+
+sed -i 's/RunType=GenerateQFFnMRFiles/#RunType=GenerateQFFnMRFiles/g' CH2F2.ici
+sed -i 's/#RunType=ComputeQFFnMRFromFiles/RunType=ComputeQFFnMRFromFiles/g' CH2F2.ici
+
+# generate txt data for VPT2 calculation
+igvpt2 CH2F2.ici  >>  $0.log 2>> $0.err
+
+sed -i 's/#RunType=GenerateQFFnMRFiles/RunType=GenerateQFFnMRFiles/g' CH2F2.ici
+sed -i 's/RunType=ComputeQFFnMRFromFiles/#RunType=ComputeQFFnMRFromFiles/g' CH2F2.ici
+
+# make ici  file for VPT2 calculation
+echo 'RunType=VPT2' > CH2F2QFF.ici
+cat CH2F2QFF.txt >> CH2F2QFF.ici
+
+# generate txt data for VPT2 calculation
+igvpt2 CH2F2QFF.ici  >  $0.out 2>> $0.err
+
+
+#/bin/rm -f xp
+/bin/rm -f xp_*
+/bin/rm -f CH2F2QFF_*.ici
+/bin/rm -f CH2F2QFF_*.gab
+/bin/rm -f CH2F2QFF_*.log
+echo "==========================================================================="
+echo "See $0.out , $0.log and $0.err files "
+echo "==========================================================================="

@@ -1,0 +1,59 @@
+#!/bin/bash
+filename=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ]
+then
+   clear
+   echo " " 
+   echo "==========================================="
+   echo "                 runFF "
+   echo "==========================================="
+   echo "You should give the name of the data file(including .inp)"
+   echo "-------------------------------------------"
+   echo "Example:"
+   echo "       runFF h2.inp "
+   echo "       h2.inp is the data file"
+   echo "==========================================="
+   echo " " 
+   exit 1
+fi
+fileinput=$filename
+filename=${fileinput%.inp}
+[ $fileinput = $filename ] && filename=${fileinput%.INP}
+[ $fileinput = $filename ] && filename=${fileinput%.Inp}
+
+export PATH=/home/allouche/Softwares/FireFly8:$PATH
+
+if [ -z "$PBS_JOBID" ]
+then
+export JID=$RANDOM
+else
+export JID=${PBS_JOBID%.master0}
+fi
+
+if [ -z "$TMPDIR" ]
+then
+export TMPDIR=/tmp
+fi
+fn=`echo "$filename" | sed "s/.*\///" | sed "s/\..*//"`
+
+export DEFAULTDIR=$PWD
+cd $DEFAULTDIR
+export fireFlyProg=`which firefly`
+#export FIREFLY_TMPDIR=$TMPDIR
+export FIREFLY_TMPDIR=/tmp
+export FIREFLYDIR=${FIREFLY_TMPDIR}/${fn}_$JID
+mkdir $FIREFLY_TMPDIR
+mkdir $FIREFLYDIR
+
+cd $FIREFLYDIR
+cp $fireFlyProg .
+cp $DEFAULTDIR/$fileinput input
+echo "Run fireFly"
+ls
+./firefly >  $DEFAULTDIR/$filename.log 
+cd $DEFAULTDIR
+
+echo "Remove tmp dir : $FIREFLYDIR "
+/bin/rm -r $FIREFLYDIR
+

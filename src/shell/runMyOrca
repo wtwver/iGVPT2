@@ -1,0 +1,43 @@
+#!/bin/bash
+filename=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ]
+then
+   clear
+   echo " "
+   echo "Usage Exemple:"
+   echo "       runOrca h2.inp "
+   echo "       fichier de donnees : h2.inp"
+   echo "==========================================="
+   echo " "
+   exit 1
+fi
+fileinp=$filename
+filename=${fileinp%.inp}
+filename=${filename%.com}
+
+if [ -z "$TMPDIR" ]
+then
+export TMPDIR=/tmp
+fi
+
+DEFAULTDIR=`pwd`
+export JID=${PBS_JOBID%.master0}
+fn=`echo "$filename" | sed "s/.*\///" | sed "s/\..*//"`
+cpid=$$
+export ORCATMP=$TMPDIR/$fn_$cpid
+mkdir $ORCATMP
+
+echo $ORCATMP
+
+echo Begin $filename
+cp  $fileinp  $ORCATMP/input.inp
+cd  $ORCATMP
+/softs/CompChemPackages/orca_3_0_2_linux_x86-64/orca input.inp > $filename.out
+cat input.engrad >> $filename.out
+cat input.hess >> $filename.out
+cp $filename.out $DEFAULTDIR/.
+cd $DEFAULTDIR
+echo End $filename
+
+/bin/rm -r $ORCATMP

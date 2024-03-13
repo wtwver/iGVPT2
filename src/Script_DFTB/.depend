@@ -1,0 +1,3 @@
+Utils.o: Utils.cpp Utils.h
+Matrix.o: Matrix.cpp Matrix.h
+xRun.o: xRun.cpp Utils.h Matrix.h

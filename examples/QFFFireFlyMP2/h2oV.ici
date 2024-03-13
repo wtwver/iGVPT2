@@ -1,0 +1,21 @@
+#RunType=Gradient
+RunType=GenerateQFFnMRFiles
+#RunType=ComputeQFFnMRFromFiles
+Model=Generic
+
+# basis and method are defined in runFireFlyMP2, to be changed if necessary
+GenericCommand=runFireFlyMP2
+
+QFFnModes=2
+
+dx=0.01
+
+#read geom and NM from a gaussian outpout file
+#Geometry
+#h2oHF.out
+
+#read geom and NM from a Gamess output file
+Geometry
+h2oOptFreq.log
+
+

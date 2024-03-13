@@ -1,0 +1,29 @@
+#!/bin/bash
+fileici=$1 ; [ 0 = $# ] || shift
+if [ -z "$fileici" ]
+then
+   clear
+   echo " " 
+   echo "================================"
+   echo "Usage Example: runiGVPT2 h2.ici "
+   echo "================================"
+   echo " " 
+   exit 1
+fi
+
+export IGVPT2DIR=$HOME/iGVPT2
+export PATH=$IGVPT2DIR/bin:$PATH
+export PATH=$IGVPT2DIR/shell:$PATH
+
+export OMP_NUM_THREADS=1
+filename=${fileici%.ici}
+DEFAULTDIR=`pwd`
+export  LOG=$DEFAULTDIR/$filename.log
+fn=`echo "$filename" | sed "s/.*\///" | sed "s/\..*//"`
+cd $DEFAULTDIR
+echo "===================" > $LOG
+echo "run $fileici ......" >> $LOG
+echo "===================" >> $LOG
+time igvpt2 $fileici >>  $LOG
+echo "======================">> $LOG
+cd 

@@ -1,0 +1,3 @@
+export IGVPT2DIR=$HOME/iGVPT2
+export PATH=$IGVPT2DIR/bin:$PATH
+export PATH=$IGVPT2DIR/shell:$PATH

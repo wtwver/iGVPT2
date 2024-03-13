@@ -1,0 +1,12 @@
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x000tmp ; cat x000 >> x000tmp; mv x000tmp x000
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x001tmp ; cat x001 >> x001tmp; mv x001tmp x001
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x002tmp ; cat x002 >> x002tmp; mv x002tmp x002
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x003tmp ; cat x003 >> x003tmp; mv x003tmp x003
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x004tmp ; cat x004 >> x004tmp; mv x004tmp x004
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x005tmp ; cat x005 >> x005tmp; mv x005tmp x005
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x006tmp ; cat x006 >> x006tmp; mv x006tmp x006
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x007tmp ; cat x007 >> x007tmp; mv x007tmp x007
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x008tmp ; cat x008 >> x008tmp; mv x008tmp x008
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x009tmp ; cat x009 >> x009tmp; mv x009tmp x009
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x010tmp ; cat x010 >> x010tmp; mv x010tmp x010
+echo "cd /home_nfs/ilm/allouche/CH2F2_Steps; export PATH=\$HOME/iGVPT2/shell:\$PATH" >> x011tmp ; cat x011 >> x011tmp; mv x011tmp x011

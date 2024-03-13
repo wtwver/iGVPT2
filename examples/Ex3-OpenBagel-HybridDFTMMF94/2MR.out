@@ -1,0 +1,317 @@
+Hybrid DFT/MMFF94
+seed = -1
+----------------------------------------------------------
+runType=HYBRIDMM
+model=GVPT2
+----------------------------------------------------------
+
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+Freq calc from Hessian = 0.00000 Freq from orca = -43.00104
+Freq calc from Hessian = 0.00000 Freq from orca = -34.17511
+Freq calc from Hessian = 0.00000 Freq from orca = -5.63504
+Freq calc from Hessian = 0.00000 Freq from orca = 2.71918
+Freq calc from Hessian = 0.00000 Freq from orca = 52.85176
+Freq calc from Hessian = 0.00000 Freq from orca = 54.88685
+Freq calc from Hessian = 1644.82000 Freq from orca = 1644.85292
+Freq calc from Hessian = 3832.97000 Freq from orca = 3833.03829
+Freq calc from Hessian = 3941.82000 Freq from orca = 3941.89292
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+#Number of free coordinates =3 
+Setting of Parameters ...
+**** couldn't find stretch parameters for O-H(46-17) 
+**** couldn't find stretch parameters for O-H(46-17) 
+**** couldn't find bend parameters for H-O-H 
+#Number of free coordinates =3 
+
+A T O M   T Y P E S
+
+IDX	TYPE	RING
+1	70	NO
+2	31	NO
+3	31	NO
+
+F O R M A L   C H A R G E S
+
+IDX	CHARGE
+1	0.000000
+2	0.000000
+3	0.000000
+
+P A R T I A L   C H A R G E S
+
+IDX	CHARGE
+1	-0.860000
+2	0.430000
+3	0.430000
+
+S E T T I N G   U P   C A L C U L A T I O N S
+
+SETTING UP BOND CALCULATIONS...
+SETTING UP ANGLE & STRETCH-BEND CALCULATIONS...
+SETTING UP TORSION CALCULATIONS...
+SETTING UP OOP CALCULATIONS...
+SETTING UP VAN DER WAALS CALCULATIONS...
+SETTING UP ELECTROSTATIC CALCULATIONS...
+
+E N E R G Y
+
+
+B O N D   S T R E T C H I N G
+
+ATOM TYPES   FF    BOND       IDEAL       FORCE
+ I    J     CLASS  LENGTH     LENGTH     CONSTANT      DELTA      ENERGY
+------------------------------------------------------------------------
+70   31      0      0.959      0.969        8.200     -0.010      0.061
+70   31      0      0.959      0.969        8.200     -0.010      0.061
+     TOTAL BOND STRETCHING ENERGY =  0.12248 kcal/mol
+
+A N G L E   B E N D I N G
+
+ATOM TYPES        FF    VALENCE     IDEAL      FORCE
+ I    J    K     CLASS   ANGLE      ANGLE     CONSTANT      DELTA      ENERGY
+-----------------------------------------------------------------------------
+31   70   31      0    104.557    103.978        0.700      0.579      0.005
+     TOTAL ANGLE BENDING ENERGY =  0.00513 kcal/mol
+
+S T R E T C H   B E N D I N G
+
+ATOM TYPES        FF    VALENCE     DELTA        FORCE CONSTANT
+ I    J    K     CLASS   ANGLE      ANGLE        I J        J K      ENERGY
+---------------------------------------------------------------------------
+31   70   31      0    104.557      0.579      0.250      0.250     -0.007
+     TOTAL STRETCH BENDING ENERGY = -0.00734 kcal/mol
+
+T O R S I O N A L
+
+ATOM TYPES             FF     TORSION       FORCE CONSTANT
+ I    J    K    L     CLASS    ANGLE         V1   V2   V3     ENERGY
+--------------------------------------------------------------------
+     TOTAL TORSIONAL ENERGY =  0.00000 kcal/mol
+
+O U T - O F - P L A N E   B E N D I N G
+
+ATOM TYPES             FF       OOP     FORCE
+ I    J    K    L     CLASS    ANGLE   CONSTANT     ENERGY
+----------------------------------------------------------
+     TOTAL OUT-OF-PLANE BENDING ENERGY =  0.00000 kcal/mol
+
+V A N   D E R   W A A L S
+
+ATOM TYPES
+ I    J        Rij       R*IJ    EPSILON    ENERGY
+--------------------------------------------------
+     TOTAL VAN DER WAALS ENERGY =  0.00000 kcal/mol
+
+E L E C T R O S T A T I C   I N T E R A C T I O N S
+
+ATOM TYPES
+ I    J        Rij        Qi         Qj        ENERGY
+-----------------------------------------------------
+     TOTAL ELECTROSTATIC ENERGY =  0.00000 kcal/mol
+
+TOTAL ENERGY =  0.12027 kcal/mol
+
+FINAL ENERGY:    0.12026884150626 kcal/mol
+nAtoms = 3
+numberOfFrequencies = 3
+End initnMRQFF0
+Energ computeQFFDerivativesEnergies
+Energ computeQFFDerivativesDipoles
+QFF parameters saved in /home/debian/iGVPT2/examples/Ex3-OpenBagel-HybridDFTMMF94/2MRQFF.txt file
+nFrequencies=3
+VPT2 model : GVPT2
+
+Gradients
+END
+
+Hessian
+1 1      1644.8529217199
+2 2      3833.0382899859
+3 3      3941.8929246794
+END
+
+Cubic
+1 1 1      -393.3934370000
+1 1 2      -443.4335060000
+1 1 3         0.7867060000
+2 2 1       117.0517470000
+2 2 2      1591.7314730000
+2 2 3         2.9741180000
+3 3 1       205.9064180000
+3 3 2      1601.5949220000
+3 3 3        -8.7547330000
+END
+
+Quartic
+1 1 1 1       144.2719890000
+1 1 1 2        44.5089030000
+1 1 1 3        -0.3909130000
+2 2 1 1      -310.9305710000
+2 2 2 1      -149.0560980000
+2 2 2 2       478.3267140000
+2 2 2 3        -1.7084300000
+3 3 1 1      -322.7356270000
+3 3 2 2       480.9039000000
+3 3 3 1         0.2496610000
+3 3 3 2         1.8113050000
+3 3 3 3       481.4654230000
+END
+
+Coriolis
+END
+
+Rotation constants
+1         1.0000000000
+2         1.0000000000
+3         1.0000000000
+END
+nFrequencies=3
+nDim=3
+VPT2 Properties model : GVPT2 : Gaussian method
+
+First derivatives
+1 1        -0.0113432009
+1 2        -0.0081415145
+1 3        -2.6172720106
+2 1         2.9095725206
+2 2         0.8465347433
+2 3        -0.0120876367
+3 1         0.0000606535
+3 2         0.0000032684
+3 3         0.0000109761
+END
+
+
+Second derivatives
+END
+
+
+Cubic derivatives
+END
+
+nFrequencies 3
+nStates 10
+State n 1	0 0 0 
+State n 2	1 0 0 
+State n 3	0 1 0 
+State n 4	0 0 1 
+State n 5	2 0 0 
+State n 6	0 2 0 
+State n 7	0 0 2 
+State n 8	1 1 0 
+State n 9	1 0 1 
+State n 10	0 1 1 
+
+Xkl (cm^-1) by VPT2+K model
+1 1       -19.3683215499
+1 2        16.6202802995
+1 3       -23.4565171260
+2 1        16.6202802995
+2 2       -39.9742700379
+2 3      -156.2290174037
+3 1       -23.4565171260
+3 2      -156.2290174037
+3 3       -43.7628808400
+END
+
+C=20.563511
+
+Diagonal of H (cm^-1) by VPT2+K model
+     4643.3493865281         0.0000000000 
+     6246.0475467349      1602.6981602068  1(1) 
+     8326.6347678862      3683.2853813581  2(1) 
+     8407.8737822627      3764.5243957346  3(1) 
+     7810.0090638420      3166.6596773139  1(2) 
+    11929.9716091685      7286.6222226404  2(2) 
+    12084.8724163175      7441.5230297894  3(2) 
+     9945.9532083925      5302.6038218644  1(1)  2(1) 
+     9987.1154253435      5343.7660388154  1(1)  3(1) 
+    11934.9301462171      7291.5807596890  2(1)  3(1) 
+END
+
+
+Resonance Matrix (cm^-1) by VPT2+K model
+========================================
+ Fermi Resonances terms :
+ 0 Fermi Resonances 
+----------------------------------------------------------------------------------------------------
+
+ Darling-Dennison Resonances terms :
+ 0 Darling-Dennison Resonances 
+----------------------------------------------------------------------------------------------------
+
+END
+
+
+
+Results
+========================
+       E(harm)      E(anharm)     Mode(Quanta), Coef 
+       -------      ---------     ---------------- 
+    0.00000000     0.00000000     [ 1.000] 
+ 1644.85292172  1602.69816021     [ 1.000  1(1)] 
+ 3289.70584344  3166.65967731     [ 1.000  1(2)] 
+ 3833.03828999  3683.28538136     [ 1.000  2(1)] 
+ 3941.89292468  3764.52439573     [ 1.000  3(1)] 
+ 5477.89121171  5302.60382186     [ 1.000  1(1)  2(1)] 
+ 5586.74584640  5343.76603882     [ 1.000  1(1)  3(1)] 
+ 7666.07657997  7286.62222264     [ 1.000  2(2)] 
+ 7774.93121467  7291.58075969     [ 1.000  2(1)  3(1)] 
+ 7883.78584936  7441.52302979     [ 1.000  3(2)] 
+
+
+
+Results With intensities
+========================
+       E(harm)      E(anharm)        I(harm)      I(anharm)     Coef Mode(Quanta) 
+       -------      ---------        -------      ---------     ---------------- 
+    0.00000000     0.00000000     0.00000000     0.00000000     [ 1.000] 
+ 1644.85292172  1602.69816021    68.54755263    68.88835626     [ 1.000  1(1)] 
+ 3289.70584344  3166.65967731     0.00000000     0.00052499     [ 1.000  1(2)] 
+ 3833.03828999  3683.28538136     5.80305548     5.24442177     [ 1.000  2(1)] 
+ 3941.89292468  3764.52439573    55.46690903    54.22891824     [ 1.000  3(1)] 
+ 5477.89121171  5302.60382186     0.00000000     0.04934062     [ 1.000  1(1)  2(1)] 
+ 5586.74584640  5343.76603882     0.00000000     0.10082777     [ 1.000  1(1)  3(1)] 
+ 7666.07657997  7286.62222264     0.00000000     0.06750029     [ 1.000  2(2)] 
+ 7774.93121467  7291.58075969     0.00000000     1.01375353     [ 1.000  2(1)  3(1)] 
+ 7883.78584936  7441.52302979     0.00000000     0.07142218     [ 1.000  3(2)] 
+
+
+
+Results With intensities
+========================
+
+Fundamental Bands
+-----------------
+       E(harm)      E(anharm)        I(harm)      I(anharm)       Coef. Mode(Quanta) 
+  ------------   ------------   ------------   ------------     -------------------- 
+ 1644.85292172  1602.69816021    68.54755263    68.88835626     [ 1.000  1(1)] 
+ 3833.03828999  3683.28538136     5.80305548     5.24442177     [ 1.000  2(1)] 
+ 3941.89292468  3764.52439573    55.46690903    54.22891824     [ 1.000  3(1)] 
+
+Overtones
+---------
+       E(harm)      E(anharm)        I(harm)      I(anharm)       Coef. Mode(Quanta) 
+  ------------   ------------   ------------   ------------     -------------------- 
+ 3289.70584344  3166.65967731     0.00000000     0.00052499     [ 1.000  1(2)] 
+ 7666.07657997  7286.62222264     0.00000000     0.06750029     [ 1.000  2(2)] 
+ 7883.78584936  7441.52302979     0.00000000     0.07142218     [ 1.000  3(2)] 
+
+Combination Bands
+----------------
+       E(harm)      E(anharm)        I(harm)      I(anharm)       Coef. Mode(Quanta) 
+  ------------   ------------   ------------   ------------     -------------------- 
+ 5477.89121171  5302.60382186     0.00000000     0.04934062     [ 1.000  1(1)  2(1)] 
+ 5586.74584640  5343.76603882     0.00000000     0.10082777     [ 1.000  1(1)  3(1)] 
+ 7774.93121467  7291.58075969     0.00000000     1.01375353     [ 1.000  2(1)  3(1)] 
+
+

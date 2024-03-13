@@ -1,0 +1,186 @@
+#RunType=HDNNGVPT2
+RunType=N2P2GVPT2
+#RunType=OBGVPT2
+
+VPT2Model=GVPT2
+PropModel=GVPT2
+maxFrequencyDifferenceFermi=200
+MartinCutOff1=1.0
+MartinCutOff2=1.0
+
+#QFFnModes=3
+
+# HighDerivativesMethod : -1(defaul, numeric), 0(analytic, all in memory(V fast)) , 1 (analytic, using disk), 2(analytic, calculated on the fly)
+#HighDerivativesMethod=-1
+
+# analytic
+#QFFnModes=3 : Only three index for energy and two index for dipole derivatives
+QFFnModes=3
+#QFFnModes=4 : for analaytical version : four index for energy & threeIndex for dipole are calculated and used in GVPT2 calculation
+#QFFnModes=4
+#HighDerivativesMethod=0
+
+Geometry
+aFreq.out
+
+#h2oB2PLYP.out
+#aFreq.out
+
+
+#====================================================================================
+# nMR-QFF constants
+# See Yagi et al. J. Chem. Phys. 121, 1383 (2004)
+#====================================================================================
+
+VPT2Model=GVPT2
+# VPT2Model=DCPT2
+# VPT2Model=HDCPT2
+# alphaHDCPT2=1.0
+# betaHDCPT2=5e5
+
+PropModel=GVPT2
+# PropModel=HDCPT2
+# PropModel=DCPT2
+# alphaPropHDCPT2=1.0
+# betaPropHDCPT2=5e5
+# alphaPropHDCPT2=1.0
+# betaPropHDCPT2=5e5
+maxFrequencyDifferenceFermi=200
+MartinCutOff1=1.0
+MartinCutOff2=1.0
+# ZCutOff=0.08
+
+#====================================================================================
+
+nFrequencies=3
+nDim=3
+
+#i Freq(cm-1)  Calc.Freq   dQ(Bohr)  Mass(amu)	Gradient[ H amu^(-1/2) Bohr^(-1)]
+Hessian
+1 1 1644.95963087358200 1646.97355949310463 0.12997697772663 1.08311889712588	-0.00000034332163
+2 2 3834.20806406454494 3834.62421303632118 0.08668364705965 1.04475442549504	-0.00000115261168
+3 3 3944.40010631796622 3939.46650785053453 0.08398383003222 1.08191198380675	-0.00000000000001
+END
+
+# i	j	k	Reduced values [cm-1]
+Cubic
+1	1	1	   -251.932781
+1	1	2	   -319.406674
+1	1	3	     -0.000005
+2	2	1	     60.578047
+2	2	2	   1824.268668
+2	2	3	     -0.000016
+3	3	1	    263.569985
+3	3	2	   1804.638643
+3	3	3	      0.000048
+3	2	1	     -0.000007
+END
+
+# i	j	k	l	Reduced values [cm-1]
+Quartic
+1	1	1	1	   -237.441727
+1	1	1	2	     78.881600
+1	1	1	3	      0.000000
+2	2	1	1	   -298.262853
+2	2	2	2	    675.104924
+2	2	2	1	    -89.866186
+2	2	2	3	      0.000015
+3	3	1	1	   -356.069113
+3	3	2	2	    778.933873
+3	3	3	3	    752.537354
+3	3	3	1	      0.000002
+3	3	3	2	     -0.000016
+3	3	2	1	      0.854273
+END
+
+
+#xyz    i       Values[au cm^1/2]
+First derivatives
+X	1	-0.0000000001
+Y	1	0.0000000179
+Z	1	2.9008599075
+X	2	-0.0000000007
+Y	2	-0.0000000101
+Z	2	0.8042327112
+X	3	0.0000000002
+Y	3	2.5496742723
+Z	3	-0.0000001279
+END
+#xyz	i	Values[au cm^1/2]
+First derivatives
+Y	1	     -0.000000
+Z	1	      4.114728
+Y	2	     -0.000000
+Z	2	      0.873270
+Y	3	      1.982770
+Z	3	      0.000000
+END
+
+#xyz	i	j	Values[au cm]
+Second derivatives
+Y	1	1	      0.000000
+Z	1	1	     27.401431
+Y	1	2	      0.000000
+Z	1	2	      6.987108
+Y	1	3	    -12.906637
+Z	1	3	      0.000000
+Y	2	1	      0.000000
+Z	2	1	      6.987108
+Y	2	2	     -0.000000
+Z	2	2	     11.283805
+Y	2	3	      3.686803
+Z	2	3	      0.000000
+Y	3	1	    -12.906637
+Z	3	1	      0.000000
+Y	3	2	      3.686803
+Z	3	2	      0.000000
+Y	3	3	      0.000000
+Z	3	3	     -1.887439
+END
+
+#xyz	i	j	k	Values[au cm^3/2]
+Cubic derivatives
+Y	1	1	1	     -0.000000
+Z	1	1	1	   -350.872002
+Y	1	1	2	     -0.000000
+Y	1	2	1	     -0.000000
+Y	2	1	1	     -0.000000
+Z	1	1	2	    261.788884
+Z	1	2	1	    261.788884
+Z	2	1	1	    261.788884
+Y	1	1	3	     36.695026
+Y	1	3	1	     36.695026
+Y	3	1	1	     36.695026
+Z	1	1	3	      0.000001
+Z	1	3	1	      0.000001
+Z	3	1	1	      0.000001
+Y	2	2	1	     -0.000000
+Y	2	1	2	     -0.000000
+Y	1	2	2	     -0.000000
+Z	2	2	1	    105.844015
+Z	2	1	2	    105.844015
+Z	1	2	2	    105.844015
+Y	2	2	2	     -0.000018
+Z	2	2	2	    491.537079
+Y	2	2	3	    667.009918
+Y	2	3	2	    667.009918
+Y	3	2	2	    667.009918
+Z	2	2	3	     -0.000005
+Z	2	3	2	     -0.000005
+Z	3	2	2	     -0.000005
+Y	3	3	1	     -0.000002
+Y	3	1	3	     -0.000002
+Y	1	3	3	     -0.000002
+Z	3	3	1	    191.348892
+Z	3	1	3	    191.348892
+Z	1	3	3	    191.348892
+Y	3	3	2	      0.000006
+Y	3	2	3	      0.000006
+Y	2	3	3	      0.000006
+Z	3	3	2	    508.191467
+Z	3	2	3	    508.191467
+Z	2	3	3	    508.191467
+Y	3	3	3	    618.295576
+Z	3	3	3	      0.000015
+END
+

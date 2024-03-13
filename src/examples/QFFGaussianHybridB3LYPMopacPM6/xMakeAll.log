@@ -1,0 +1,1968 @@
+ Begin QFF2MR-VPT2 calculation Hybrid B3LYP/PM6 
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFFNMRFILES
+model=MOPAC
+----------------------------------------------------------
+
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+nAtoms = 3
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+ordre = 2
+First derivatives saved in /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVFirstDerivatives.txt file
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFFNMRFROMFILES
+model=MOPAC
+----------------------------------------------------------
+
+Reading molecule from /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_0.gab file
+nAtoms = 3
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_1.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1632.770705601209 Mass= 1.083288174591 Q= Qeq + 0.391353098522
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_2.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1632.770705601209 Mass= 1.083288174591 Q= Qeq + 0.260902065681
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_3.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1632.770705601209 Mass= 1.083288174591 Q= Qeq + 0.130451032841
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_4.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1632.770705601209 Mass= 1.083288174591 Q= Qeq - 0.130451032841
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_5.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1632.770705601209 Mass= 1.083288174591 Q= Qeq - 0.260902065681
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_6.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1632.770705601209 Mass= 1.083288174591 Q= Qeq - 0.391353098522
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_7.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3810.041799750820 Mass= 1.044596975738 Q= Qeq + 0.260894020519
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_8.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3810.041799750820 Mass= 1.044596975738 Q= Qeq + 0.173929347013
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_9.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3810.041799750820 Mass= 1.044596975738 Q= Qeq + 0.086964673506
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_10.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3810.041799750820 Mass= 1.044596975738 Q= Qeq - 0.086964673506
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_11.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3810.041799750820 Mass= 1.044596975738 Q= Qeq - 0.173929347013
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_12.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3810.041799750820 Mass= 1.044596975738 Q= Qeq - 0.260894020519
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_13.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3913.069421178133 Mass= 1.082256373768 Q= Qeq + 0.252917875624
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_14.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3913.069421178133 Mass= 1.082256373768 Q= Qeq + 0.168611917083
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_15.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3913.069421178133 Mass= 1.082256373768 Q= Qeq + 0.084305958541
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_16.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3913.069421178133 Mass= 1.082256373768 Q= Qeq - 0.084305958541
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_17.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3913.069421178133 Mass= 1.082256373768 Q= Qeq - 0.168611917083
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_18.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3913.069421178133 Mass= 1.082256373768 Q= Qeq - 0.252917875624
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_19.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.710045870065 -0.375285797929 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.710045499352 -0.375285508702 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.000000023358 0.105369000837 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_20.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.872057020674 -0.483818467480 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.872057391103 -0.483818761331 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.000000023340 0.119046127348 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_21.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.651402979326 -0.453027532520 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.651402608897 -0.453027238669 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.000000023340 0.115165872652 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_22.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.813414129935 -0.561560202071 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.813414500648 -0.561560491298 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.000000023358 0.128842999163 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_23.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.865897316537 -0.487084862909 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.716205969111 -0.372019666695 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.009431915778 0.112207580594 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_24.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.716205574202 -0.372019402500 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.865896921343 -0.487084603338 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.009431915760 0.112207547591 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_25.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.807254425798 -0.564826597500 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.657563078657 -0.449761396662 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.009431915760 0.122004452409 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_26.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.657562683463 -0.449761137091 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.807254030889 -0.564826333305 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.009431915778 0.122004419406 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_27.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.764049586934 -0.411463354446 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.764049463269 -0.411463259578 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.000000007792 0.109928043007 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_28.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.705406696196 -0.489205089037 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.705406572814 -0.489204989545 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.000000007774 0.119724914822 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_29.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.818053303804 -0.447640910963 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.818053427186 -0.447641010455 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.000000007774 0.114487085178 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_30.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.759410413066 -0.525382645554 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.759410536731 -0.525382740422 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.000000007792 0.124283956993 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_31.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.822692477673 -0.333721619856 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.822692353724 -0.333721529611 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.000000007810 0.100131171192 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_32.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.646763805457 -0.566946823627 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.646763682359 -0.566946719512 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.000000007756 0.129521786637 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_33.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.876696194543 -0.369899176373 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.876696317641 -0.369899280488 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.000000007756 0.104690213363 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_34.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.700767522327 -0.603124380144 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.700767646276 -0.603124470389 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.000000007810 0.134080828808 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_35.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.809574012733 -0.507866951946 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.659882541925 -0.392801656240 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.009431923552 0.114826495416 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_36.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.659882270397 -0.392801491537 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.809573494157 -0.507866592883 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.009431907986 0.114826462414 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_37.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.863577729603 -0.544044508463 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.713886505843 -0.428979407117 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.009431907986 0.119385537586 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_38.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.713885987267 -0.428979048054 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.863577458075 -0.544044343760 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.009431923552 0.119385504584 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_39.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.816000069092 -0.448729709440 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.766102953189 -0.410374645576 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143971932 0.112207569593 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_40.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.757357178353 -0.526471444030 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.707460062734 -0.488116375543 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143971914 0.122004441408 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_41.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.766102821647 -0.410374555970 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.815999937266 -0.448729624457 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143971914 0.112207558592 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_42.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.707459930908 -0.488116290560 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.757357046811 -0.526471354424 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143971932 0.122004430407 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_43.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.759676765288 -0.469511798476 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.709779526003 -0.431156635121 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143979706 0.114826484415 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_44.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.813680482157 -0.505689354993 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.763783489920 -0.467334385998 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143964140 0.119385526585 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_45.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.709779517843 -0.431156645007 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.759676510080 -0.469511614002 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143964140 0.114826473415 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_46.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.763783234712 -0.467334201524 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.813680473997 -0.505689364879 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143979706 0.119385515585 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_47.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.874642959831 -0.370987974849 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.824745843644 -0.332632915609 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143971950 0.102410697778 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_48.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.698714287614 -0.604213178620 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.648817172279 -0.565858105510 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143971896 0.131801313223 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_49.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.824745712386 -0.332632821380 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.874642827721 -0.370987894490 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143971896 0.102410686777 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_50.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.648817040169 -0.565858025151 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.698714156356 -0.604213084391 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143971950 0.131801302222 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_51.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.705673048418 -0.433334241959 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.655775562086 -0.394978884245 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143995272 0.110267442245 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_52.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.867684199027 -0.541866911510 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.817787453837 -0.503512136874 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 -0.003143948574 0.123944568756 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_53.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.655775800973 -0.394979088490 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.705672546163 -0.433333863126 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143948574 0.110267431244 0.000000000000 2  1 1 2 1
+
+fileName = /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_54.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFFnMRFromFiles
+
+buffer = Model=Mopac
+
+buffer = QMKeys= PM6  
+
+buffer = MopacCommand=mopac
+
+buffer = 
+
+buffer = QFFnModes=2
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.000000000000 2 1 0.817786951582 -0.503511758041 0.000000000000 1  3 1
+
+buffer =  H H H H 0 0.000000000000 2 1 -0.867684437914 -0.541867115755 0.000000000000 1  3 1
+
+buffer =  O O O O 0 0.000000000000 2 1 0.003143995272 0.123944557755 0.000000000000 2  1 1 2 1
+
+numberOfFrequencies = 3
+Begin initNMRQFF0 nf = 3
+End initgrad
+End initNMRQFF0
+Reading molecule from /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF_0.gab file
+Begin free
+End free
+Energ computeQFFDerivativesEnergies
+Energ computeQFFDerivativesDipoles
+QFF parameters saved in /home/lbarnes/iGVPT2/examples/QFFGaussianHybridB3LYPOrcaPM6/h2oVQFF.txt file
+

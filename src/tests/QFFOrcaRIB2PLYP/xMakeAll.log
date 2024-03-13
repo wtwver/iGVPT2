@@ -1,0 +1,1759 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=ORCA
+----------------------------------------------------------
+
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+Freq calc from Hessian = 0.00000 Freq from orca = -120.70789
+Freq calc from Hessian = 0.00000 Freq from orca = -113.05448
+Freq calc from Hessian = 0.00000 Freq from orca = -59.84656
+Freq calc from Hessian = 0.00000 Freq from orca = 11.17815
+Freq calc from Hessian = 0.00000 Freq from orca = 61.01283
+Freq calc from Hessian = 0.00000 Freq from orca = 65.30972
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79242
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99751
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95412
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+ordre = 2
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=ORCA
+----------------------------------------------------------
+
+Reading molecule from /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_0.gab file
+nAtoms = 3
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_1.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1642.792415000046 Mass= 1.082689383894 Q= Qeq + 0.390265440079
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_2.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1642.792415000046 Mass= 1.082689383894 Q= Qeq + 0.260176960053
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_3.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1642.792415000046 Mass= 1.082689383894 Q= Qeq + 0.130088480026
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_4.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1642.792415000046 Mass= 1.082689383894 Q= Qeq - 0.130088480026
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_5.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1642.792415000046 Mass= 1.082689383894 Q= Qeq - 0.260176960053
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_6.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 1642.792415000046 Mass= 1.082689383894 Q= Qeq - 0.390265440079
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_7.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3833.997513353776 Mass= 1.044945283503 Q= Qeq + 0.260034330925
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_8.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3833.997513353776 Mass= 1.044945283503 Q= Qeq + 0.173356220616
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_9.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3833.997513353776 Mass= 1.044945283503 Q= Qeq + 0.086678110308
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_10.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3833.997513353776 Mass= 1.044945283503 Q= Qeq - 0.086678110308
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_11.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3833.997513353776 Mass= 1.044945283503 Q= Qeq - 0.173356220616
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_12.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3833.997513353776 Mass= 1.044945283503 Q= Qeq - 0.260034330925
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_13.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3943.954121242812 Mass= 1.082031313458 Q= Qeq + 0.251951840968
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_14.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3943.954121242812 Mass= 1.082031313458 Q= Qeq + 0.167967893979
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_15.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3943.954121242812 Mass= 1.082031313458 Q= Qeq + 0.083983946989
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_16.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3943.954121242812 Mass= 1.082031313458 Q= Qeq - 0.083983946989
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_17.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3943.954121242812 Mass= 1.082031313458 Q= Qeq - 0.167967893979
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_18.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3943.954121242812 Mass= 1.082031313458 Q= Qeq - 0.251951840968
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_19.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.024967128379 -0.981342641875 -0.262337411043 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.470476944112 0.477598332508 -0.763548324447 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.028059915327 0.031749010795 0.064608986934 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_20.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.014977779688 -0.791583731167 -0.221538807075 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.381837499768 0.376850370917 -0.622931155009 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.023132603154 0.026140026834 0.053166905639 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_21.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.070958482231 -1.002287845856 -0.179532007576 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.460321568381 0.562225386224 -0.716796308434 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.024512395972 0.027715396009 0.056510362554 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_22.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.060969133540 -0.812528935149 -0.138733403609 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.371682124037 0.461477424633 -0.576179138996 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.019585083799 0.022106412048 0.045068281258 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_23.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.018067798698 -0.795845157552 -0.216851837223 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.469737060020 0.470605361603 -0.764392105414 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.028461662554 0.020508044957 0.061786351166 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_24.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.021877109369 -0.977081215490 -0.267024380896 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.382577383859 0.383843341821 -0.622087374042 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.022730855928 0.037380992672 0.055989541407 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_25.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.064059152550 -0.816790361533 -0.134046433756 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.459581684290 0.555232415320 -0.717640089401 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.024914143199 0.016474430171 0.053687726785 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_26.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.067868463221 -0.998026419472 -0.184218977429 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.372422008129 0.468470395537 -0.575335358029 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.019183336573 0.033347377886 0.047890917026 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_27.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.021637345482 -0.918089671639 -0.248737876387 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.440930462664 0.444015678644 -0.716675934634 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.026417477936 0.029879349475 0.060794959836 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_28.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.067628699334 -0.939034875621 -0.165932472920 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.430775086933 0.528642732360 -0.669923918621 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.022869958581 0.025845734689 0.052696335455 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_29.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.018307562585 -0.854836701403 -0.235138341731 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.411383981216 0.410433024780 -0.669803544822 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.024775040545 0.028009688155 0.056980932737 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_30.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.064298916437 -0.875781905385 -0.152332938264 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.401228605485 0.495060078496 -0.623051528808 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.021227521190 0.023976073368 0.048882308356 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_31.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 -0.024354008370 -0.897144467657 -0.331543279854 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.451085838394 0.359388624928 -0.763427950647 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.029964997291 0.033912964261 0.068893584217 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_32.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.113620053186 -0.959980079602 -0.083127069453 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.420619711203 0.613269786076 -0.623171902608 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.019322439226 0.021812119902 0.044597711074 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_33.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 -0.027683791267 -0.833891497421 -0.317943745198 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.421539356946 0.325805971064 -0.716555560835 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.028322559900 0.032043302941 0.065079557118 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_34.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.110290270289 -0.896727109366 -0.069527534798 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.391073229755 0.579687132212 -0.576299512795 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.017680001835 0.019942458582 0.040783683976 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_35.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.042728367072 -0.837944244660 -0.182248902817 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.479432612879 0.529710215393 -0.764452292314 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.027509121572 0.019426068224 0.059644052525 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_36.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.046537677744 -1.019180302599 -0.232421446490 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.392272936718 0.442948195611 -0.622147560942 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.021778314946 0.036299015939 0.053847242766 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_37.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.039398584175 -0.774691274425 -0.168649368161 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.449886131431 0.496127561530 -0.717579902501 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.025866684181 0.017556406904 0.055830025426 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_38.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.043207894847 -0.955927332363 -0.218821911834 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.362726455270 0.409365541747 -0.575275171129 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.020135877555 0.034429354619 0.050033215667 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_39.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.019337568922 -0.856257176864 -0.233576018447 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.440683834633 0.441684688343 -0.716957194957 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.026551393678 0.026132360862 0.059854081246 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_40.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.065328922774 -0.877202380846 -0.150770614980 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.430528458903 0.526311742059 -0.670205178944 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.023003874323 0.022098746076 0.051755456866 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_41.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.020607339145 -0.916669196177 -0.250300199671 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.411630609246 0.412764015082 -0.669522284499 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.024641124803 0.031756676767 0.057921811327 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_42.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.066598692998 -0.937614400159 -0.167494796204 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.401475233516 0.497391068798 -0.622770268486 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.021093605448 0.027723061981 0.049823186946 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_43.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.043998137296 -0.898356263973 -0.198973084042 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.450379387492 0.500789542132 -0.717017381857 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.025598852696 0.025050384129 0.057711782605 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_44.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.040668354399 -0.835103293737 -0.185373549386 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.420832906044 0.467206888269 -0.670144992044 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.023956415305 0.023180722809 0.053897755507 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_45.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.045267907520 -0.958768283286 -0.215697265266 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.421326162105 0.471868868872 -0.669582471399 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.023688583821 0.030674700034 0.055779512686 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_46.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.041938124623 -0.895515313050 -0.202097730610 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.391779680657 0.438286215008 -0.622710081586 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.022046146430 0.028805038714 0.051965485587 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_47.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 -0.026653784931 -0.835311972883 -0.316381421914 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.450839210364 0.357057634626 -0.763709210970 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.030098913033 0.030165975649 0.067952705627 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_48.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.111320276626 -0.898147584828 -0.067965211513 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.420373083172 0.610938795775 -0.623453162931 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.019456354968 0.018065131290 0.043656832485 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_49.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 -0.025384014707 -0.895723992196 -0.333105603138 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.421785984977 0.328136961366 -0.716274300512 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.028188644158 0.035790291553 0.066020435708 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_50.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.112590046850 -0.958559604141 -0.084689392738 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.391319857785 0.582018122514 -0.576018252473 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.017546086093 0.023689447194 0.041724562565 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_51.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.047327920193 -0.961609234209 -0.212572618697 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.479925868940 0.534372195996 -0.763889771669 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.027241290087 0.026920045450 0.061525809704 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_52.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.037338571502 -0.771850323502 -0.171774014730 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.391286424596 0.433624234405 -0.623272602231 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.022313977914 0.021311061488 0.050083728408 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_53.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.048597690417 -1.022021253522 -0.229296799922 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.450872643553 0.505451522735 -0.716454861212 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.025331021212 0.032544361355 0.059593539784 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_54.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=Orca
+
+buffer = QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+
+buffer = orcaCommand=runOrca
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H H H H 0 0.214143000000 2 1 0.038608341726 -0.832262342815 -0.188498195954 1  3 1
+
+buffer =  H H H H 0 0.215685000000 2 1 -0.362233199209 0.404703561144 -0.575837691774 1  3 1
+
+buffer =  O O O O 0 -0.429828000000 2 1 0.020403709039 0.026935377393 0.048151458488 2  1 1 2 1
+
+numberOfFrequencies = 3
+Begin initNMRQFF0 nf = 3
+End initgrad
+End initNMRQFF0
+Reading molecule from /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF_0.gab file
+Begin free
+End free
+Energ computeQFFDerivativesEnergies
+Energ computeQFFDerivativesDipoles
+QFF parameters saved in /home/allouche/MySoftwares/CChemI/CChemI-100716/iGVPT2/tests/QFFOrcaRIB2PLYP/h2oVQFF.txt file
+

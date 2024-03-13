@@ -1,0 +1,11 @@
+RunType=HybridMM
+VPT2Model=HDCPT2
+PropModel=HDCPT2
+maxFrequencyDifferenceFermi=200
+MartinCutOff1=1.0
+MartinCutOff2=1.0
+QFFnModes=3
+
+Geometry
+k1_GlcNBeta_1_4_GlcNAcBeta_B2PLYP.gab
+

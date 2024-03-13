@@ -1,0 +1,15 @@
+#RunType=Gradient
+RunType=GenerateQFFnMRFiles
+#RunType=ComputeQFFnMRFromFiles
+Model=Generic
+QMKeys=Generic
+genericCommand=xCCRun /home/lbarnes/iGVPT2/examples/QFFHybridOrcaDFTB+/Options.txt
+
+QFFnModes=3
+
+dx=0.01
+
+
+Geometry
+h2oB2PLYP.out
+

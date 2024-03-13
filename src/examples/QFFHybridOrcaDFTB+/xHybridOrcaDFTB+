@@ -1,0 +1,92 @@
+#!/bin/bash
+
+# Hybrid DFT/DFTB+ calculation
+
+# Works on both linux and Mac OS X.
+function read_link() {
+    local path=$1
+        if [ -d $path ] ; then
+        local abspath=$(cd $path; pwd)
+        else
+            local prefix=$(cd $(dirname -- $path) ; pwd)
+            local suffix=$(basename $path)
+            local abspath="$prefix/$suffix"
+        fi
+    echo $abspath
+}
+SCRIPT=$(read_link $0)
+export  DEFDIR=`dirname $SCRIPT`
+echo "DEFDIR=$DEFDIR"
+cd $DEFDIR
+
+export IGVPT2DIR=$HOME/iGVPT2
+export PATH=$IGVPT2DIR/bin:$PATH
+export PATH=$IGVPT2DIR/shell:$PATH
+
+filename=$1 ; [ 0 = $# ] || shift
+
+if [ -z "$filename" ]
+then
+   clear
+   echo " "
+   echo "Usage Exemple:"
+   echo "       xHybridOrcaMopac h2oV.ici"
+   echo "==========================================="
+   echo " "
+   exit 1
+fi
+fileinp=$filename
+filename=${fileinp%.ici}
+filename=${filename%.inp}
+filename=${filename%.com}
+
+echo "Hybrid DFT/DFTB+" >  ${filename}.out
+
+rm *.err
+
+# generate QFF energies files
+/bin/rm -f h2oVQFF_*.ici
+/bin/rm -f h2oVQFF_*.gab
+/bin/rm -f h2oVQFF_*.log
+igvpt2 h2oV.ici >> $0.log 2>>  $0.err
+ls h2oVQFF_* > xp
+sed -i 's/h2oVQFF/runiGVPT2 h2oVQFF/' xp
+#cat xp
+chmod u+x xp
+
+#parallel
+#module purge
+#module use /softs/modulefiles
+#module load gcc/4.7.3 openmpi/1.7.4/openmpi-gcc47
+#mpirun /home_nfs/ilm/allouche/Softwares/bin/parallel ./xp >>  $0.log 2>> $0.err
+
+#single 
+./xp >>  $0.log 2>> $0.err
+
+sed -i 's/RunType=GenerateQFFnMRFiles/#RunType=GenerateQFFnMRFiles/g' h2oV.ici
+sed -i 's/#RunType=ComputeQFFnMRFromFiles/RunType=ComputeQFFnMRFromFiles/g' h2oV.ici
+
+# generate txt data for VPT2 calculation
+igvpt2 h2oV.ici  >>  $0.log 2>> $0.err
+
+sed -i 's/#RunType=GenerateQFFnMRFiles/RunType=GenerateQFFnMRFiles/g' h2oV.ici
+sed -i 's/RunType=ComputeQFFnMRFromFiles/#RunType=ComputeQFFnMRFromFiles/g' h2oV.ici
+
+# make ici  file for VPT2 calculation
+echo 'RunType=VPT2' > h2oVQFF.ici
+cat h2oVFirstDerivatives.txt >> h2oVQFF.ici
+cat h2oVQFF.txt >> h2oVQFF.ici
+
+# generate txt data for VPT2 calculation
+igvpt2 h2oVQFF.ici  >  $0.out 2>> $0.err
+
+
+/bin/rm -f xp
+/bin/rm -f xp_*
+/bin/rm -f h2oVQFF_*.ici
+/bin/rm -f h2oVQFF_*.gab
+/bin/rm -f h2oVQFF_*.log
+/bin/rm -f *One*
+echo "==========================================================================="
+echo "See $0.out , $0.log and $0.err files "
+echo "==========================================================================="
