@@ -1,0 +1,38 @@
+
+$orca_opt_file
+
+$trust
+   -0.300000000000
+
+$epredict
+    0.000000000000
+
+$ediffsc
+  1000.000000000000
+
+$ctyp
+  3
+
+# redundant internal coordinates
+#  nbonds nangles ndihedrals nimpropers ncartesians
+# bond  definitions A B
+# angle definitions A B C
+# dihedral definitions A B C D
+# improper torsion definitions A B C D
+# cartesian definitions A x/y/z
+$redundant_internals
+ 2 1 0 0 0
+   1   0   0
+   2   0   0
+   1   0   2   0   0
+$bmatrix
+ 3 9
+                  0          1          2          3          4          5    
+      0      -0.838360   0.545117  -0.000000   0.838360  -0.545117   0.000000
+      1       0.833226   0.552932   0.000000   0.000000   0.000000   0.000000
+      2       0.006907  -0.898210   0.000000   0.291573   0.448424  -0.000000
+                  6          7          8    
+      0       0.000000   0.000000   0.000000
+      1      -0.833226  -0.552932  -0.000000
+      2      -0.298480   0.449786  -0.000000
+
