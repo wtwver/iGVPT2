@@ -1,0 +1,8 @@
+! RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/C TIGHTSCF PLS,8
+! TightOpt NumFreq
+* xyz 0 1
+O     -0.005703    0.385159   -0.000000
+H     -0.796078   -0.194675   -0.000000
+H      0.801781   -0.190484    0.000000
+
+*
