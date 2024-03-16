@@ -1,0 +1,41 @@
+              *****************************************************
+               *                      ERROR                        *
+               *        SCF NOT CONVERGED AFTER 234 CYCLES         *
+               *****************************************************
+
+  Last Energy change         ...    0.0000e+00  Tolerance :   1.0000e-08
+  Last Orbital Gradient      ...    1.1497e+00  Tolerance :   1.0000e-05
+  Last Orbital Rotation      ...    9.6246e-04
+
+================================================================================
+                                        WARNING
+Check your MOs and check whether a frozen core calculation is appropriate
+MO 1 should be a C  s core orbital but seems to be delocalized with a C  p orbital (85.7% vs. 18.6%)
+================================================================================
+================================================================================
+                                        WARNING
+Check your MOs and check whether a frozen core calculation is appropriate
+MO 2 should be a C  s core orbital but seems to be delocalized with a C  p orbital (39.5% vs. 29.9%)
+================================================================================
+     --------------------------------------------------------------------
+                                      ERROR
+     This wavefunction IS NOT CONVERGED! 
+     And it is 'too far' from meeting the convergence thresholds.
+     Aborting ...
+     Please restart calculation (with larger maxiter?)
+     --------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-Ys-MacBook-Air-24610@1,7] Exit code:    125
+--------------------------------------------------------------------------
+
+ORCA finished by error termination in SCF
+Calling Command: mpirun -np 8  /Users/yeren/orca/orca_scf_mpi PS.gbw b PS 
+Check for SCF-logfiles
+[file orca_main/maingopt.cpp, line 1229]: ORCA finished with an error in the energy calculation
+
+[file orca_main/maingopt.cpp, line 1229]: ORCA finished with an error in the energy calculation
