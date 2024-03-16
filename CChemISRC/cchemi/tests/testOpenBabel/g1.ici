@@ -1,0 +1,27 @@
+#RunType=Optimization
+RunType=OptFreq
+#RunType=Gradient
+#RunType=Frequencies
+OptimizerType=Quasi
+
+Model=OpenBabel
+dx=0.001
+openBabelCommand=obgradient -ff mmff94
+#openBabelCommand=obgradient -ff mmff94s
+#openBabelCommand=obgradient -ff uff
+#openBabelCommand=obgradient -ff Ghemical
+mopacCommand=mopac
+orcaCommand=orca
+fireflyCommand=firefly
+
+quasiNewtonMaxIterations = 2000
+quasiNewtonUpdateFrequency = 1
+quasiNewtonEpsilon  = 0.000001
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  25
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+g1Opt.gab
+
+

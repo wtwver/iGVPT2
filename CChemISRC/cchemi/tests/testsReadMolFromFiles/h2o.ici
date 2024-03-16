@@ -1,0 +1,24 @@
+RunType=Energy
+
+#Model=Mopac
+Model=MM
+QMKeys=PM7
+dx=0.01
+mopacCommand=mopac
+orcaCommand=orca
+fireflyCommand=firefly
+buildMMTypes=Amber
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+a.gab
+
+#h2oFreq.fchk
+#h2oFreq.gab
+#h2oMopac.aux
+#a.ici
+#h2oOrca.hess
+#h2oGauss.log
+#h2oMopac.out
+#h2oOrca.out
+#h2oFreq.fchk

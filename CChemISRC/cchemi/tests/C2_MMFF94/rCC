@@ -1,0 +1,57 @@
+#!/bin/bash
+fileici=$1 ; [ 0 = $# ] || shift
+if [ -z "$fileici" ]
+then
+   clear
+   echo " " 
+   echo "================================"
+   echo "Usage Exemple: runCChemI h2.ici "
+   echo "================================"
+   echo " " 
+   exit 1
+fi
+
+if [ -z "$PBS_JOBID" ]
+then
+export JID=$RANDOM
+else
+export JID=${PBS_JOBID%.master0}
+fi
+
+if [ -z "$TMPDIR" ]
+then
+export TMPDIR=/tmp
+fi
+
+export OMP_NUM_THREADS=1
+filename=${fileici%.ici}
+DEFAULTDIR=`pwd`
+export  LOG=$DEFAULTDIR/$filename.log
+export CCHEMITMP=$TMPDIR/cchemi_$JID
+mkdir $CCHEMITMP
+fn=`echo "$filename" | sed "s/.*\///" | sed "s/\..*//"`
+export CCHEMITMP=$TMPDIR/cchemi_$JID/$fn
+mkdir $CCHEMITMP
+
+cd $CCHEMITMP
+cp $DEFAULTDIR/$fileici .
+cp $DEFAULTDIR/*.gab .
+cp $DEFAULTDIR/*.out .
+cp $DEFAULTDIR/*.log .
+cp $DEFAULTDIR/*.ici .
+#echo "run $fileici ......"
+echo "===================" > $LOG
+echo "run $fileici ......" >> $LOG
+echo "===================" >> $LOG
+echo "dir =  $CCHEMITMP ......" >> $LOG
+#cat  $fileici >> $LOG
+echo "===================" >> $LOG
+CCHEMI=/home/theochem/allouche/tmp/CChemI-050116/cchemi/cchemi
+time $CCHEMI $fileici >>  $LOG
+echo "======================">> $LOG
+#echo "======================"
+cp *.gab $DEFAULTDIR/.
+cp *.ici $DEFAULTDIR/.
+cd 
+/bin/rm -r $CCHEMITMP
+/bin/rm -r $TMPDIR/cchemi_$JID

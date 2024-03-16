@@ -1,0 +1,3 @@
+/bin/rm AlORDGeoms*.mop
+/bin/rm AlORDGeoms*.com
+/bin/rm AlORDGeoms*inp

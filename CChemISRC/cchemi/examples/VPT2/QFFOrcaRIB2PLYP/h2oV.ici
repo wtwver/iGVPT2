@@ -1,0 +1,18 @@
+#RunType=Gradient
+RunType=GenerateQFF2MRFiles
+#RunType=ComputeQFF2MRFromFiles
+Model=Orca
+QMKeys= RIJCOSX RI-B2PLYP D3BJ def2-tzvpp def2-tzvpp/JK def2-tzvpp/C TIGHTSCF 
+orcaCommand=runMyOrca
+
+dx=0.01
+
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+
+Geometry
+h2oB2PLYP.out
+

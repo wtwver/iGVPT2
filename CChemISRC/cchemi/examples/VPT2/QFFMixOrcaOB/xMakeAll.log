@@ -1,0 +1,40 @@
+ Begin QFF2MR-VPT2 calculation
+/tmp/12345
+Begin h2oB2PLYP
+End h2oB2PLYP
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+type 12
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+nFreqs = 9
+Freq calc from Hessian = 0.00000 Freq from orca = 1642.79276
+Freq calc from Hessian = 0.00000 Freq from orca = 3833.99713
+Freq calc from Hessian = 0.00000 Freq from orca = 3943.95399
+Freq calc from Hessian = 0.00000 Freq from orca = 11.23824
+Freq calc from Hessian = 0.00000 Freq from orca = 61.00738
+Freq calc from Hessian = 0.00000 Freq from orca = 65.32882
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79276
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99713
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95399
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+nAtoms = 3
+numberOfFrequencies = 3
+QFF parameters saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMixOrcaOB/h2oVQFF.txt file
+

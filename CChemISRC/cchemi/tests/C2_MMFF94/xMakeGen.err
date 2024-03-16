@@ -1,0 +1,63 @@
+
+real	0m0.043s
+user	0m0.036s
+sys	0m0.000s
+./rCC : ligne 50 :  7880 Erreur de segmentation  $CCHEMI $fileici >> $LOG
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.032s
+user	0m0.024s
+sys	0m0.000s
+./rCC : ligne 50 :  7921 Erreur de segmentation  $CCHEMI $fileici >> $LOG
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.033s
+user	0m0.020s
+sys	0m0.008s
+./rCC : ligne 50 :  7962 Erreur de segmentation  $CCHEMI $fileici >> $LOG
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.032s
+user	0m0.024s
+sys	0m0.000s
+./rCC : ligne 50 :  8003 Erreur de segmentation  $CCHEMI $fileici >> $LOG
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.032s
+user	0m0.024s
+sys	0m0.000s
+./rCC : ligne 50 :  8044 Erreur de segmentation  $CCHEMI $fileici >> $LOG
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.033s
+user	0m0.024s
+sys	0m0.000s
+./rCC : ligne 50 :  8085 Erreur de segmentation  $CCHEMI $fileici >> $LOG
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+real	0m0.032s
+user	0m0.024s
+sys	0m0.000s
+./rCC : ligne 50 :  8126 Erreur de segmentation  $CCHEMI $fileici >> $LOG
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s

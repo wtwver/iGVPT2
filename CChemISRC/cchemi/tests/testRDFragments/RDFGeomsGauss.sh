@@ -1,0 +1,9 @@
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_1.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_2.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_3.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_4.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_5.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_6.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_7.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_8.com
+g03 /home/allouche/MySoftwares/CChemI/CChemI-01062018/cchemi/tests/testRDFragments/RDFGeoms_9.com

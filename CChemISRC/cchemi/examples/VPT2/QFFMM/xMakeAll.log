@@ -1,0 +1,2493 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=OPTFREQ
+model=MM
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+Setting of Parameters ...
+#Number of free coordinates =3 
+Minimization by QuasiNewton method
+Gradient = 196.51056870117310 energy = 8.41462186971710 
+Gradient = 1273.71738994336806 energy = 362.07753334747179 
+Gradient = 75.94121187471757 energy = 1.44333828902240 
+Gradient = 13.04085333676002 energy = 0.13146924139609 
+Gradient = 9.54844942026600 energy = 0.06565687604938 
+Gradient = 2.06243670398167 energy = 0.00088727589966 
+Gradient = 4.55818622602487 energy = 0.00436734470906 
+Gradient = 0.09628929130980 energy = 0.00000715466884 
+Gradient = 0.00201579357615 energy = 0.00000000094124 
+Gradient = 0.00000025210043 energy = 0.00000000000000 
+Gradient = 0.00000000031470 energy = 0.00000000000000 
+Gradient = 0.00000000000174 energy = 0.00000000000000 
+Gradient = 0.00000000000174 energy = 0.00000000000000 
+Optimized geometry saved in /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oOpt.gab file
+Save molecule in /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oOpt.gab
+Gradient Norm  = 0.00000000000174 energy = 0.00000000000000(kcal/mol)
+--------------------------------------------------------------------------------
+Bond energy                    =     0.00000000000000
+Bend energy                    =     0.00000000000000
+Str-Bend energy                =     0.00000000000000
+Dihedral energy                =     0.00000000000000
+Improper Torsion energy        =     0.00000000000000
+Out Of Plane energy            =     0.00000000000000
+VDW 6-12 energy                =     0.00000000000000
+VDW 7-14 energy                =     0.00000000000000
+Coulomb energy                 =     0.00000000000000
+Sutton-Chen energy             =     0.00000000000000
+Hydrogen Bonded energy         =     0.00000000000000
+Pair wise energy               =     0.00000000000000
+Hydrogen Bonded-H4 energy      =     0.00000000000000
+Total energy                   =     0.00000000000000
+--------------------------------------------------------------------------------
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+Setting of Parameters ...
+#Number of free coordinates =3 
+Gradient Norm  = 0.00000000042405 energy = 0.00000000000000(kcal/mol)
+--------------------------------------------------------------------------------
+Bond energy                    =     0.00000000000000
+Bend energy                    =     0.00000000000000
+Str-Bend energy                =     0.00000000000000
+Dihedral energy                =     0.00000000000000
+Improper Torsion energy        =     0.00000000000000
+Out Of Plane energy            =     0.00000000000000
+VDW 6-12 energy                =     0.00000000000000
+VDW 7-14 energy                =     0.00000000000000
+Coulomb energy                 =     0.00000000000000
+Sutton-Chen energy             =     0.00000000000000
+Hydrogen Bonded energy         =     0.00000000000000
+Pair wise energy               =     0.00000000000000
+Hydrogen Bonded-H4 energy      =     0.00000000000000
+Total energy                   =     0.00000000000000
+--------------------------------------------------------------------------------
+Frequencies and modes in the /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oFreq.gab file
+Save molecule in /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oFreq.gab
+Save molecule in /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oFreq.gab
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+========================================================================================================================
+# Geometry and velocities
+# Fixed normal modes (ground, n=0) and scaled to T = 300.000000
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+3 0 1
+ H HW HW1 HOH 1 0.417000000000 2 1 0.637758770308 -0.513598106655 -0.144247701158 1  3 1
+ H HW HW2 HOH 1 0.417000000000 2 1 0.078182539295 1.073517908348 -0.729400626523 1  3 1
+ O OW OW HOH 1 -0.134000000000 2 1 0.598996287364 0.466231066811 0.090722503259 2  1 1 2 1
+# Velocities, vx(Ang/AKMA-time) vy(Ang/AKMA-time) vz(Ang/AKMA-time): 1fs = 0.020455 AKMA
+Velocities
+-1.005759005962e-01 1.243130196889e+00 1.981960704472e-01
+-1.262020427823e-01 5.046036429891e-02 -2.293545108526e-01
+1.428907129456e-02 -8.150796095690e-02 1.963264900222e-03
+========================================================================================================================
+
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=MM
+----------------------------------------------------------
+
+type 5
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+index = 62
+nAll = 63
+see h2oV.iciQFF_*.ici generated files
+ordre = 3
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=MM
+----------------------------------------------------------
+
+Reading molecule from /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_0.gab file
+nAtoms = 3
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_1.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2341.020261000000 Mass= 1.070533000000 Q= Qeq + 0.328776495498
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_2.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2341.020261000000 Mass= 1.070533000000 Q= Qeq + 0.219184330332
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_3.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2341.020261000000 Mass= 1.070533000000 Q= Qeq + 0.109592165166
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_4.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2341.020261000000 Mass= 1.070533000000 Q= Qeq - 0.109592165166
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_5.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2341.020261000000 Mass= 1.070533000000 Q= Qeq - 0.219184330332
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_6.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2341.020261000000 Mass= 1.070533000000 Q= Qeq - 0.328776495498
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_7.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3685.360632000000 Mass= 1.056730000000 Q= Qeq + 0.263743255843
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_8.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3685.360632000000 Mass= 1.056730000000 Q= Qeq + 0.175828837228
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_9.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3685.360632000000 Mass= 1.056730000000 Q= Qeq + 0.087914418614
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_10.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3685.360632000000 Mass= 1.056730000000 Q= Qeq - 0.087914418614
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_11.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3685.360632000000 Mass= 1.056730000000 Q= Qeq - 0.175828837228
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_12.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3685.360632000000 Mass= 1.056730000000 Q= Qeq - 0.263743255843
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_13.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3736.349041000000 Mass= 1.081876000000 Q= Qeq + 0.258875478317
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_14.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3736.349041000000 Mass= 1.081876000000 Q= Qeq + 0.172583652211
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_15.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3736.349041000000 Mass= 1.081876000000 Q= Qeq + 0.086291826106
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_16.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3736.349041000000 Mass= 1.081876000000 Q= Qeq - 0.086291826106
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_17.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3736.349041000000 Mass= 1.081876000000 Q= Qeq - 0.172583652211
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_18.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 3736.349041000000 Mass= 1.081876000000 Q= Qeq - 0.258875478317
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_19.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.574718347594 -0.321267049343 -0.205875657497 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.174522341231 0.854651903425 -0.611430448205 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.573545501428 0.492445149604 0.049548755723 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_20.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.575065590091 -0.509286858469 -0.264744984283 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.082317455643 0.938504546263 -0.764110796694 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.579332504192 0.499008702710 0.062878513102 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_21.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.613528759469 -0.347283360365 -0.138675949365 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.178932528317 0.929703955289 -0.579094218346 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.570823162288 0.489355014572 0.043277435586 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_22.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.613876001966 -0.535303169491 -0.197545276151 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.086727642729 1.013556598127 -0.731774566835 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.576610165052 0.495918567678 0.056607192965 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_23.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.572950258367 -0.322138962882 -0.209585602399 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.083560139668 0.940980296672 -0.760911762797 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.579387734147 0.487060601331 0.059201408186 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_24.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.576833679318 -0.508414944930 -0.261035039381 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.173279657206 0.852176153016 -0.614629482102 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.573490271472 0.504393250984 0.053225860639 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_25.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.611760670242 -0.348155273904 -0.142385894267 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.087970326754 1.016032348536 -0.728575532938 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.576665395008 0.483970466298 0.052930088049 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_26.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.615644091193 -0.534431255952 -0.193835331249 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.177689844292 0.927228204880 -0.582293252243 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.570767932333 0.501303115951 0.046954540502 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_27.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.574834095093 -0.383940319052 -0.225498766426 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.143787379368 0.882602784371 -0.662323897702 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.575474502349 0.494633000640 0.053992008182 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_28.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.613644506968 -0.409956630074 -0.158299058294 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.148197566455 0.957654836235 -0.629987667842 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.572752163210 0.491542865607 0.047720688046 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_29.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.574949842592 -0.446613588760 -0.245121875354 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.113052417505 0.910553665317 -0.713217347198 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.577403503270 0.496820851675 0.058435260642 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_30.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.613760254467 -0.472629899782 -0.177922167222 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.117462604592 0.985605717181 -0.680881117338 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.574681164131 0.493730716642 0.052163940506 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_31.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.536023683218 -0.357924008030 -0.292698474558 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.139377192282 0.807550732507 -0.694660127561 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.578196841489 0.497723135672 0.060263328319 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_32.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.652454918843 -0.435972941096 -0.091099350162 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.152607753541 1.032706888099 -0.597651437983 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.570029824070 0.488452730574 0.041449367909 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_33.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.536139430717 -0.420597277738 -0.312321583486 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.108642230419 0.835501613453 -0.745553577057 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.580125842410 0.499910986708 0.064706580779 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_34.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.652570666342 -0.498646210804 -0.110722459090 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.121872791678 1.060657769045 -0.648544887479 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.571958824991 0.490640581610 0.045892620369 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_35.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.592297590555 -0.303810483538 -0.166174193869 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.101132714143 0.964530882131 -0.719296923119 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.577062064117 0.484421608297 0.053844121888 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_36.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.596181011506 -0.490086465587 -0.217623630851 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.190852231680 0.875726738475 -0.573014642425 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.571164601442 0.501754257950 0.047868574341 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_37.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.592413338054 -0.366483753247 -0.185797302797 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.070397752280 0.992481763077 -0.770190372615 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.578991065038 0.486609459332 0.058287374347 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_38.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.596296759005 -0.552759735296 -0.237246739779 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.160117269817 0.903677619421 -0.623908091921 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.573093602363 0.503942108985 0.052311826800 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_39.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.574244732017 -0.384230956898 -0.226735414726 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.113466645514 0.911378915453 -0.712151002565 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.577421913256 0.492838151215 0.057209559004 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_40.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.613055143892 -0.410247267920 -0.159535706594 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.117876832600 0.986430967318 -0.679814772706 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.574699574116 0.489748016183 0.050938238867 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_41.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.575539205668 -0.446322950914 -0.243885227054 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.143373151360 0.881777534234 -0.663390242334 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.575456092364 0.498615701099 0.055217709821 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_42.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.614349617543 -0.472339261936 -0.176685518922 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.147783338446 0.956829586099 -0.631054012475 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.572733753224 0.495525566067 0.048946389684 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_43.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.593592064205 -0.365902477555 -0.183324006196 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.131039219989 0.934929500912 -0.670536162888 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.575096243225 0.490199158181 0.051852272705 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_44.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.593707811704 -0.428575747263 -0.202947115125 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.100304258126 0.962880381858 -0.721429612384 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.577025244147 0.492387009217 0.056295525165 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_45.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.594886537856 -0.427994471571 -0.200473818523 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.160945725834 0.905328119694 -0.621775402656 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.573130422333 0.495976708065 0.049860423523 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_46.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.595002285355 -0.490667741279 -0.220096927452 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.130210763971 0.933279000640 -0.672668852152 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.575059423255 0.498164559101 0.054303675983 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_47.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.535434320143 -0.358214645876 -0.293935122858 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.109056458428 0.836326863589 -0.744487232425 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.580144252395 0.495928286248 0.063480879140 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_48.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.651865555767 -0.436263578942 -0.092335998462 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.122287019686 1.061483019182 -0.647478542847 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.571977234977 0.486657881150 0.044666918730 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_49.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.536728793793 -0.420306639892 -0.311084935186 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.138962964274 0.806725482370 -0.695726472193 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.578178431503 0.501705836132 0.061489029958 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_50.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.653160029417 -0.498355572958 -0.109485810790 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.152193525532 1.031881637963 -0.598717782615 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.570011414085 0.492435431034 0.042675069548 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_51.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.593476316707 -0.303229207846 -0.163700897267 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.161774181851 0.906978619966 -0.619642713391 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.573167242304 0.488011307146 0.047409020245 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_52.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.593823559203 -0.491249016972 -0.222570224053 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.069569296263 0.990831262804 -0.772323061880 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.578954245068 0.494574860252 0.060738777625 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_53.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.594770790357 -0.365321201862 -0.180850709595 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.191680687697 0.877377238748 -0.570881953160 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.571201421412 0.493788857030 0.045417171063 2  1 1 2 1
+
+fileName = /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_54.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model= MM
+
+buffer = QFFnModes=3
+
+buffer = 
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = # Geometry, nAtoms, charge, spin multiplicity.
+
+buffer = # symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+
+buffer = Geometry
+
+buffer = 3 0 1
+
+buffer =  H HW HW1 HOH 1 0.417000000000 2 1 0.595118032853 -0.553341010988 -0.239720036381 1  3 1
+
+buffer =  H HW HW2 HOH 1 0.417000000000 2 1 0.099475802109 0.961229881586 -0.723562301649 1  3 1
+
+buffer =  O OW OW HOH 1 -0.134000000000 2 1 0.576988424176 0.500352410136 0.058746928443 2  1 1 2 1
+
+numberOfFrequencies = 3
+Begin initNMRQFF
+Reading molecule from /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF_0.gab file
+nModes = 4
+Begin free
+End free
+Energ computeQFFDerivativesEnergies
+Energ computeQFFDerivativesDipoles
+QFF parameters saved in /home/allouche/MySoftwares/CChemI/CChemI-080416/cchemi/examples/VPT2/QFFMM/h2oVQFF.txt file
+

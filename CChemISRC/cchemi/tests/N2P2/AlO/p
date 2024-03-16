@@ -1,0 +1,108 @@
+seed = 199
+----------------------------------------------------------
+runType=OPTIMIZATION
+model=HDNN
+----------------------------------------------------------
+
+We use the internal optimizer
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =9 
+Minimization by Conjugate Gradient method
+=============================================================================================================================================
+			Optimization by Conjugate Gradient method
+---------------------------------------------------------------------------------------------------------------------------------------------
+			MaxIteration 		= 2000
+			Epsilon 		= 1.0000e-02
+			Max lines search 	= 500
+			Wolf Powell approach
+=============================================================================================================================================
+Iter # 2/2000	 Gradient(kcal/mol/Ang) = 14.28310358698531	Energy(kcal/mol) = -445868.36839206988225 
+Iter # 3/2000	 Gradient(kcal/mol/Ang) = 5.16935959286250	Energy(kcal/mol) = -445868.42657359322766 
+Iter # 4/2000	 Gradient(kcal/mol/Ang) = 4.19108170512159	Energy(kcal/mol) = -445868.45002725109225 
+Iter # 5/2000	 Gradient(kcal/mol/Ang) = 2.85125277604647	Energy(kcal/mol) = -445868.47517599468119 
+Iter # 6/2000	 Gradient(kcal/mol/Ang) = 3.72340632067484	Energy(kcal/mol) = -445868.48076628369745 
+Iter # 7/2000	 Gradient(kcal/mol/Ang) = 2.12282084448309	Energy(kcal/mol) = -445868.49860580783570 
+Iter # 8/2000	 Gradient(kcal/mol/Ang) = 0.37851696262504	Energy(kcal/mol) = -445868.49982002837351 
+Iter # 9/2000	 Gradient(kcal/mol/Ang) = 0.30809185048836	Energy(kcal/mol) = -445868.50006702274550 
+Iter # 10/2000	 Gradient(kcal/mol/Ang) = 0.19040611991069	Energy(kcal/mol) = -445868.50009679212235 
+Iter # 11/2000	 Gradient(kcal/mol/Ang) = 0.39131443612127	Energy(kcal/mol) = -445868.50033635646105 
+Iter # 12/2000	 Gradient(kcal/mol/Ang) = 0.37333049808481	Energy(kcal/mol) = -445868.50041696388507 
+Iter # 13/2000	 Gradient(kcal/mol/Ang) = 1.60043222530876	Energy(kcal/mol) = -445868.50149601424346 
+Iter # 14/2000	 Gradient(kcal/mol/Ang) = 1.99034034256234	Energy(kcal/mol) = -445868.50357865053229 
+Iter # 15/2000	 Gradient(kcal/mol/Ang) = 2.28760958724175	Energy(kcal/mol) = -445868.50752223620657 
+Iter # 16/2000	 Gradient(kcal/mol/Ang) = 7.95821163580834	Energy(kcal/mol) = -445868.52837840956636 
+Iter # 17/2000	 Gradient(kcal/mol/Ang) = 7.39262664341187	Energy(kcal/mol) = -445868.54004209401319 
+Iter # 18/2000	 Gradient(kcal/mol/Ang) = 5.53284012341921	Energy(kcal/mol) = -445868.55943140177988 
+Iter # 19/2000	 Gradient(kcal/mol/Ang) = 4.91088447656019	Energy(kcal/mol) = -445868.59569619875401 
+Iter # 20/2000	 Gradient(kcal/mol/Ang) = 2.26286918972886	Energy(kcal/mol) = -445868.60445149301086 
+Iter # 21/2000	 Gradient(kcal/mol/Ang) = 3.02111796524077	Energy(kcal/mol) = -445868.60964078299003 
+Iter # 22/2000	 Gradient(kcal/mol/Ang) = 3.51580485335590	Energy(kcal/mol) = -445868.61620544450125 
+Iter # 23/2000	 Gradient(kcal/mol/Ang) = 1.58856773250249	Energy(kcal/mol) = -445868.62499465764267 
+Iter # 24/2000	 Gradient(kcal/mol/Ang) = 2.90708103482943	Energy(kcal/mol) = -445868.62774090195308 
+Iter # 25/2000	 Gradient(kcal/mol/Ang) = 1.99871401058882	Energy(kcal/mol) = -445868.63599068910116 
+Iter # 26/2000	 Gradient(kcal/mol/Ang) = 2.23681388024523	Energy(kcal/mol) = -445868.63834720797604 
+Iter # 27/2000	 Gradient(kcal/mol/Ang) = 4.95941450409352	Energy(kcal/mol) = -445868.65863910218468 
+Iter # 28/2000	 Gradient(kcal/mol/Ang) = 4.15001493154884	Energy(kcal/mol) = -445868.66901650209911 
+Iter # 29/2000	 Gradient(kcal/mol/Ang) = 8.72567086536606	Energy(kcal/mol) = -445868.70572939858539 
+Iter # 30/2000	 Gradient(kcal/mol/Ang) = 22.69604078108885	Energy(kcal/mol) = -445868.91629932069918 
+Iter # 31/2000	 Gradient(kcal/mol/Ang) = 29.27382646105800	Energy(kcal/mol) = -445869.01106560428161 
+Iter # 32/2000	 Gradient(kcal/mol/Ang) = 39.17717332556887	Energy(kcal/mol) = -445869.72194256092189 
+Iter # 33/2000	 Gradient(kcal/mol/Ang) = 144.57239757452939	Energy(kcal/mol) = -445874.33912580058677 
+Iter # 34/2000	 Gradient(kcal/mol/Ang) = 192.27436783857334	Energy(kcal/mol) = -445876.04375504987547 
+Iter # 35/2000	 Gradient(kcal/mol/Ang) = 164.17428887673756	Energy(kcal/mol) = -445883.11670767772011 
+Iter # 36/2000	 Gradient(kcal/mol/Ang) = 139.45292796127592	Energy(kcal/mol) = -445910.75731946091400 
+Iter # 37/2000	 Gradient(kcal/mol/Ang) = 39.67082878055044	Energy(kcal/mol) = -445914.92527387809241 
+Iter # 38/2000	 Gradient(kcal/mol/Ang) = 19.25183123451500	Energy(kcal/mol) = -445915.52854432584718 
+Iter # 39/2000	 Gradient(kcal/mol/Ang) = 3.21442787387436	Energy(kcal/mol) = -445915.66731253016042 
+Iter # 40/2000	 Gradient(kcal/mol/Ang) = 10.17667341975390	Energy(kcal/mol) = -445915.71590251609450 
+Iter # 41/2000	 Gradient(kcal/mol/Ang) = 8.63963644256501	Energy(kcal/mol) = -445915.79890895198332 
+Iter # 42/2000	 Gradient(kcal/mol/Ang) = 9.61621526549844	Energy(kcal/mol) = -445915.92677146365168 
+Iter # 43/2000	 Gradient(kcal/mol/Ang) = 36.20540775401732	Energy(kcal/mol) = -445916.30147188442061 
+Iter # 44/2000	 Gradient(kcal/mol/Ang) = 44.70705895146496	Energy(kcal/mol) = -445916.36478933593025 
+Iter # 45/2000	 Gradient(kcal/mol/Ang) = 44.52097218994439	Energy(kcal/mol) = -445917.12484316446353 
+Iter # 46/2000	 Gradient(kcal/mol/Ang) = 128.96250605567374	Energy(kcal/mol) = -445929.48714053939329 
+Iter # 47/2000	 Gradient(kcal/mol/Ang) = 134.54470249492240	Energy(kcal/mol) = -445931.32896786020137 
+Iter # 48/2000	 Gradient(kcal/mol/Ang) = 74.07655130308565	Energy(kcal/mol) = -445939.35726799635449 
+Iter # 49/2000	 Gradient(kcal/mol/Ang) = 68.65394045881487	Energy(kcal/mol) = -445943.80623015202582 
+Iter # 50/2000	 Gradient(kcal/mol/Ang) = 45.33927917028536	Energy(kcal/mol) = -445945.88487075327430 
+Iter # 51/2000	 Gradient(kcal/mol/Ang) = 42.18541652280459	Energy(kcal/mol) = -445947.33939757471671 
+Iter # 52/2000	 Gradient(kcal/mol/Ang) = 34.38522045941394	Energy(kcal/mol) = -445949.61378304706886 
+Iter # 53/2000	 Gradient(kcal/mol/Ang) = 40.96643235634458	Energy(kcal/mol) = -445951.81579272518866 
+Iter # 54/2000	 Gradient(kcal/mol/Ang) = 37.76712828973994	Energy(kcal/mol) = -445954.16991488734493 
+Iter # 55/2000	 Gradient(kcal/mol/Ang) = 21.86308240822814	Energy(kcal/mol) = -445955.16923564113677 
+Iter # 56/2000	 Gradient(kcal/mol/Ang) = 18.46044011470038	Energy(kcal/mol) = -445955.63047753862338 
+Iter # 57/2000	 Gradient(kcal/mol/Ang) = 26.19714071421097	Energy(kcal/mol) = -445956.21187590394402 
+Iter # 58/2000	 Gradient(kcal/mol/Ang) = 22.88751853530003	Energy(kcal/mol) = -445957.12222096079495 
+Iter # 59/2000	 Gradient(kcal/mol/Ang) = 16.22774965443918	Energy(kcal/mol) = -445957.48850421071984 
+Iter # 60/2000	 Gradient(kcal/mol/Ang) = 11.40057476320391	Energy(kcal/mol) = -445957.68844692321727 
+Iter # 61/2000	 Gradient(kcal/mol/Ang) = 18.32714026716349	Energy(kcal/mol) = -445957.98022299277363 
+Iter # 62/2000	 Gradient(kcal/mol/Ang) = 93.44234584134938	Energy(kcal/mol) = -445978.57628922193544 
+Iter # 63/2000	 Gradient(kcal/mol/Ang) = 90.92408983839016	Energy(kcal/mol) = -445978.64257381844800 
+Iter # 64/2000	 Gradient(kcal/mol/Ang) = 46.25671121197589	Energy(kcal/mol) = -445988.01230381423375 
+Iter # 65/2000	 Gradient(kcal/mol/Ang) = 16.57522803408152	Energy(kcal/mol) = -445989.91348369669868 
+Iter # 66/2000	 Gradient(kcal/mol/Ang) = 8.23378041964649	Energy(kcal/mol) = -445990.18726807978237 
+Iter # 67/2000	 Gradient(kcal/mol/Ang) = 13.02780735890563	Energy(kcal/mol) = -445990.45085715100868 
+Iter # 68/2000	 Gradient(kcal/mol/Ang) = 7.69200442594858	Energy(kcal/mol) = -445990.95155644952320 
+Iter # 69/2000	 Gradient(kcal/mol/Ang) = 2.65591049009582	Energy(kcal/mol) = -445991.01773853169288 
+Iter # 70/2000	 Gradient(kcal/mol/Ang) = 2.74153979874160	Energy(kcal/mol) = -445991.03815972304437 
+Iter # 71/2000	 Gradient(kcal/mol/Ang) = 0.87998278315248	Energy(kcal/mol) = -445991.05100611300441 
+Iter # 72/2000	 Gradient(kcal/mol/Ang) = 0.38852291534870	Energy(kcal/mol) = -445991.05180932418443 
+Iter # 73/2000	 Gradient(kcal/mol/Ang) = 0.57505782176660	Energy(kcal/mol) = -445991.05234375683358 
+Iter # 74/2000	 Gradient(kcal/mol/Ang) = 0.28742821440840	Energy(kcal/mol) = -445991.05336797091877 
+Iter # 75/2000	 Gradient(kcal/mol/Ang) = 0.07455379468191	Energy(kcal/mol) = -445991.05344639654504 
+Iter # 76/2000	 Gradient(kcal/mol/Ang) = 0.06059704376876	Energy(kcal/mol) = -445991.05345563683659 
+Iter # 77/2000	 Gradient(kcal/mol/Ang) = 0.04115062237846	Energy(kcal/mol) = -445991.05346770619508 
+Iter # 78/2000	 Gradient(kcal/mol/Ang) = 0.01921978490921	Energy(kcal/mol) = -445991.05346961837495 
+Iter # 79/2000	 Gradient(kcal/mol/Ang) = 0.02659727544305	Energy(kcal/mol) = -445991.05347086553229 
+Iter # 80/2000	 Gradient(kcal/mol/Ang) = 0.01134484177002	Energy(kcal/mol) = -445991.05347285437165 
+Iter # 81/2000	 Gradient(kcal/mol/Ang) = 0.00262293700455	Energy(kcal/mol) = -445991.05347297235858 
+End optimisation
+Gradient(kcal/mol/Ang) = 0.0027402818  Energy = -445991.0534729724 (kcal/mol)
+
+Optimized geometry saved in /home/allouche/MySoftwares/CChemI/CChemI-29042019/cchemi/tests/HDNNP/AlO/AlORDOpt.gab file
+Save molecule in /home/allouche/MySoftwares/CChemI/CChemI-29042019/cchemi/tests/HDNNP/AlO/AlORDOpt.gab
+Gradient Norm  = 0.00262293700455 energy = -445991.05347297235858(kcal/mol) -710.73190387560032(Hartree)
+

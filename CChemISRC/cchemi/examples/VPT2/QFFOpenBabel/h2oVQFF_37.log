@@ -1,0 +1,22 @@
+===================
+run h2oVQFF_37.ici ......
+===================
+dir =  /tmp/cchemi_19114/h2oVQFF_37 ......
+===================
+seed = -1
+----------------------------------------------------------
+runType=ENERGY
+model=OPENBABEL
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+energy = 16.61949708251414(kcal/mol)
+Geometry saved in /tmp/cchemi_19114/h2oVQFF_37/h2oVQFF_37.gab file
+Save molecule in /tmp/cchemi_19114/h2oVQFF_37/h2oVQFF_37.gab
+
+======================

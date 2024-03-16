@@ -1,0 +1,104 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=OPTFREQ
+model=MOPAC
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+We use the internal optimizer
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+Minimization by QuasiNewton method
+Gradient = 152.93610398697359 energy = -45.36436000000000 
+Gradient = 3186.25624226551599 Energy(kcal/mol) = 523.37685999999997 
+Gradient = 136.04032026856950 Energy(kcal/mol) = -47.60907000000000 
+Gradient = 137.00918525095665 Energy(kcal/mol) = -50.32742000000000 
+Gradient = 31.91281068032518 Energy(kcal/mol) = -53.19907000000000 
+Gradient = 12.41632977005556 Energy(kcal/mol) = -53.40148000000000 
+Gradient = 0.87530985323141 Energy(kcal/mol) = -53.43238000000000 
+Gradient = 0.47705113997034 Energy(kcal/mol) = -53.43259000000000 
+Gradient = 0.38975815026757 Energy(kcal/mol) = -53.43274000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.13852301662540 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.11541731941524 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.15375916705680 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.16750757528542 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17079743959732 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Line search failed. See documentation of routine mcsrch.
+ Error return of line search: info = 3 Possible causes:
+ function or gradient are incorrect, or incorrect tolerances.
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Gradient = 0.17262079163878 Energy(kcal/mol) = -53.43283000000000 
+Optimized geometry saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMopac/h2oOpt.gab file
+Save molecule in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMopac/h2oOpt.gab
+Gradient Norm  = 0.17262079163878 energy = -53.43283000000000(kcal/mol)
+#Number of free coordinates =3 
+Computing of IR spectra... Please wait
+nAtoms = 3
+Gradient Norm  = 0.17262079163878 energy = -53.43283000000000(kcal/mol)
+Frequencies and modes in the /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMopac/h2oFreq.gab file
+Save molecule in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMopac/h2oFreq.gab
+Save molecule in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMopac/h2oFreq.gab
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+========================================================================================================================
+# Geometry and velocities
+# Fixed normal modes (ground, n=0) and scaled to T = 300.000000
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+3 0 1
+ H HW HW1 HOH 1 0.417000000000 2 1 0.637964211805 -0.492483725832 -0.137132882090 1  3 1
+ H HW HW2 HOH 1 0.417000000000 2 1 0.143467845796 1.007326923273 -0.623483596461 1  3 1
+ O OW OW HOH 1 -0.134000000000 2 1 0.594866827477 0.469063377624 0.083591061557 2  1 1 2 1
+# Velocities, vx(Ang/AKMA-time) vy(Ang/AKMA-time) vz(Ang/AKMA-time): 1fs = 0.020455 AKMA
+Velocities
+-1.016852831232e-01 -3.277561252114e-01 -3.014746046100e-01
+-5.663695580642e-01 4.274610115591e-01 -9.656705550328e-01
+4.209352832893e-02 -6.282314264126e-03 7.984166476436e-02
+========================================================================================================================
+
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=MOPAC
+----------------------------------------------------------
+
+type 5
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+

@@ -1,0 +1,787 @@
+Begin Title
+	Atom Types         : Ty(Type) Symbol Numero Masse(C12 UMA) Polarisablities(Ang**3) charge electronegativity (chi, eV) hardness (eta, eV) width (Ang)
+	Bond Length        : N1-N2 Force(kcal/mol/A**2) Re [h3] [h4] h5] [h6] where h3, h4, h5, h6 are the anharmonic term in Ang-1, Ang-2, ...
+	Bond Angle         : N1-N2-N3 Force(kcal/mol/rad**2) Angle(Deg) [h3] [h4] h5] [h6] where h3, h4, h5, h6 are the anharmonic term in Deg-1, Deg-2, ...
+	Str Bend           : N1-N2-N3 N1-N2-N3 Force12(kcal/mol/rad**2) Force23(kcal/mol/rad**2)
+	Dihedral           : N1-N2-N3-N4 Idiv Pk Phase(Deg) Pn 
+	                     E = Pk/Idiv*(1 + cos(P,*Phi - Phase)
+	                     Pk = Barrier/2 kcal/mol
+	                     Idiv barrier is divised by Idiv
+	                     Pn = periodicity fo the torional barrier
+	                     if Pn<0 the tosional potential is 
+	                     assumed to have more than one term
+	                     if Ni=0 => N is a number for any one Type
+	Improper Dihedral  : N1-N2-N3-N4 Pk Phase(Deg) Pn 
+	H-Bond 10-12       : N1-N2   A(coef. 1/r**12)  B(coef. -B/r**10)
+	H-Bond Morse       : N1-N2   Force(kcal/mol/A**2) R(Ang) De(kcal)
+	Pair Wise          :N1-N2  A(kcal/mol)  B(Ang-1) C6(kcal*Ang**6) C8 C10 b(Ang-1)
+	                   V(r) = A*exp(-B*r) -Somme(C2n*f2n/r**(2*n))[n=3,4,5]
+	                   f2n = 1- exp(-b*r)*Somme((b*r)**k/k!,k=1..2*n)
+	BOND HARDNESS PARAMETERS  N1-N2   kappa (eV)
+End
+Begin  INPUT FOR ATOM TYPES, MASSE AND POLARISABILITIES
+C	C	1	12.010	 0.616  	sp2 C carbonyl group 
+CA	C	2	12.010	 0.360		sp2 C pure aromatic (benzene)
+CB	C	3	12.010	 0.360		sp2 aromatic C, 5&6 membered ring junction
+CC	C	4	12.010	 0.360		sp2 aromatic C, 5 memb. ring HIS
+CD	C	5	12.010	 0.360		sp2 C atom in the middle of: C=CD-CD=C
+CK	C	6	12.010	 0.360		sp2 C 5 memb.ring in purines
+CM	C	7	12.010	 0.360		sp2 C  pyrimidines in pos. 5 & 6
+CN	C	8	12.010	 0.360		sp2 C aromatic 5&6 memb.ring junct.(TRP)
+CQ	C	9	12.010	 0.360		sp2 C in 5 mem.ring of purines between 2 N
+CR	C	10	12.010	 0.360		sp2 arom as CQ but in HIS
+CT	C	11	12.010	 0.878		sp3 aliphatic C
+CV	C	12	12.010	 0.360		sp2 arom. 5 memb.ring w/1 N and 1 H (HIS)
+CW	C	13	12.010	 0.360		sp2 arom. 5 memb.ring w/1 N-H and 1 H (HIS)
+C*	C	14	12.010	 0.360		sp2 arom. 5 memb.ring w/1 subst. (TRP)
+CY	C	15	12.010	 0.360		nitrile C (Howard et al.JCC,16,243,1995)
+CZ	C	16	12.010	 0.360		sp C (Howard et al.JCC,16,243,1995)
+C0	Ca	17	40.080	 0.000		calcium
+H	H	18	 1.008	 0.161 		H bonded to nitrogen atoms
+HC	H	19	 1.008	 0.135		H aliph. bond. to C without electrwd.group
+H1	H	20	 1.008	 0.135		H aliph. bond. to C with 1 electrwd. group
+H2	H	21	 1.008	 0.135		H aliph. bond. to C with 2 electrwd.groups
+H3	H	22	 1.008	 0.135		H aliph. bond. to C with 3 eletrwd.groups
+HA	H	23	 1.008	 0.167		H arom. bond. to C without elctrwd. groups
+H4	H	24	 1.008	 0.167		H arom. bond. to C with 1 electrwd. group
+H5	H	25	 1.008	 0.167		H arom.at C with 2 elctrwd. gr,+HCOO group
+HO	H	26	 1.008	 0.135		hydroxyl group
+HS	H	27	 1.008	 0.135		hydrogen bonded to sulphur (pol?)
+HW	H	28	 1.008	 0.000 0.0 2.0 10.0 1.1		H in TIP3P water
+HP	H	29	 1.008	 0.135		H bonded to C next to positively charged gr
+HZ	H	30	 1.008	 0.161		H bond sp C (Howard et al.JCC,16,243,1995)
+F	F	31	19.000	 0.320		fluorine
+Cl	Cl	32	35.450	 1.910		chlorine  (Applequist)
+Br	Br	33	79.900	 2.880		bromine  (Applequist)
+I	I	34	126.900	 4.690		iodine   (Applequist)
+IM	Cl	35	35.450	 3.235		assumed to be Cl- (ion minus)
+IB	I	36	131.000	 0.000		'big ion w/ waters' for vacuum (Na+, 6H2O)
+MG	Mg	37	24.305	 0.120		magnesium
+N	N	38	14.010	 0.530 		sp2 nitrogen in amide groups
+NA	N	39	14.010	 0.530		sp2 N in 5 memb.ring w/H atom (HIS)
+NB	N	40	14.010	 0.530		sp2 N in 5 memb.ring w/LP (HIS,ADE,GUA)
+NC	N	41	14.010	 0.530		sp2 N in 6 memb.ring w/LP (ADE,GUA)
+N2	N	42	14.010	 0.530		sp2 N in amino groups
+N3	N	43	14.010	 0.530		sp3 N for charged amino groups (Lys, etc)
+NT	N	44	14.010	 0.530		sp3 N for amino groups amino groups 
+N*	N	45	14.010	 0.530		sp2 N 
+NY	N	46	14.010	 0.530		nitrile N (Howard et al.JCC,16,243,1995)
+O	O	47	16.000	 0.434		carbonyl group oxygen
+O2	O	48	16.000	 0.434		carboxyl and phosphate group oxygen
+OW	O	49	16.000	 0.000	 0.0 8.0 10.0 1.3	oxygen in TIP3P water
+OH	O	50	16.000	 0.465		oxygen in hydroxyl group
+OS	O	51	16.000	 0.465		ether and ester oxygen
+P	P	52	30.970	 1.538		phosphate,pol:JACS,112,8543,90,K.J.Miller
+S	S	53	32.060	 2.900		S in disulfide linkage,pol:JPC,102,2399,98
+SH	S	54	32.060	 2.900		S in cystine
+CU	Cu	55	63.550	 0.000		copper
+FE	Fe	56	55.000	 0.000		iron
+Li	Li	57	 6.940	 0.029		lithium, ions pol:J.PhysC,11,1541,(1978)
+IP	Na	58	22.990	 0.250		assumed to be Na+ (ion plus)
+Na	Na	59	22.990	 0.250		Na+, ions pol:J.PhysC,11,1541,(1978)
+K	K	60	39.100	 1.060		potassium
+Rb	Rb	61	85.470	 0.000		rubidium
+Cs	Cs	62	132.910	 0.000		cesium
+Zn	Zn	63	65.400	 0.000		Zn2+ 
+Ba	Ba	64	137.327	 0.000		Ba
+Au	Au	65	196.967	 0.000		Au
+Ag	Ag	66	107.870	 0.000		Ag
+Ni	Ni	67	58.71	 0.000		Ni
+End
+Begin INPUT FOR BOND LENGTH PARAMETERS
+49	28	 553.0	 0.9572  	TIP3P water 
+28	28	 553.0	 1.5136		TIP3P water 
+1	1	 310.0	 1.5250		Junmei et al, 1999
+1	2	 469.0	 1.4090		JCC,7,(1986),230; (not used any more in TYR)
+1	3	 447.0	 1.4190		JCC,7,(1986),230; GUA
+1	7	 410.0	 1.4440		JCC,7,(1986),230; THY,URA
+1	11	 317.0	 1.5220		JCC,7,(1986),230; AA
+1	18	 317.0	 1.5220		JCC,7,(1986),230; AA
+1	38	 490.0	 1.3350		JCC,7,(1986),230; AA
+1	45	 424.0	 1.3830		JCC,7,(1986),230; CYT,URA
+1	39	 418.0	 1.3880		JCC,7,(1986),230; GUA.URA
+1	41	 457.0	 1.3580		JCC,7,(1986),230; CYT
+1	47	 570.0	 1.2290		JCC,7,(1986),230; AA,CYT,GUA,THY,URA
+1	48	 656.0	 1.2500		JCC,7,(1986),230; GLU,ASP
+1	50	 450.0	 1.3640		JCC,7,(1986),230; (not used any more for TYR) 
+1	51	 450.0	 1.3230		Junmei et al, 1999
+1	24	 367.0	 1.0800		Junmei et al, 1999
+1	25	 367.0	 1.0800		Junmei et al, 1999
+2	2	 469.0	 1.4000		JCC,7,(1986),230; BENZENE,PHE,TRP,TYR
+2	3	 469.0	 1.4040		JCC,7,(1986),230; ADE,TRP
+2	7	 427.0	 1.4330		JCC,7,(1986),230; CYT
+2	8	 469.0	 1.4000		JCC,7,(1986),230; TRP
+2	11	 317.0	 1.5100		JCC,7,(1986),230; PHE,TYR
+2	23	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; PHE,TRP,TYR
+2	24	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; no assigned
+2	42	 481.0	 1.3400		JCC,7,(1986),230; ARG,CYT,GUA
+2	39	 427.0	 1.3810		JCC,7,(1986),230; GUA
+2	41	 483.0	 1.3390		JCC,7,(1986),230; ADE,CYT,GUA
+2	50	 450.0	 1.3640		substituted for C-OH in tyr 
+3	3	 520.0	 1.3700		JCC,7,(1986),230; ADE,GUA
+3	45	 436.0	 1.3740		JCC,7,(1986),230; ADE,GUA
+3	40	 414.0	 1.3910		JCC,7,(1986),230; ADE,GUA
+3	41	 461.0	 1.3540		JCC,7,(1986),230; ADE,GUA
+5	23	 367.0	 1.0800		Junmei et al, 1999 
+5	5	 469.0	 1.4000		Junmei et al, 1999
+5	7	 549.0	 1.3500		Junmei et al, 1999
+5	11	 317.0	 1.5100		Junmei et al, 1999
+6	25	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; ADE,GUA
+6	45	 440.0	 1.3710		JCC,7,(1986),230; ADE,GUA
+6	40	 529.0	 1.3040		JCC,7,(1986),230; ADE,GUA
+7	7	 549.0	 1.3500		JCC,7,(1986),230; CYT,THY,URA
+7	11	 317.0	 1.5100		JCC,7,(1986),230; THY
+7	23	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; CYT,URA
+7	24	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; CYT,URA
+7	25	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; not assigned
+7	45	 448.0	 1.3650		JCC,7,(1986),230; CYT,THY,URA
+7	51	 480.0	 1.2400		Junmei et al, 1999
+9	25	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; ADE
+9	41	 502.0	 1.3240		JCC,7,(1986),230; ADE
+11	11	 310.0	 1.5260		JCC,7,(1986),230; AA, SUGARS
+11	19	 340.0	 1.0900		changed from 331 bsd on NMA nmodes; AA, SUGARS
+11	20	 340.0	 1.0900		changed from 331 bsd on NMA nmodes; AA, RIBOSE
+11	21	 340.0	 1.0900		changed from 331 bsd on NMA nmodes; SUGARS
+11	22	 340.0	 1.0900		changed from 331 bsd on NMA nmodes; not assigned
+11	29	 340.0	 1.0900		changed from 331; AA-lysine, methyl ammonium cation
+11	45	 337.0	 1.4750		JCC,7,(1986),230; ADE,CYT,GUA,THY,URA
+11	42	 337.0	 1.4630		JCC,7,(1986),230; ARG
+11	50	 320.0	 1.4100		JCC,7,(1986),230; SUGARS
+11	51	 320.0	 1.4100		JCC,7,(1986),230; NUCLEIC ACIDS
+14	19	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes, not needed AA
+14	3	 388.0	 1.4590		JCC,7,(1986),230; TRP
+14	11	 317.0	 1.4950		JCC,7,(1986),230; TRP
+14	13	 546.0	 1.3520		JCC,7,(1986),230; TRP
+3	8	 447.0	 1.4190		JCC,7,(1986),230; TRP
+4	11	 317.0	 1.5040		JCC,7,(1986),230; HIS
+4	12	 512.0	 1.3750		JCC,7,(1986),230; HIS(delta)
+4	13	 518.0	 1.3710		JCC,7,(1986),230; HIS(epsilon)
+4	39	 422.0	 1.3850		JCC,7,(1986),230; HIS
+4	40	 410.0	 1.3940		JCC,7,(1986),230; HIS
+8	39	 428.0	 1.3800		JCC,7,(1986),230; TRP
+10	25	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes;HIS
+10	39	 477.0	 1.3430		JCC,7,(1986),230; HIS
+10	40	 488.0	 1.3350		JCC,7,(1986),230; HIS
+11	38	 337.0	 1.4490		JCC,7,(1986),230; AA
+11	43	 367.0	 1.4710		JCC,7,(1986),230; LYS
+11	44	 367.0	 1.4710		for neutral amines 
+11	53	 227.0	 1.8100		changed from 222.0 based on dimethylS nmodes
+11	54	 237.0	 1.8100		changed from 222.0 based on methanethiol nmodes
+11	15	 400.0	 1.4580		Howard et al JCC.16,243,1995
+11	16	 400.0	 1.4590		Howard et al JCC,16,243,1995
+12	24	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes; HIS
+12	40	 410.0	 1.3940		JCC,7,(1986),230; HIS
+13	24	 367.0	 1.0800		changed from 340. bsd on C6H6 nmodes;HIS(epsilon,+)
+13	39	 427.0	 1.3810		JCC,7,(1986),230; HIS,TRP
+15	46	 600.0	 1.1500		Howard et al JCC,16,243,1995
+16	16	 600.0	 1.2060		Howard et al JCC,16,243,1995
+16	30	 400.0	 1.0560		Howard et al JCC,16,243,1995
+48	52	 525.0	 1.4800		JCC,7,(1986),230; NA PHOSPHATES
+50	52	 230.0	 1.6100		JCC,7,(1986),230; NA PHOSPHATES
+51	52	 230.0	 1.6100		JCC,7,(1986),230; NA PHOSPHATES
+18	42	 434.0	 1.0100		JCC,7,(1986),230; ADE,CYT,GUA,ARG
+18	45	 434.0	 1.0100		for plain unmethylated bases ADE,CYT,GUA,ARG
+18	39	 434.0	 1.0100		JCC,7,(1986),230; GUA,URA,HIS
+18	38	 434.0	 1.0100		JCC,7,(1986),230; AA
+18	43	 434.0	 1.0100		JCC,7,(1986),230; LYS    
+18	44	 434.0	 1.0100		for neutral amines 
+26	50	 553.0	 0.9600		JCC,7,(1986),230; SUGARS,SER,TYR
+26	51	 553.0	 0.9600		JCC,7,(1986),230; NUCLEOTIDE ENDS
+27	54	 274.0	 1.3360		JCC,7,(1986),230; CYS
+53	53	 166.0	 2.0380		JCC,7,(1986),230; CYX   (SCHERAGA)
+31	11	 367.0	 1.3800		JCC,13,(1992),963;CF4; R0=1.332 FOR CHF3
+32	11	 232.0	 1.7660		6-31g* opt
+33	11	 159.0	 1.9440		Junmei et al,99 
+34	11	 148.0	 2.1660		Junmei et al,99 
+31	2	 386.0	 1.3590		Junmei et al,99 
+32	2	 193.0	 1.7270		Junmei et al,99 
+34	2	 171.0	 2.0750		Junmei et al,99 
+33	2	 172.0	 1.8900		Junmei et al,99
+24	11	 340.0	 1.0900		
+53	65	 96.0	 2.3900		
+End
+Begin INPUT FOR BOND ANGLE PARAMETERS
+28	49	28	100.000	104.52		TIP3P water
+28	28	49	 0.000	127.74		(found in crystallographic water with 3 bonds)
+1	1	47	80.000	120.00		Junmei et al, 1999 acrolein
+1	1	50	80.000	120.00		Junmei et al, 1999
+2	1	2	63.000	120.00		changed from 85.0  bsd on C6H6 nmodes; AA
+2	1	50	70.000	120.00		AA (not used in tyr)
+3	1	39	70.000	111.30		NA
+3	1	47	80.000	128.80		 
+7	1	39	70.000	114.10		 
+7	1	47	80.000	125.30		 
+11	1	47	80.000	120.40		 
+11	1	48	70.000	117.00		 
+11	1	38	70.000	116.60		AA general
+11	1	11	63.000	117.00		Junmei et al, 1999
+11	1	51	80.000	115.00		Junmei et al, 1999
+11	1	50	80.000	110.00		Junmei et al, 1999
+45	1	39	70.000	115.40		 
+45	1	41	70.000	118.60		 
+45	1	47	80.000	120.90		 
+39	1	47	80.000	120.60		 
+41	1	47	80.000	122.50		 
+38	1	47	80.000	122.90		AA general
+47	1	47	80.000	126.00		AA COO- terminal residues
+47	1	50	80.000	120.00		(check with Junmei for: theta0:120.0?)
+47	1	51	80.000	125.00		Junmei et al, 1999
+47	1	18	80.000	125.00		Junmei et al, 1999
+38	1	18	80.000	125.00		Junmei et al, 1999
+48	1	48	80.000	126.00		AA GLU            (SCH JPC 79,2379)
+24	1	1	50.000	120.00		Junmei et al, 1999 
+24	1	7	50.000	115.00		Junmei et al, 1999 
+24	1	11	50.000	115.00		Junmei et al, 1999
+24	1	47	50.000	120.00		Junmei et al, 1999
+24	1	50	50.000	120.00		Junmei et al, 1999
+25	1	38	50.000	120.00		Junmei et al, 1999
+25	1	47	50.000	119.00		Junmei et al, 1999
+25	1	50	50.000	107.00		Junmei et al, 1999
+25	1	51	50.000	107.00		Junmei et al, 1999
+1	2	2	63.000	120.00		changed from 85.0  bsd on C6H6 nmodes
+1	2	23	50.000	120.00		AA (not used in tyr)
+2	2	2	63.000	120.00		changed from 85.0  bsd on C6H6 nmodes
+2	2	3	63.000	120.00		changed from 85.0  bsd on C6H6 nmodes
+2	2	11	70.000	120.00		 
+2	2	23	50.000	120.00		 
+2	2	24	50.000	120.00		 
+2	2	50	70.000	120.00		replacement in tyr
+2	2	8	63.000	120.00		changed from 85.0  bsd on C6H6 nmodes; AA trp
+3	2	23	50.000	120.00		 
+3	2	24	50.000	120.00		 
+3	2	42	70.000	123.50		 
+3	2	41	70.000	117.30		 
+7	2	42	70.000	120.10		 
+7	2	41	70.000	121.50		 
+8	2	23	50.000	120.00		AA trp
+39	2	41	70.000	123.30		 
+42	2	39	70.000	116.00		 
+42	2	41	70.000	119.30		 
+42	2	42	70.000	120.00		AA arg
+31	2	2	70.000	121.00		Junmei et al,99 
+32	2	2	70.000	118.80		Junmei et al,99 
+33	2	2	70.000	118.80		Junmei et al,99
+34	2	2	70.000	118.80		Junmei et al,99 
+1	3	3	63.000	119.20		changed from 85.0  bsd on C6H6 nmodes; NA gua
+1	3	40	70.000	130.00		 
+2	3	3	63.000	117.30		changed from 85.0  bsd on C6H6 nmodes; NA ade
+2	3	40	70.000	132.40		
+3	3	45	70.000	106.20		 
+3	3	40	70.000	110.40		 
+3	3	41	70.000	127.70		 
+14	3	2	63.000	134.90		changed from 85.0  bsd on C6H6 nmodes; AA trp
+14	3	8	63.000	108.80		changed from 85.0  bsd on C6H6 nmodes; AA trp
+2	3	8	63.000	116.20		changed from 85.0  bsd on C6H6 nmodes; AA trp
+45	3	41	70.000	126.20		 
+5	5	7	63.000	120.00		Junmei et al, 1999
+5	5	11	70.000	120.00		Junmei et al, 1999
+7	5	11	70.000	120.00		Junmei et al, 1999
+23	5	23	35.000	119.00		Junmei et al, 1999
+23	5	5	50.000	120.00		Junmei et al, 1999
+23	5	7	50.000	120.00		Junmei et al, 1999
+25	6	45	50.000	123.05		 
+25	6	40	50.000	123.05		 
+45	6	40	70.000	113.90		 
+1	7	7	63.000	120.70		changed from 85.0  bsd on C6H6 nmodes; NA thy
+1	7	11	70.000	119.70		 
+1	7	23	50.000	119.70		 
+1	7	24	50.000	119.70		 
+2	7	7	63.000	117.00		changed from 85.0  bsd on C6H6 nmodes; NA cyt
+2	7	23	50.000	123.30		 
+2	7	24	50.000	123.30		 
+7	7	11	70.000	119.70		 
+7	7	23	50.000	119.70		 
+7	7	24	50.000	119.70		 
+7	7	45	70.000	121.20		 
+7	7	51	80.000	125.00		Junmei et al, 1999
+24	7	45	50.000	119.10		 
+24	7	51	50.000	113.00		Junmei et al, 1999
+23	7	23	35.000	120.00		Junmei et al, 1999
+23	7	5	50.000	120.00		Junmei et al, 1999
+23	7	11	50.000	120.00		Junmei et al, 1999
+41	9	41	70.000	129.10		 
+25	9	41	50.000	115.45		 
+20	11	20	35.000	109.50		 
+20	11	45	50.000	109.50		changed based on NMA nmodes
+20	11	50	50.000	109.50		changed based on NMA nmodes 
+20	11	51	50.000	109.50		changed based on NMA nmodes 
+20	11	7	50.000	109.50		Junmei et al, 1999 
+20	11	15	50.000	110.00		Junmei et al, 1999
+20	11	16	50.000	110.00		Junmei et al, 1999
+20	11	38	50.000	109.50		AA general  changed based on NMA nmodes
+20	11	53	50.000	109.50		AA cys     changed based on NMA nmodes
+20	11	54	50.000	109.50		AA cyx     changed based on NMA nmodes
+20	11	42	50.000	109.50		AA arg     changed based on NMA nmodes
+20	11	44	50.000	109.50		neutral amines 
+21	11	21	35.000	109.50		AA lys
+21	11	45	50.000	109.50		changed based on NMA nmodes
+21	11	51	50.000	109.50		changed based on NMA nmodes
+29	11	29	35.000	109.50		AA lys, ch3nh4+
+29	11	43	50.000	109.50		AA lys, ch3nh3+, changed based on NMA nmodes
+19	11	19	35.000	109.50		 
+19	11	7	50.000	109.50		changed based on NMA nmodes
+19	11	5	50.000	109.50		Junmei et al, 1999
+19	11	16	50.000	110.00		Junmei et al, 1999
+1	11	20	50.000	109.50		AA general  changed based on NMA nmodes
+1	11	29	50.000	109.50		AA zwitterion  changed based on NMA nmodes
+1	11	19	50.000	109.50		AA gln      changed based on NMA nmodes
+1	11	38	63.000	110.10		AA general
+1	11	43	80.000	111.20		AA amino terminal residues
+1	11	11	63.000	111.10		AA general
+1	11	51	60.000	109.50		Junmei et al, 1999
+2	11	19	50.000	109.50		AA tyr     changed based on NMA nmodes
+4	11	11	63.000	113.10		AA his
+4	11	19	50.000	109.50		AA his     changed based on NMA nmodes
+7	11	11	63.000	111.00		Junmei et al, 1999 (last change: Mar24,99)
+7	11	51	50.000	109.50		Junmei et al, 1999
+11	11	11	40.000	109.50		 
+11	11	19	50.000	109.50		changed based on NMA nmodes
+11	11	20	50.000	109.50		changed based on NMA nmodes
+11	11	21	50.000	109.50		changed based on NMA nmodes
+11	11	29	50.000	109.50		changed based on NMA nmodes
+11	11	45	50.000	109.50		 
+11	11	50	50.000	109.50		 
+11	11	51	50.000	109.50		 
+11	11	53	50.000	114.70		AA cyx            (SCHERAGA  JPC 79,1428)
+11	11	54	50.000	108.60		AA cys
+11	11	2	63.000	114.00		AA phe tyr          (SCH JPC  79,2379)
+11	11	42	80.000	111.20		AA arg             (JCP 76, 1439)
+11	11	38	80.000	109.70		AA ala, general    (JACS 94, 2657)
+11	11	43	80.000	111.20		AA lys             (JCP 76, 1439)
+11	11	44	80.000	111.20		neutral amines 
+11	11	15	63.000	110.00		Junmei et al, 1999    
+11	11	16	63.000	110.00		Junmei et al, 1999
+14	11	11	63.000	115.60		AA trp
+14	11	19	50.000	109.50		AA trp    changed based on NMA nmodes
+51	11	51	160.000	101.00		Junmei et al, 1999
+51	11	15	50.000	110.00		Junmei et al, 1999
+51	11	16	50.000	110.00		Junmei et al, 1999
+51	11	16	50.000	110.00		Junmei et al, 1999
+51	11	15	50.000	110.00		Junmei et al, 1999
+51	11	45	50.000	109.50		 
+31	11	31	77.000	109.10		JCC,13,(1992),963;
+31	11	20	50.000	109.50		JCC,13,(1992),963;
+31	11	11	50.000	109.00		
+31	11	21	50.000	109.50		 
+32	11	11	50.000	108.50		(6-31g* opt value)
+32	11	20	50.000	108.50		(6-31g* opt value)  
+33	11	11	50.000	108.00		Junmei et al 99 
+33	11	20	50.000	106.50		Junmei et al 99 
+34	11	11	50.000	106.00		Junmei et al,99 
+11	4	39	70.000	120.00		AA his
+11	4	12	70.000	120.00		AA his
+11	4	40	70.000	120.00		AA his
+12	4	39	70.000	120.00		AA his
+13	4	39	70.000	120.00		AA his
+13	4	40	70.000	120.00		AA his
+11	4	13	70.000	120.00		AA his
+25	10	39	50.000	120.00		AA his
+25	10	40	50.000	120.00		AA his
+39	10	39	70.000	120.00		AA his
+39	10	40	70.000	120.00		AA his
+4	12	24	50.000	120.00		AA his
+4	12	40	70.000	120.00		AA his
+24	12	40	50.000	120.00		AA his
+4	13	24	50.000	120.00		AA his
+4	13	39	70.000	120.00		AA his
+14	13	24	50.000	120.00		AA trp
+14	13	39	70.000	108.70		AA trp
+24	13	39	50.000	120.00		AA his
+3	14	11	70.000	128.60		AA trp
+3	14	13	63.000	106.40		changed from 85.0  bsd on C6H6 nmodes; AA trp
+11	14	13	70.000	125.00		AA trp
+2	8	3	63.000	122.70		changed from 85.0  bsd on C6H6 nmodes; AA trp
+2	8	39	70.000	132.80		AA trp
+3	8	39	70.000	104.40		AA trp
+11	15	46	80.000	180.00		Junmei et al, 1999
+11	16	16	80.000	180.00		Junmei et al, 1999
+16	16	30	50.000	180.00		Junmei et al, 1999
+1	38	11	50.000	121.90		AA general
+1	38	18	50.000	120.00		AA general, gln, asn,changed based on NMA nmodes
+11	38	18	50.000	118.04		AA general,     changed based on NMA nmodes
+11	38	11	50.000	118.00		AA pro             (DETAR JACS 99,1232)
+18	38	18	35.000	120.00		ade,cyt,gua,gln,asn     **
+1	45	7	70.000	121.60		 
+1	45	11	70.000	117.60		 
+1	45	18	50.000	119.20		changed based on NMA nmodes
+3	45	6	70.000	105.40		 
+3	45	11	70.000	125.80		 
+3	45	18	50.000	125.80		for unmethylated n.a. bases,chngd bsd NMA nmodes
+6	45	11	70.000	128.80		 
+6	45	18	50.000	128.80		for unmethylated n.a. bases,chngd bsd NMA nmodes
+7	45	11	70.000	121.20		 
+7	45	18	50.000	121.20		for unmethylated n.a. bases,chngd bsd NMA nmodes
+2	42	18	50.000	120.00		
+2	42	11	50.000	123.20		AA arg
+11	42	18	50.000	118.40		AA arg
+18	42	18	35.000	120.00		
+11	43	18	50.000	109.50		AA lys,     changed based on NMA nmodes
+11	43	11	50.000	109.50		AA pro/nt
+18	43	18	35.000	109.50		AA lys, AA(end)
+11	44	18	50.000	109.50		neutral amines 
+11	44	11	50.000	109.50		neutral amines 
+18	44	18	35.000	109.50		neutral amines 
+1	39	1	70.000	126.40		 
+1	39	2	70.000	125.20		 
+1	39	18	50.000	116.80		changed based on NMA nmodes
+2	39	18	50.000	118.00		changed based on NMA nmodes
+4	39	10	70.000	120.00		AA his
+4	39	18	50.000	120.00		AA his,    changed based on NMA nmodes
+10	39	13	70.000	120.00		AA his
+10	39	18	50.000	120.00		AA his,    changed based on NMA nmodes
+13	39	18	50.000	120.00		AA his,    changed based on NMA nmodes
+8	39	13	70.000	111.60		AA trp
+8	39	18	50.000	123.10		AA trp,    changed based on NMA nmodes
+3	40	6	70.000	103.80		 
+4	40	10	70.000	117.00		AA his
+10	40	12	70.000	117.00		AA his
+1	41	2	70.000	120.50		 
+2	41	3	70.000	112.20		 
+2	41	9	70.000	118.60		 
+3	41	9	70.000	111.00		 
+1	50	26	50.000	113.00		(not used in tyr anymore)
+2	50	26	50.000	113.00		replacement in tyr
+11	50	26	55.000	108.50		 
+26	50	52	45.000	108.50		 
+1	51	11	60.000	117.00		Junmei et al, 1999
+7	51	11	60.000	117.00		Junmei et al, 1999
+11	51	11	60.000	109.50		 
+11	51	52	100.000	120.50		 
+52	51	52	100.000	120.50		 
+48	52	50	45.000	108.23		 
+48	52	48	140.000	119.90		 
+48	52	51	100.000	108.23		 
+50	52	51	45.000	102.60		 
+51	52	51	45.000	102.60		 
+11	53	11	62.000	 98.90		AA met
+11	53	53	68.000	103.70		AA cyx             (SCHERAGA  JPC 79,1428)
+11	54	27	43.000	 96.00		changed from 44.0 based on methanethiol nmodes
+27	54	27	35.000	 92.07		AA cys
+11	11	24	50.000	 109.5		
+24	11	24	35.000	 109.5		
+1		11	24	50.000	 109.5		
+38	11	24	50.000	 120.0		
+50	1	48	60.000	 115.0		
+38	11	53	50.000	 109.0		
+53	11	1	50.000	 109.0		
+53	11	24	50.000	 109.0		
+65	53	11	46.35	 104.0		
+End
+Begin INPUT FOR DIHEDRAL PARAMETERS
+0	1	1	0	 4.0	14.500	180.00	 2.0		Junmei et al, 1999
+0	1	2	0	 4.0	14.500	180.00	 2.0		intrpol.bsd.on C6H6
+0	1	3	0	 4.0	12.000	180.00	 2.0		intrpol.bsd.on C6H6
+0	1	7	0	 4.0	 8.700	180.00	 2.0		intrpol.bsd.on C6H6
+0	1	11	0	 6.0	 0.000	  0.00	 2.0		JCC,7,(1986),230
+0	1	38	0	 4.0	10.000	180.00	 2.0		AA,NMA
+0	1	45	0	 4.0	 5.800	180.00	 2.0		JCC,7,(1986),230
+0	1	39	0	 4.0	 5.400	180.00	 2.0		JCC,7,(1986),230
+0	1	41	0	 2.0	 8.000	180.00	 2.0		JCC,7,(1986),230
+0	1	47	0	 4.0	11.200	180.00	 2.0		Junmei et al, 1999
+0	1	50	0	 2.0	 4.600	180.00	 2.0		Junmei et al, 1999
+0	1	51	0	 2.0	 5.400	180.00	 2.0		Junmei et al, 1999
+0	2	2	0	 4.0	14.500	180.00	 2.0		intrpol.bsd.on C6H6
+0	2	3	0	 4.0	14.000	180.00	 2.0		intrpol.bsd.on C6H6
+0	2	7	0	 4.0	10.200	180.00	 2.0		intrpol.bsd.on C6H6
+0	2	8	0	 4.0	14.500	180.00	 2.0		reinterpolated 93'
+0	2	11	0	 6.0	 0.000	  0.00	 2.0		JCC,7,(1986),230
+0	2	42	0	 4.0	 9.600	180.00	 2.0		reinterpolated 93'
+0	2	39	0	 4.0	 6.000	180.00	 2.0		JCC,7,(1986),230
+0	2	41	0	 2.0	 9.600	180.00	 2.0		JCC,7,(1986),230
+0	2	50	0	 2.0	 1.800	180.00	 2.0		Junmei et al, 99
+0	3	3	0	 4.0	21.800	180.00	 2.0		intrpol.bsd.on C6H6
+0	3	8	0	 4.0	12.000	180.00	 2.0		reinterpolated 93'
+0	3	45	0	 4.0	 6.600	180.00	 2.0		JCC,7,(1986),230
+0	3	40	0	 2.0	 5.100	180.00	 2.0		JCC,7,(1986),230
+0	3	41	0	 2.0	 8.300	180.00	 2.0		JCC,7,(1986),230
+0	4	11	0	 6.0	 0.000	  0.00	 2.0		JCC,7,(1986),230
+0	4	12	0	 4.0	20.600	180.00	 2.0		intrpol.bsd.on C6H6
+0	4	13	0	 4.0	21.500	180.00	 2.0		intrpol.bsd.on C6H6
+0	4	39	0	 4.0	 5.600	180.00	 2.0		JCC,7,(1986),230
+0	4	40	0	 2.0	 4.800	180.00	 2.0		JCC,7,(1986),230
+0	5	5	0	 4.0	 4.000	180.00	 2.0		Junmei et al, 1999
+0	5	11	0	 6.0	 0.000	  0.00	 2.0		Junmei et al, 1999
+0	5	7	0	 4.0	26.600	180.00	 2.0		Junmei et al, 1999
+0	6	45	0	 4.0	 6.800	180.00	 2.0		JCC,7,(1986),230
+0	6	40	0	 2.0	20.000	180.00	 2.0		JCC,7,(1986),230
+0	7	7	0	 4.0	26.600	180.00	 2.0		intrpol.bsd.on C6H6
+0	7	11	0	 6.0	 0.000	  0.00	 3.0		JCC,7,(1986),230
+0	7	45	0	 4.0	 7.400	180.00	 2.0		JCC,7,(1986),230
+0	7	51	0	 2.0	 2.100	180.00	 2.0		Junmei et al, 1999
+0	8	39	0	 4.0	 6.100	180.00	 2.0		reinterpolated 93'
+0	9	41	0	 2.0	13.600	180.00	 2.0		JCC,7,(1986),230
+0	11	11	0	 9.0	 1.400	  0.00	 3.0		JCC,7,(1986),230
+0	11	15	0	 3.0	 0.000	  0.00	 1.0		Junmei et al, 1999
+0	11	16	0	 3.0	 0.000	  0.00	 1.0		Junmei et al, 1999
+0	11	38	0	 6.0	 0.000	  0.00	 2.0		JCC,7,(1986),230
+0	11	45	0	 6.0	 0.000	  0.00	 2.0		JCC,7,(1986),230
+0	11	42	0	 6.0	 0.000	  0.00	 3.0		JCC,7,(1986),230
+0	11	44	0	 6.0	 1.800	  0.00	 3.0		Junmei et al, 1999
+0	11	43	0	 9.0	 1.400	  0.00	 3.0		JCC,7,(1986),230
+0	11	50	0	 3.0	 0.500	  0.00	 3.0		JCC,7,(1986),230
+0	11	51	0	 3.0	 1.150	  0.00	 3.0		JCC,7,(1986),230
+0	11	53	0	 3.0	 1.000	  0.00	 3.0		JCC,7,(1986),230
+0	11	54	0	 3.0	 0.750	  0.00	 3.0		JCC,7,(1986),230
+0	14	3	0	 4.0	 6.700	180.00	 2.0		intrpol.bsd.onC6H6aa
+0	14	11	0	 6.0	 0.000	  0.00	 2.0		JCC,7,(1986),230
+0	14	13	0	 4.0	26.100	180.00	 2.0		intrpol.bsd.on C6H6
+0	10	39	0	 4.0	 9.300	180.00	 2.0		JCC,7,(1986),230
+0	10	40	0	 2.0	10.000	180.00	 2.0		JCC,7,(1986),230
+0	12	40	0	 2.0	 4.800	180.00	 2.0		JCC,7,(1986),230
+0	13	39	0	 4.0	 6.000	180.00	 2.0		JCC,7,(1986),230
+0	50	52	0	 3.0	 0.750	  0.00	 3.0		JCC,7,(1986),230
+0	51	52	0	 3.0	 0.750	  0.00	 3.0		JCC,7,(1986),230
+38	11	1	38	 1.0	 1.700	180.00	-1.0		 
+38	11	1	38	 1.0	 2.000	180.00	 2.0		 
+1	38	11	1	 1.0	 0.850	180.00	-2.0		 
+1	38	11	1	 1.0	 0.800	  0.00	 1.0		 
+11	11	38	1	 1.0	 0.500	180.00	-4.0		phi,psi,parm94
+11	11	38	1	 1.0	 0.150	180.00	-3.0		phi,psi,parm94
+11	11	38	1	 1.0	 0.530	  0.00	 1.0		phi,psi,parm94
+11	11	1	38	 1.0	 0.100	  0.00	-4.0		phi,psi,parm94
+11	11	1	38	 1.0	 0.070	  0.00	 2.0		phi,psi,parm94
+18	38	1	47	 1.0	 2.500	180.00	-2.0		JCC,7,(1986),230
+18	38	1	47	 1.0	 2.000	  0.00	 1.0		JCC,7,(1986),230
+11	53	53	11	 1.0	 3.500	  0.00	-2.0		JCC,7,(1986),230
+11	53	53	11	 1.0	 0.600	  0.00	 3.0		JCC,7,(1986),230
+50	52	51	11	 1.0	 0.250	  0.00	-3.0		JCC,7,(1986),230
+50	52	51	11	 1.0	 1.200	  0.00	 2.0		JCC,7,(1986),230
+51	52	51	11	 1.0	 0.250	  0.00	-3.0		JCC,7,(1986),230
+51	52	51	11	 1.0	 1.200	  0.00	 2.0		JCC,7,(1986),230
+20	11	1	47	 1.0	 0.800	  0.00	-1.0		Junmei et al, 1999
+20	11	1	47	 1.0	 0.080	180.00	 3.0		Junmei et al, 1999
+19	11	1	47	 1.0	 0.800	  0.00	-1.0		Junmei et al, 1999
+19	11	1	47	 1.0	 0.080	180.00	 3.0		Junmei et al, 1999
+19	11	11	19	 1.0	 0.150	  0.00	 3.0		Junmei et al, 1999
+19	11	11	11	 1.0	 0.160	  0.00	 3.0		Junmei et al, 1999
+19	11	7	7	 1.0	 0.380	180.00	-3.0		Junmei et al, 1999
+19	11	7	7	 1.0	 1.150	  0.00	 1.0		Junmei et al, 1999
+26	50	11	11	 1.0	 0.160	  0.00	-3.0		Junmei et al, 1999
+26	50	11	11	 1.0	 0.250	  0.00	 1.0		Junmei et al, 1999
+26	50	1	47	 1.0	 2.300	180.00	-2.0		Junmei et al, 1999
+26	50	1	47	 1.0	 1.900	  0.00	 1.0		Junmei et al, 1999
+7	7	1	47	 1.0	 2.175	180.00	-2.0		Junmei et al, 1999
+7	7	1	47	 1.0	 0.300	  0.00	 3.0		Junmei et al, 1999
+11	7	7	11	 1.0	 6.650	180.00	-2.0		Junmei et al, 1999
+11	7	7	11	 1.0	 1.900	180.00	 1.0		Junmei et al, 1999
+11	11	11	11	 1.0	 0.180	  0.00	-3.0		Junmei et al, 1999
+11	11	11	11	 1.0	 0.250	180.00	-2.0		Junmei et al, 1999
+11	11	11	11	 1.0	 0.200	180.00	 1.0		Junmei et al, 1999
+11	11	44	11	 1.0	 0.300	  0.00	-3.0		Junmei et al, 1999
+11	11	44	11	 1.0	 0.480	180.00	 2.0		Junmei et al, 1999
+11	11	51	11	 1.0	 0.383	  0.00	-3.0		 
+11	11	51	11	 1.0	 0.100	180.00	 2.0		 
+11	11	51	1	 1.0	 0.383	  0.00	-3.0		Junmei et al, 1999
+11	11	51	1	 1.0	 0.800	180.00	 1.0		Junmei et al, 1999
+11	51	11	51	 1.0	 0.100	  0.00	-3.0		Junmei et al, 1999
+11	51	11	51	 1.0	 0.850	180.00	-2.0		Junmei et al, 1999
+11	51	11	51	 1.0	 1.350	180.00	 1.0		Junmei et al, 1999
+11	51	11	45	 1.0	 0.383	  0.00	-3.0		parm98.dat, TC,PC,PAK
+11	51	11	45	 1.0	 0.650	  0.00	 2.0		parm98.dat, TC,PC,PAK
+11	16	16	30	 1.0	 0.000	  0.00	 1.0		Junmei et al, 1999
+47	1	51	11	 1.0	 2.700	180.00	-2.0		Junmei et al, 1999
+47	1	51	11	 1.0	 1.400	180.00	 1.0		Junmei et al, 1999
+51	11	45	6	 1.0	 0.000	  0.00	-2.0		parm98, TC,PC,PAK
+51	11	45	6	 1.0	 2.500	  0.00	 1.0		parm98, TC,PC,PAK
+51	11	45	7	 1.0	 0.000	  0.00	-2.0		parm98, TC,PC,PAK
+51	11	45	7	 1.0	 2.500	  0.00	 1.0		parm98, TC,PC,PAK
+51	11	11	51	 1.0	 0.144	  0.00	-3.0		parm98, TC,PC,PAK
+51	11	11	51	 1.0	 1.175	  0.00	 2.0		parm98, TC,PC,PAK
+51	11	11	50	 1.0	 0.144	  0.00	-3.0		parm98, TC,PC,PAK
+51	11	11	50	 1.0	 1.175	  0.00	 2.0		parm98, TC,PC,PAK
+50	11	11	50	 1.0	 0.144	  0.00	-3.0		parm98, TC,PC,PAK
+50	11	11	50	 1.0	 1.175	  0.00	 2.0		parm98, TC,PC,PAK
+31	11	11	31	 1.0	 1.200	180.00	 1.0		Junmei et al, 1999
+32	11	11	32	 1.0	 0.450	180.00	 1.0		Junmei et al, 1999
+33	11	11	33	 1.0	 0.000	180.00	 1.0		Junmei et al, 1999
+20	11	11	51	 1.0	 0.250	  0.00	 1.0		Junmei et al, 1999
+20	11	11	50	 1.0	 0.250	  0.00	 1.0		Junmei et al, 1999
+20	11	11	31	 1.0	 0.190	  0.00	 1.0		Junmei et al, 1999
+20	11	11	32	 1.0	 0.250	  0.00	 1.0		Junmei et al, 1999
+20	11	11	33	 1.0	 0.550	  0.00	 1.0		Junmei et al, 1999
+19	11	11	51	 1.0	 0.250	  0.00	 1.0		Junmei et al, 1999
+19	11	11	50	 1.0	 0.250	  0.00	 1.0		Junmei et al, 1999
+19	11	11	31	 1.0	 0.190	  0.00	 1.0		Junmei et al, 1999
+19	11	11	32	 1.0	 0.250	  0.00	 1.0		Junmei et al, 1999
+19	11	11	33	 1.0	 0.550	  0.00	 1.0		Junmei et al, 1999
+End
+Begin INPUT FOR IMPROPER DIHEDRAL PARAMETERS
+0	0	1	47	10.500	180.00	 2.0		JCC,7,(1986),230
+0	48	1	48	10.500	180.00	 2.0		JCC,7,(1986),230
+0	0	38	18	 1.000	180.00	 2.0		JCC,7,(1986),230
+0	0	42	18	 1.000	180.00	 2.0		JCC,7,(1986),230
+0	0	39	18	 1.000	180.00	 2.0		JCC,7,(1986),230
+0	42	2	42	10.500	180.00	 2.0		JCC,7,(1986),230
+0	11	38	11	 1.000	180.00	 2.0		JCC,7,(1986),230
+0	0	2	23	 1.100	180.00	 2.0		bsd.on C6H6 nmodes
+0	0	13	24	 1.100	180.00	 2.0		 
+0	0	10	25	 1.100	180.00	 2.0		 
+0	0	12	24	 1.100	180.00	 2.0		 
+0	0	9	25	 1.100	180.00	 2.0		 
+0	0	6	25	 1.100	180.00	 2.0		 
+0	0	7	24	 1.100	180.00	 2.0		 
+0	0	7	23	 1.100	180.00	 2.0		 
+0	0	2	24	 1.100	180.00	 2.0		bsd.on C6H6 nmodes 
+0	0	2	25	 1.100	180.00	 2.0		bsd.on C6H6 nmodes
+6	3	45	11	 1.000	180.00	 2.0		 
+7	1	45	11	 1.000	180.00	 2.0		dac guess, 9/94
+7	1	7	11	 1.100	180.00	 2.0		 
+11	47	1	50	10.500	180.00	 2.0		 
+39	12	4	11	 1.100	180.00	 2.0		 
+40	13	4	11	 1.100	180.00	 2.0		 
+39	13	4	11	 1.100	180.00	 2.0		 
+13	3	14	11	 1.100	180.00	 2.0		 
+2	2	2	11	 1.100	180.00	 2.0		 
+1	7	7	11	 1.100	180.00	 2.0		dac guess, 9/94
+41	7	2	42	 1.100	180.00	 2.0		dac guess, 9/94
+3	41	2	42	 1.100	180.00	 2.0		dac, 10/94
+39	41	2	42	 1.100	180.00	 2.0		dac, 10/94
+2	2	1	50	 1.100	180.00	 2.0		(not used in tyr!)
+2	2	2	50	 1.100	180.00	 2.0		in tyr
+25	47	1	50	 1.100	180.00	 2.0		Junmei et al.1999
+25	47	1	51	 1.100	180.00	 2.0		
+7	11	7	23	 1.100	180.00	 2.0		Junmei et al.1999
+2	2	2	33	 1.100	180.00	 2.0		Junmei et al.1999
+7	24	1	47	 1.100	180.00	 2.0		Junmei et al.1999
+1	11	38	18	 1.100	180.00	 2.0		Junmei et al.1999
+1	11	38	47	 1.100	180.00	 2.0		Junmei et al.1999
+End
+Begin INPUT FOR H-BOND 10-12 POTENTIAL PARAMETERS
+18	40	  7557.0	  2385.0		 
+28	49	  7557.0	  2385.0		 
+18	41	 10238.0	  3071.0		 
+18	47	  7557.0	  2385.0		 
+18	48	  4019.0	  1409.0		 
+18	50	  7557.0	  2385.0		 
+18	53	265720.0	 35429.0		 
+18	54	265720.0	 35429.0		 
+26	40	  7557.0	  2385.0		 
+26	47	  7557.0	  2385.0		 
+26	48	  4019.0	  1409.0		 
+26	50	  7557.0	  2385.0		 
+26	53	265720.0	 35429.0		 
+26	54	265720.0	 35429.0		 
+27	40	 14184.0	  3082.0		 
+27	47	 14184.0	  3082.0		 
+27	48	  4019.0	  1409.0		 
+27	50	 14184.0	  3082.0		 
+27	53	265720.0	 35429.0		 
+27	54	265720.0	 35429.0		 
+21	40	  4019.0	  1409.0		 
+21	47	 10238.0	  3071.0		 
+21	48	  4019.0	  1409.0		 
+21	50	  4019.0	  1409.0		 
+21	53	  7557.0	  2385.0		 
+21	54	  7557.0	  2385.0		 
+22	40	  4019.0	  1409.0		 
+22	47	  4019.0	  1409.0		 
+22	48	  4019.0	  1409.0		 
+22	50	  4019.0	  1409.0		 
+22	53	  7557.0	  2385.0		 
+22	54	  7557.0	  2385.0		 
+End
+Begin INPUT FOR SUTTON-CHEN POTENTIAL PARAMETERS
+65	65	0.29501359 	4.08 34.408 10.0 8.0
+66	66	0.05860838 	4.09 144.41 12.0 6.0
+67	67	0.36221203 	3.52 39.432 9.0 6.0
+End
+Begin INPUT FOR THE NON-BONDED 7-14 POTENTIAL PARAMETERS
+18	  0.8000	  0.0157		Ferguson base pair geom.
+47	  0.8612	  0.2100		OPLS
+28	  1.8612	  0.2100		OPLS
+49	  1.8612	  0.2100		OPLS
+End
+Begin INPUT FOR THE NON-BONDED 6-12 POTENTIAL PARAMETERS
+18	  0.6000	  0.0157		Ferguson base pair geom.
+26	  0.2000	  0.0200		OPLS Jorgensen, JACS,110,(1988),1657
+27	  0.6000	  0.0157		W. Cornell CH3SH --> CH3OH FEP
+19	  1.4870	  0.0157		OPLS
+20	  1.3870	  0.0157		Veenstra et al JCC,8,(1992),963 
+21	  1.2870	  0.0157		Veenstra et al JCC,8,(1992),963 
+22	  1.1870	  0.0157		Veenstra et al JCC,8,(1992),963 
+29	  1.1000	  0.0157		Veenstra et al JCC,8,(1992),963
+23	  1.4590	  0.0150		Spellmeyer 
+24	  1.4090	  0.0150		Spellmeyer, one electrowithdr. neighbor
+25	  1.3590	  0.0150		Spellmeyer, two electrowithdr. neighbor
+28	  1.0000	  0.0100		TIP3P water model
+30	  1.4590	  0.0150		H bonded to sp C (Howard et al JCC 16)
+47	  1.6612	  0.2100		OPLS
+48	  1.6612	  0.2100		OPLS
+49	  1.7683	  0.1520		TIP3P water model
+50	  1.7210	  0.2104		OPLS 
+51	  1.6837	  0.1700		OPLS ether
+14	  1.9080	  0.0860		Spellmeyer
+2	  1.9080	  0.0860		Spellmeyer
+3	  1.9080	  0.0860		Spellmeyer
+4	  1.9080	  0.0860		Spellmeyer
+5	  1.9080	  0.0860		Spellmeyer
+6	  1.9080	  0.0860		Spellmeyer
+7	  1.9080	  0.0860		Spellmeyer
+8	  1.9080	  0.0860		Spellmeyer
+9	  1.9080	  0.0860		Spellmeyer
+10	  1.9080	  0.0860		Spellmeyer
+12	  1.9080	  0.0860		Spellmeyer
+13	  1.9080	  0.0860		Spellmeyer
+15	  1.9080	  0.0860		Spellmeyer
+16	  1.9080	  0.0860		Spellmeyer
+11	  1.9080	  0.1094		Spellmeyer
+1	  1.9080	  0.0860		OPLS
+38	  1.8240	  0.1700		OPLS
+39	  1.8240	  0.1700		OPLS
+42	  1.8240	  0.1700		OPLS
+45	  1.8240	  0.1700		OPLS
+41	  1.8240	  0.1700		OPLS
+40	  1.8240	  0.1700		OPLS
+43	  1.8240	  0.1700		OPLS
+44	  1.8240	  0.1700		OPLS
+46	  1.8240	  0.1700		OPLS
+46	  1.8240	  0.1700		N in nitrile
+38	  1.8240	  0.1700		N in nitrile
+39	  1.8240	  0.1700		N in nitrile
+42	  1.8240	  0.1700		N in nitrile
+45	  1.8240	  0.1700		N in nitrile
+41	  1.8240	  0.1700		N in nitrile
+40	  1.8240	  0.1700		N in nitrile
+43	  1.8240	  0.1700		N in nitrile
+44	  1.8240	  0.1700		N in nitrile
+53	  2.0000	  0.2500		W. Cornell CH3SH and CH3SCH3 FEP's
+54	  2.0000	  0.2500		W. Cornell CH3SH and CH3SCH3 FEP's
+52	  2.1000	  0.2000		JCC,7,(1986),230; 
+35	  2.4700	  0.1000		Cl- Smith & Dang, JCP 1994,100:5,3757
+57	  1.1370	  0.0183		Li+ Aqvist JPC 1990,94,8021. (adapted)
+58	  1.8680	  0.0028		Na+ Aqvist JPC 1990,94,8021. (adapted)
+59	  1.8680	  0.0028		Na+ Aqvist JPC 1990,94,8021. (adapted)
+60	  2.6580	  0.0003		K+  Aqvist JPC 1990,94,8021. (adapted)
+61	  2.9560	  0.0002		Rb+ Aqvist JPC 1990,94,8021. (adapted)
+62	  3.3950	  0.0001		Cs+ Aqvist JPC 1990,94,8021. (adapted)
+37	  0.7926	  0.8947		Mg2+ Aqvist JPC 1990,94,8021.(adapted)
+17	  1.7131	  0.4598		Ca2+ Aqvist JPC 1990,94,8021.(adapted)
+63	  1.1000	  0.0125		Zn2+, Merz,PAK, JACS,113,8262,(1991) 
+31	  1.7500	  0.0610		Gough et al. JCC 13,(1992),963.
+32	  1.9480	  0.2650		Fox, JPCB,102,8070,(98),flex.mdl CHCl3
+33	  2.2200	  0.3200		Junmei(?)
+34	  2.3500	  0.4000		JCC,7,(1986),230;  
+36	  5.0000	  0.1000		solvated ion for vacuum approximation
+65          1.6600	  0.4674		Au
+66          1.7200	  0.3446		Ag
+67          1.6300	  11.9675		Ni
+End
+Begin INPUT FOR PAIR WISE PARAMETERS
+64	64	10000.0	1.584	100.0	0.0	0.0	2.168
+End
+Begin INPUT FOR PAIR WISE PARAMETERS
+End
+Begin INPUT FOR STRETCH-BEND PARAMETERS
+28 49	28	 10.0	  10.0
+END
+Begin INPUT FOR OUT OF PLANE PARAMETERS
+47  1 0 0 10.0
+38  1 0 0 10.0
+18  1 0 0 10.0
+END
+Begin INPUT FOR BOND HARDNESS PARAMETERS
+28 49 10.0
+END
+Begin INPUT FOR H-BOND MORSE POTENTIAL PARAMETERS
+49	28	 553.0	 0.9572   0.1	TIP3P water
+End

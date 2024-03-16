@@ -1,0 +1,53 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=ORCA
+----------------------------------------------------------
+
+type 12
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+nFreqs = 9
+Freq calc from Hessian = 0.00000 Freq from orca = 1642.79276
+Freq calc from Hessian = 0.00000 Freq from orca = 3833.99713
+Freq calc from Hessian = 0.00000 Freq from orca = 3943.95399
+Freq calc from Hessian = 0.00000 Freq from orca = 11.23824
+Freq calc from Hessian = 0.00000 Freq from orca = 61.00738
+Freq calc from Hessian = 0.00000 Freq from orca = 65.32882
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79276
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99713
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95399
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+
+rank #    0 42.410686 second(s)
+rank #    1 42.410635 second(s)
+rank #    2 42.410665 second(s)
+rank #    3 42.410596 second(s)
+rank #    4 42.410665 second(s)
+rank #    5 42.410604 second(s)
+rank #    6 42.410663 second(s)
+rank #    7 42.410618 second(s)
+rank #    8 42.410667 second(s)
+rank #    9 42.410623 second(s)
+rank #   10 42.410658 second(s)
+rank #   11 42.410611 second(s)
+Total time for all ranks =  508.927691 second(s)
+Average time by rank     =  42.410641 second(s)
+Max time by rank         =  42.410686 second(s)
+Standard deviation       =  0.000029 second(s)
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=ORCA
+----------------------------------------------------------
+
+nAtoms = 3
+numberOfFrequencies = 3
+QFF parameters saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/h2oVQFF.txt file
+

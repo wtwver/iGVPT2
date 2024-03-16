@@ -1,0 +1,15 @@
+#!/bin/bash
+echo " Begin QFF2MR-VPT2 calculation">  $0.log
+CCHEMI=$HOME/bin/cchemi
+# Opt+ Freq => h2oFreq.gab
+$CCHEMI h2o.ici >> $0.log 2>  $0.err
+
+# generate QFF energies files
+/bin/rm -f h2oVQFF_*.ici
+/bin/rm -f h2oVQFF_*.gab
+$CCHEMI h2oV.ici >> $0.log 2>  $0.err
+ls h2oVQFF_* > xp
+sed -i 's/h2oVQFF/runCChemI h2oVQFF/' xp
+#cat xp
+chmod u+x xp
+./xp >>  $0.log 2>> $0.err

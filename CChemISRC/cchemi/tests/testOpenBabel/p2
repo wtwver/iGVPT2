@@ -1,0 +1,16 @@
+seed = -1
+----------------------------------------------------------
+runType=GRADIENT
+model=OPENBABEL
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+Gradient Norm  = 191.47442419323932 energy = 14.81875109168461(kcal/mol)
+Geometry saved in /home/allouche/CChemI/CChemI-181215/cchemi/tests/testOpenBabel/h2o.gab file
+Save molecule in /home/allouche/CChemI/CChemI-181215/cchemi/tests/testOpenBabel/h2o.gab
+

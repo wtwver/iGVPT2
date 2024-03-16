@@ -1,0 +1,17 @@
+-------------------------------------------------
+Hyhrogen-Bond Correction Parameters:
+Method=SCC-DFTB
+OH_O=1.120000
+OH_N=2.580000
+NH_O=0.800000
+NH_N=2.010000
+WH_O=1.320000
+COO=1.220000
+NH4=1.220000
+HB_R_CUTOFF=5.500000
+HB_R_0=1.500000
+MAX_XH_BOND=1.150000
+HH_REPULSION_K=0.100000
+HH_REPULSION_E=12.700000
+HH_REPULSION_R0=2.300000
+-------------------------------------------------

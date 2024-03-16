@@ -1,0 +1,51 @@
+LIBPTHREAD    = -lpthread
+RM = rm -f
+MAKE = make
+WIN32LIB   = 
+X11LIB   = -lX11
+#CC = gcc -pg
+CC = gcc -O -fPIC -I $(LIBCCHEMIDIR)/src
+
+enable_omp = 0
+ifeq ($(enable_omp),1)
+OMPLIB=-L/usr/lib -lgomp
+OMPCFLAGS=-DENABLE_OMP -fopenmp
+endif
+
+# REQUIRED for TensorMol interface
+enable_python = 0
+ifeq ($(enable_python),1)
+PYTHONLIB=`python3-config --ldflags`
+PYTHONI=`python3-config --includes`
+PYTHONCFLAGS=-DENABLE_PYTHON -I `python3-config --includes`
+endif
+
+# 0->without CL,   1->NVIDIA,      2->ATI
+enable_cl = 0
+ifeq ($(enable_cl),1)
+CLLIB=-L/usr/lib -lOpenCL
+CLCFLAGS=-DENABLE_CL 
+endif
+
+ifeq ($(enable_cl),2)
+CC = gcc -I/home/allouche/Softwares/ati-stream-sdk-v2.2-lnx32/include/CL
+CLLIB=-L/home/allouche/Softwares/ati-stream-sdk-v2.2-lnx32/lib/x86 -lOpenCL
+CLCFLAGS=-DENABLE_CL -DCPU_CL
+endif
+
+enable_mpi = 0
+ifeq ($(enable_mpi),1)
+CC = mpicc
+MPICFLAGS=-DENABLE_MPI 
+endif
+
+#DEBUGFLAG=-DDEBUG
+#DEBUGFLAG=
+
+enable_n2p2 = 1
+ifeq ($(enable_n2p2),1)
+N2P2CFLAGS=-DHIGH_DERIVATIVES
+endif
+
+COMMONCFLAGS = -Wall -O2 $(OMPCFLAGS) $(CLCFLAGS) $(MPICFLAGS) $(DEBUGFLAG) $(PYTHONCFLAGS) $(N2P2CFLAGS)
+

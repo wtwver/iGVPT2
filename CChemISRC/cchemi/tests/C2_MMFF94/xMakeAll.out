@@ -1,0 +1,121 @@
+seed = -1
+----------------------------------------------------------
+runType=VPT2
+model=GVPT2
+----------------------------------------------------------
+
+nFrequencies=1
+VPT2 model : GVPT2
+
+Gradients
+END
+
+Hessian
+1 1      2116.5017900000
+END
+
+Cubic
+1 1 1       654.0278610000
+END
+
+Quartic
+1 1 1 1       157.2647740000
+END
+
+Coriolis
+END
+
+Rotation constants
+1         1.0000000000
+2         1.0000000000
+3         1.0000000000
+END
+nFrequencies=1
+nDim=3
+VPT2 Properties model : GVPT2 : Gaussian method
+
+First derivatives
+END
+
+
+Second derivatives
+END
+
+
+Cubic derivatives
+END
+
+nFrequencies 1
+nStates 3
+State n 1	0 
+State n 2	1 
+State n 3	2 
+
+Xkl (cm^-1) by VPT2+K model
+1 1       -11.2234006957
+END
+
+C=0.001143
+
+Diagonal of H (cm^-1) by VPT2+K model
+     1055.4450448261         0.0000000000 
+     3149.5000334346      2094.0549886085  1(1) 
+     5221.1082206516      4165.6631758256  1(2) 
+END
+
+
+Resonance Matrix (cm^-1) by VPT2+K model
+========================================
+ Fermi Resonances terms :
+ 0 Fermi Resonances 
+----------------------------------------------------------------------------------------------------
+
+ Darling-Dennison Resonances terms :
+ 0 Darling-Dennison Resonances 
+----------------------------------------------------------------------------------------------------
+
+END
+
+
+
+Results
+========================
+       E(harm)      E(anharm)     Mode(Quanta), Coef 
+       -------      ---------     ---------------- 
+    0.00000000     0.00000000     [ 1.000] 
+ 2116.50179000  2094.05498861     [ 1.000  1(1)] 
+ 4233.00358000  4165.66317583     [ 1.000  1(2)] 
+
+
+
+Results With intensities
+========================
+       E(harm)      E(anharm)        I(harm)      I(anharm)     Coef Mode(Quanta) 
+       -------      ---------        -------      ---------     ---------------- 
+    0.00000000     0.00000000     0.00000000     0.00000000     [ 1.000] 
+ 2116.50179000  2094.05498861     0.00000000     0.00000000     [ 1.000  1(1)] 
+ 4233.00358000  4165.66317583     0.00000000     0.00000000     [ 1.000  1(2)] 
+
+
+
+Results With intensities
+========================
+
+Fundamental Bands
+-----------------
+       E(harm)      E(anharm)        I(harm)      I(anharm)       Coef. Mode(Quanta) 
+  ------------   ------------   ------------   ------------     -------------------- 
+ 2116.50179000  2094.05498861     0.00000000     0.00000000     [ 1.000  1(1)] 
+
+Overtones
+---------
+       E(harm)      E(anharm)        I(harm)      I(anharm)       Coef. Mode(Quanta) 
+  ------------   ------------   ------------   ------------     -------------------- 
+ 4233.00358000  4165.66317583     0.00000000     0.00000000     [ 1.000  1(2)] 
+
+Combination Bands
+----------------
+       E(harm)      E(anharm)        I(harm)      I(anharm)       Coef. Mode(Quanta) 
+  ------------   ------------   ------------   ------------     -------------------- 
+
+

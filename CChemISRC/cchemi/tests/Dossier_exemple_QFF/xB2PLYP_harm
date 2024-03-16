@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sed -i 's/Mopac/Orca/g' qff*.ici
+sed -i 's/PM6-DH+/NORI Def2-TZVPP B2PLYP TightSCF Grid5 FinalGrid6 /g' qff*.ici
+sed -i 's/=orca/=runOrca/g' qff*.ici
+

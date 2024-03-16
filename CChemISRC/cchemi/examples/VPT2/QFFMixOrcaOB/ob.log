@@ -1,0 +1,89 @@
+===================
+run ob.ici ......
+===================
+seed = -1
+----------------------------------------------------------
+runType=OPTFREQ
+model=OPENBABEL
+----------------------------------------------------------
+
+type 12
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+nFreqs = 9
+Freq calc from Hessian = 0.00000 Freq from orca = 1642.79242
+Freq calc from Hessian = 0.00000 Freq from orca = 3833.99751
+Freq calc from Hessian = 0.00000 Freq from orca = 3943.95412
+Freq calc from Hessian = 0.00000 Freq from orca = 11.17815
+Freq calc from Hessian = 0.00000 Freq from orca = 61.01283
+Freq calc from Hessian = 0.00000 Freq from orca = 65.30972
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79242
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99751
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95412
+optimization using the Computational chemistry optimizer
+type 12
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+nFreqs = 9
+Freq calc from Hessian = 0.00000 Freq from orca = 1642.79242
+Freq calc from Hessian = 0.00000 Freq from orca = 3833.99751
+Freq calc from Hessian = 0.00000 Freq from orca = 3943.95412
+Freq calc from Hessian = 0.00000 Freq from orca = 11.17815
+Freq calc from Hessian = 0.00000 Freq from orca = 61.01283
+Freq calc from Hessian = 0.00000 Freq from orca = 65.30972
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79242
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99751
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95412
+QMKeys = mmff94
+Model = OPENBABEL
+Energy by OpenBabel = 0.000000
+Read geom from /tmp/cchemi_27646_ob/obOptOne.out
+Save molecule in /tmp/cchemi_27646_ob/obOpt.gab
+----------------------------------------- 
+Optimized geometry saved in /tmp/cchemi_27646_ob/obOpt.gab file
+----------------------------------------- 
+Read geom from /tmp/cchemi_27646_ob/obOptOne.out
+#Number of free coordinates =3 
+Computing of IR spectra... Please wait
+nAtoms = 3
+Gradient Norm  = 17.80502238259098 energy = 0.06002965696078(kcal/mol)
+Frequencies and modes in the /tmp/cchemi_27646_ob/obFreq.gab file
+Save molecule in /tmp/cchemi_27646_ob/obFreq.gab
+Save molecule in /tmp/cchemi_27646_ob/obFreq.gab
+type 12
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+nFreqs = 9
+Freq calc from Hessian = 0.00000 Freq from orca = 1642.79242
+Freq calc from Hessian = 0.00000 Freq from orca = 3833.99751
+Freq calc from Hessian = 0.00000 Freq from orca = 3943.95412
+Freq calc from Hessian = 0.00000 Freq from orca = 11.17815
+Freq calc from Hessian = 0.00000 Freq from orca = 61.01283
+Freq calc from Hessian = 0.00000 Freq from orca = 65.30972
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79242
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99751
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95412
+#Number of free coordinates =3 
+========================================================================================================================
+# Geometry and velocities
+# Fixed normal modes (ground, n=0) and scaled to T = 300.000000
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+3 0 1
+ H H H H 0 0.214143000000 2 1 0.000031844868 -0.760585104939 -0.297747296450 1  2 61
+ H H H H 0 0.215685000000 2 1 -0.420423515311 0.552201888744 -0.639151903853 1  2 61
+ O O O O 0 -0.429828000000 2 1 0.026090532272 0.039029737942 0.066583672386 1  2 61
+# Velocities, vx(Ang/AKMA-time) vy(Ang/AKMA-time) vz(Ang/AKMA-time): 1fs = 0.020455 AKMA
+Velocities
+2.392436992153e-01 8.479871488544e-01 8.155623204407e-01
+-2.221101070350e-02 4.044742915387e-01 1.125077810891e-01
+-1.367391399587e-02 -7.891000261993e-02 -5.847207090081e-02
+========================================================================================================================
+

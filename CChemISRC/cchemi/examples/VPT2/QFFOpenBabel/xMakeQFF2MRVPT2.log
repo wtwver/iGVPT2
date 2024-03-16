@@ -1,0 +1,23 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+type 5
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+nAtoms = 3
+numberOfFrequencies = 3
+QFF parameters saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOpenBabel/h2oVQFF.txt file
+

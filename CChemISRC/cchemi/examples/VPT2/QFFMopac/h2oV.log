@@ -1,0 +1,16 @@
+===================
+run h2oV.ici ......
+===================
+dir =  /tmp/cchemi_7693/h2oV ......
+===================
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=MOPAC
+----------------------------------------------------------
+
+nAtoms = 3
+numberOfFrequencies = 3
+QFF parameters saved in /tmp/cchemi_7693/h2oV/h2oVQFF.txt file
+
+======================

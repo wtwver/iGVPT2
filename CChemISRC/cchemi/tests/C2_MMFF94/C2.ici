@@ -1,0 +1,34 @@
+RunType=OptFreq
+OptimizerType=Quasi
+Model=OpenBabel
+openBabelCommand=obgradient -ff mmff94
+
+dx=1e-2
+
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=TRUE
+#ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldUseVanderWals=TRUE
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=0
+
+#QuasiNewton
+quasiNewtonMaxIterations = 2000
+quasiNewtonUpdateFrequency = 1
+quasiNewtonEpsilon  = 1e-10
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  25
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+2 0 1
+C C C DUM 0 0.000000000000 2 0 0.000000000000 0.000000000000 0.627413197369 	1 2 3
+C C C DUM 0 0.000000000000 2 0 0.000000000000 0.000000000000 -0.627413197369 	1 1 3

@@ -1,0 +1,1 @@
+obopt -ff mmff94  /home_nfs/ilm/allouche/tmp/CChemI-191215/cchemi/tests/testOpenBabel/mdGeomsOne.hin > /home_nfs/ilm/allouche/tmp/CChemI-191215/cchemi/tests/testOpenBabel/mdGeomsOne.out 2>/dev/null

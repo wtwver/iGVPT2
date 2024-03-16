@@ -1,0 +1,121 @@
+#RunType = Energy, Optimization, MD, MDConfo, REMDConfo, OptFreq, PIMD
+#RunType=MDConfo
+#RunType=Freq
+#RunType=OptFreq
+#RunType=Optimization
+#RunType=OptFreq
+RunType=Energy
+#RunType=MDConfo
+#RunType=MD
+#RunType=PIMD
+#OptimizerType=External
+#Model = MM , Mopac , Orca or FireFly
+#Model=Mopac
+#Model=Orca
+Model=MM
+#QMKeys=PM6
+#QMKeys=PM3
+#addH4Corrections=TRUE
+#addD3Corrections=TRUE
+mopacCommand=/home/allouche/Softwares/MOPAC2009/MOPAC2009.exe
+orcaCommand=orca
+fireflyCommand=firefly
+
+#HarmonicVelocityModes=9
+SeedRandom=999
+
+omegaMax = 20000
+Nf=200
+nBeads=256
+nSuzukiYoshida=1
+lengthOfNHChains=1
+
+#Confo
+gaussianCommand=g03
+fireflyCommand=firefly
+numberOfGeometries=3
+tolEnergy=0.1
+tolDistance=0.1
+ConfoOptMM=TRUE
+#ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM6 GNORM=0.001
+ConfoOptFireFly=FALSE
+# remove # if post processing required
+#mopacKeywordsPost=PM6
+gaussianKeywordsPost=B3LYP/aug-cc-pvdz
+lascmdKeywordsPost=B3LYP/aug-cc-pvdz
+orcaKeywordsPost=AM1 Opt
+fireflyKeywordsPost=GBASIS=PM3
+mopacKeywordsPost=PM6
+#fireflyKeywordsPost=AM1
+
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseStrBend=FALSE
+ForceFieldUseDihedral=FALSE
+ForceFieldUseOutOfPlane=FALSE
+ForceFieldUseImproper=FALSE
+ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUseCoulomb=TRUE
+#ForceFieldChargesType=Scaled
+#ForceFieldChargesType=EEM
+ForceFieldChargesType=ACKH2
+ForceFieldUseNumericalGradient=TRUE
+#ForceFieldVanderWals=7-14
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=0
+
+#MD
+updateFrequency=1
+#Time in ps
+heatTime = 0.0
+equiTime = 20.0
+runTime = 20.0
+coolTime = 0
+timeExchange = 1.0
+heatTemp = 0
+runTemp = 30
+runTempMax = 200
+nTemperatures = 10
+#in fs
+stepSize = 0.5
+#  VERLET = 0, BEEMAN = 1, STOCHASTIC = 2, LANGEVIN = 3, QTB = 4, MARTYNATUCKERMAN = 5
+integrator = 4
+#  NONE = 0, ANDERSEN = 1, BERENDSEN = 2, BUSSI = 3, NH = 4
+thermostat = 0
+friction=30
+collide = 20
+
+#  NONE = 0, LANGEVIN = 1, NOSEHOOVER=2, QTB = 3
+PIMDThermostat = 1
+#  NONE = 0, STAGING = 1, NORMALMODE=2
+PIMDTransformation = 2
+
+#QuasiNewton
+quasiNewtonMaxIterations = 2000
+quasiNewtonUpdateFrequency = 1
+quasiNewtonEpsilon  = 1e-8
+quasiNewtonTolerence = 1e-8
+quasiNewtonMaxLines =  200
+
+#ConjugateGradient
+conjugateGradientGradientNorm = 1e-3
+conjugateGradientMaxIterations = 100
+conjugateGradientUpdateFrequency = 1
+conjugateGradientMaxLines = 25
+conjugateGradientInitialStep = 0.001
+# 1 : Hestenes Stiefel,  2 : Fletcher Reeves, 3 : Polak Ribiere, 4 : Wolf Powell
+conjugateGradientMethod = 1
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+6 0 1
+ C C C1 GFME 0 -0.048145 2 1 -0.60759989 -0.02320824 0.22462954 3  2 2 3 1 6 1
+ O O O1 GFME 0 0.081086 2 1 -1.24776927 0.41657690 1.17728649 1  1 2
+ N N N1 GFME 0 0.296604 2 1 0.71827302 0.12134813 0.21960410 3  1 1 4 1 5 1
+ H H H2 GFME 0 0.078185 2 1 1.25040640 -0.22810434 -0.56407006 1  3 1
+ H H H3 GFME 0 0.010657 2 1 1.19459657 0.43403571 1.05340048 1  3 1
+ H H H1 GFME 0 -0.418387 2 1 -1.30790683 -0.72064816 -0.93085054 1  1 1

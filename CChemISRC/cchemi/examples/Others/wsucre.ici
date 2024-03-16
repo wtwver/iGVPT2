@@ -1,0 +1,109 @@
+#RunType = Energy, Optimization, MD, MDConfo, REMDConfo
+RunType=MDConfo
+#RunType=RDConfo
+#RunType=Optimization
+#RunType=OptFreq
+#RunType=Freq
+#RunType=Energy
+#Model = MM , Mopac , Orca or FireFly
+Model=Mopac
+#Model=MM
+QMKeys=PM7 NOMM
+#SEKeys=PM3
+mopacCommand=mopac
+orcaCommand=orca
+fireflyCommand=firefly
+
+#Confo
+gaussianCommand=g09
+fireflyCommand=firefly
+numberOfGeometries=1000
+tolEnergy=0.5
+tolDistance=0.2
+ConfoOptMM=TRUE
+ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM7 NOMM GNORM=0.001
+ConfoOptFireFly=FALSE
+# remove # if post processing required
+#mopacKeywordsPost=PM6
+gaussianKeywordsPost=B3LYP/6-31G* scf=(XQC,tight) nosym Opt(Tight) 
+#fireflyKeywordsPost=AM1
+
+Wall=1000 20 6
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldUseVanderWals=TRUE
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=1
+
+#MD
+updateFrequency=5
+#Time in ps
+heatTime = 0.1
+equiTime = 0.1
+runTime = 1.0
+coolTime = 0
+timeExchange = 0.01
+runTemp = 3000
+runTempMax = 3000
+nTemperatures = 10
+#in fs
+stepSize = 0.5
+#  VERLET = 0, BEEMAN = 1, STOCHASTIC = 2
+integrator = 0
+#  NONE = 0, ANDERSEN = 1, BERENDSEN = 2, BUSSI = 3
+thermostat = 0
+friction=40
+collide = 20
+
+#QuasiNewton
+useQuasiNewton = TRUE
+quasiNewtonMaxIterations = 20000
+quasiNewtonUpdateFrequency = 100
+quasiNewtonEpsilon  = 0.0001
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  25
+
+#ConjugateGradient
+useConjugateGradient = FALSE
+conjugateGradientGradientNorm = 1e-3
+conjugateGradientMaxIterations = 100
+conjugateGradientUpdateFrequency = 1
+conjugateGradientMaxLines = 25
+conjugateGradientInitialStep = 0.001
+# 1 : Hestenes Stiefel,  2 : Fletcher Reeves, 3 : Polak Ribiere, 4 : Wolf Powell
+conjugateGradientMethod = 1
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+22 1 1
+ O O O DUM 0 0.000000 2 0 1.009900 0.789300 -0.285200  2  2 1 4 1
+ C C C DUM 0 0.000000 2 0 -0.288300 1.263100 -0.310300  4  1 1 6 1 8 1 11 1
+ C C C DUM 0 0.000000 2 0 0.153900 -1.457000 0.407500  4  4 1 5 1 9 1 12 1
+ C C C DUM 0 0.000000 2 0 1.283000 -0.612300 -0.211000  4  1 1 3 1 7 1 13 1
+ O O O DUM 0 0.000000 2 0 0.100900 -1.235100 1.782700  2  3 1 14 1
+ O O O DUM 0 0.000000 2 0 -1.030400 1.047900 0.878500  2  2 1 8 1
+ C C C DUM 0 0.000000 2 0 1.612000 -1.068100 -1.634700  4  4 1 10 1 15 1 16 1
+ C C C DUM 0 0.000000 2 0 -1.457600 0.343700 -0.305000  4  2 1 6 1 9 1 17 1
+ C C C DUM 0 0.000000 2 0 -1.213700 -1.151400 -0.245300  4  3 1 8 1 18 1 20 1
+ O O O DUM 0 0.000000 2 0 2.826000 -0.397800 -1.969100  2  7 1 19 1
+ H H H DUM 0 0.000000 2 0 -0.257100 2.286800 -0.694100  1  2 1
+ H H H DUM 0 0.000000 2 0 0.391800 -2.550200 0.333400  1  3 1
+ H H H DUM 0 0.000000 2 0 2.173500 -0.638800 0.478200  1  4 1
+ H H H DUM 0 0.000000 2 0 -0.229700 -0.320400 1.979000  1  5 1
+ H H H DUM 0 0.000000 2 0 1.748800 -2.164800 -1.702900  1  7 1
+ H H H DUM 0 0.000000 2 0 0.855000 -0.753700 -2.388500  1  7 1
+ H H H DUM 0 0.000000 2 0 -2.427000 0.658100 -0.710100  1  8 1
+ O O O DUM 0 0.000000 2 0 -1.097600 -1.623400 -1.568800  2  9 1 21 1
+ H H H DUM 0 0.000000 2 0 3.427700 -0.965700 -2.496400  1  10 1
+ H H H DUM 0 0.000000 2 0 -2.030400 -1.678300 0.305300  1  9 1
+ H H H DUM 0 0.000000 2 0 -1.949400 -1.988600 -1.899200  1  18 1
+ Li Li Li DUM 0 0.000000 2 0 2.665900 1.495900 -1.230300  0 

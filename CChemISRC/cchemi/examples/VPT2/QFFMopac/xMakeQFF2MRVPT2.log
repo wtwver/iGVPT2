@@ -1,0 +1,11 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=MOPAC
+----------------------------------------------------------
+
+nAtoms = 3
+numberOfFrequencies = 3
+QFF parameters saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMopac/h2oVQFF.txt file
+

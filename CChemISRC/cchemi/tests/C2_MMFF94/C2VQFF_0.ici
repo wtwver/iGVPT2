@@ -1,0 +1,21 @@
+#RunType=Gradient
+RunType=Energy
+#RunType=ComputeQFF2MRFromFiles
+Model=OpenBabel
+openBabelCommand=obgradient -ff mmff94
+
+dx=0.01
+
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+
+
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+2 0 1
+ C C C DUM 0 0.000000000000 2 1 0.000000000000 0.000000000000 0.595999999713 1  2 3
+ C C C DUM 0 0.000000000000 2 1 0.000000000000 0.000000000000 -0.595999999713 1  1 3

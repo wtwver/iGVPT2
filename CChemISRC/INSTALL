@@ -1,0 +1,8 @@
+To install cchemi, type  :
+ cd cchemi
+ ./cleancchemi.sh  
+ ./compcchemi.sh 
+
+cchemi is a binary file. 
+You can run it by : ./cchemi
+You can copy cchemi in any directory : /usr/local/bin, $HOME/bin, ... for example

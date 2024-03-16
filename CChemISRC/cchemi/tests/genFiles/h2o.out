@@ -1,0 +1,229 @@
+ *******************************************************************************
+ ** Site#: 1079         For non-commercial use only     Version 15.146L 64BITS**
+ *******************************************************************************
+ ** Cite this work as:                                                        **
+ **                                                                           **
+ ** (a) MOPAC2012, James J. P. Stewart, Stewart Computational Chemistry,      **
+ **  Version 15.146L web: HTTP://OpenMOPAC.net         Days remaining: 166    **
+ **                                                                           **
+ **                                 AND                                       **
+ **                                                                           **
+ ** (b) Maia, J.D.C., et al., J. Chem. Theory Comput. 2012, 8, 3072-3081.     **
+ **                DOI: 10.1021/ct3004645.                                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                MOPAC2012                                  **
+ **                                                                           **
+ *******************************************************************************
+
+                            PM3 CALCULATION RESULTS
+
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Fri Dec 11 08:34:06 2015  *
+ *  PM3        - The PM3 Hamiltonian to be used
+ *  SINGLET    - SPIN STATE DEFINED AS A SINGLET
+ *  NOREOR     - DO NOT REORIENTATE SYSTEM WHEN WORKING OUT THE SYMMETRY
+ *
+ *
+ *
+ *                 CHARGE ON SYSTEM =     0
+ *
+ *
+ *
+ *  FORCE      - FORCE CALCULATION SPECIFIED
+ *  T=         - A TIME OF 172800.0 SECONDS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY  7200.000 SECONDS
+ *  AUX        - OUTPUT AUXILIARY INFORMATION
+ *******************************************************************************
+PM3 FORCE CHARGE=0 Singlet AUX NOREOR
+
+ TEST
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+ 
+     1       O         -0.00001000  *  -0.38096200  *   0.00000000  *
+     2       H          0.76796600  *   0.17999600  *   0.00000000  *
+     3       H         -0.76792600  *   0.17996400  *   0.00000000  *
+ 
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM         X         Y         Z
+
+     1         O       -0.0000   -0.3810    0.0000
+     2         H        0.7680    0.1800    0.0000
+     3         H       -0.7679    0.1800    0.0000
+
+  H: (PM3): J. J. P. STEWART, J. COMP. CHEM. 10, 209 (1989).
+  O: (PM3): J. J. P. STEWART, J. COMP. CHEM. 10, 209 (1989).
+
+           Empirical Formula: H2 O  =     3 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   Cs  
+
+
+ SINGLET STATE CALCULATION
+
+
+      RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS =    4
+
+
+
+          HEAT OF FORMATION =     -53.432825 KCALS/MOLE
+
+
+          INTERNAL COORDINATE DERIVATIVES
+
+   NUMBER  ATOM       BOND         ANGLE      DIHEDRAL
+
+     1       O     -0.064123    -0.028552     0.000000
+     2       H      0.109498     0.037730     0.000000
+     3       H     -0.045375    -0.009178     0.000000
+ DIPOLE           X         Y         Z       TOTAL
+ POINT-CHG.     0.000     0.966     0.000     0.966
+ HYBRID        -0.000     0.772    -0.000     0.772
+ SUM            0.000     1.739    -0.000     1.739
+
+
+          GRADIENT NORM =   0.14312
+
+          MOLECULAR WEIGHT =   18.02
+
+
+
+          ROTATIONAL CONSTANTS IN CM(-1)
+
+          A =   29.92599445   B =   14.18037598   C =    9.62132791
+
+
+
+           PRINCIPAL MOMENTS OF INERTIA IN UNITS OF 10**(-40)*GRAM-CM**2
+
+          A =        0.9354   B =        1.9741   C =        2.9095
+
+
+          ORIENTATION OF MOLECULE IN FORCE CALCULATION
+
+    NO.       ATOM         X         Y         Z
+
+     1          O      -0.0000   -0.3810    0.0000
+     2          H       0.7680    0.1800    0.0000
+     3          H      -0.7679    0.1800    0.0000
+
+
+    FIRST DERIVATIVES WILL BE USED IN THE CALCULATION OF SECOND DERIVATIVES
+
+    FOR POINT-GROUP Cs   THERE ARE   2 UNIQUE SYMMETRY FUNCTIONS.
+
+ STEP:   1 TIME =     0.00 SECS, INTEGRAL =      0.00 TIME LEFT: 172800.00
+ STEP:   2 TIME =     0.00 SECS, INTEGRAL =      0.00 TIME LEFT: 172800.00
+ STEP:   3 TIME =     0.00 SECS, INTEGRAL =      0.00 TIME LEFT: 172800.00
+ STEP:   4 TIME =     0.00 SECS, INTEGRAL =      0.00 TIME LEFT: 172800.00
+ STEP:   5 TIME =     0.00 SECS, INTEGRAL =      0.00 TIME LEFT: 172800.00
+ STEP:   6 TIME =     0.00 SECS, INTEGRAL =      0.00 TIME LEFT: 172800.00
+ STEP:   7 TIME =     0.00 SECS, INTEGRAL =      0.00 TIME LEFT: 172800.00
+ STEP:   8 TIME =     0.00 SECS, INTEGRAL =      0.01 TIME LEFT: 172799.99
+ STEP:   9 TIME =     0.00 SECS, INTEGRAL =      0.01 TIME LEFT: 172799.99
+
+(To convert to Hartree/Bohr^2, multiply by (10^(-21) x N x a0^2)/(4.184 x 627.51) =  0.0642)
+
+
+           FORCE MATRIX IN MILLIDYNES/ANGSTROM
+
+
+                  O  1       H  2       H  3
+ ------------------------------------------
+     O    1  12.826802
+     H    2   8.182890   8.698725
+     H    3   8.186125   1.118067   8.701556
+
+
+          HEAT OF FORMATION =     -53.432825 KCALS/MOLE
+
+          ZERO POINT ENERGY      13.721 KCAL/MOL
+
+
+           NORMAL COORDINATE ANALYSIS (Total motion = 1 Angstrom)
+
+
+   Root No.       1         2         3
+
+                 1 A'      2 A'      3 A'  
+
+                1742.0    3867.8    3988.4
+  
+           1   -0.0000   -0.0484   -0.0001
+           2   -0.0498   -0.0001    0.0312
+           3    0.0002   -0.0001   -0.0001
+           4   -0.2642    0.3852   -0.4156
+           5    0.3949    0.2812   -0.2468
+           6   -0.0022    0.0000   -0.0002
+           7    0.2642    0.3832    0.4173
+           8    0.3949   -0.2801   -0.2481
+           9   -0.0008    0.0021    0.0021
+
+
+           MASS-WEIGHTED COORDINATE ANALYSIS (NORMAL COORDINATES)
+
+
+   Root No.       1         2         3
+
+                 1 A'      2 A'      3 A'  
+
+                1742.0    3867.8    3988.4
+  
+           1   -0.0000   -0.2755   -0.0006
+           2   -0.2830   -0.0004    0.1784
+           3    0.0011   -0.0007   -0.0007
+           4   -0.3771    0.5503   -0.5969
+           5    0.5637    0.4018   -0.3544
+           6   -0.0031    0.0000   -0.0003
+           7    0.3771    0.5475    0.5994
+           8    0.5637   -0.4001   -0.3563
+           9   -0.0011    0.0030    0.0030
+
+
+          DESCRIPTION OF VIBRATIONS
+
+
+ VIBRATION    1    1A'      ATOM PAIR        ENERGY CONTRIBUTION    RADIAL
+ FREQ.      1741.97        O  1 --  H  2          +50.0% ( 54.5%)     4.4%
+ T-DIPOLE    0.2992        O  1 --  H  3          +50.0% ( 54.5%)     4.4%
+ TRAVEL      0.1524
+ RED. MASS   0.5291
+ EFF. MASS   1.6670
+
+ VIBRATION    2    2A'      ATOM PAIR        ENERGY CONTRIBUTION    RADIAL
+ FREQ.      3867.83        O  1 --  H  2          +50.2% ( 72.6%)    96.9%
+ T-DIPOLE    0.2034        O  1 --  H  3          +49.8% ( 72.3%)    96.8%
+ TRAVEL      0.1072
+ RED. MASS   0.5226
+ EFF. MASS   1.5164
+
+ VIBRATION    3    3A'      ATOM PAIR        ENERGY CONTRIBUTION    RADIAL
+ FREQ.      3988.42        O  1 --  H  3          +50.2% ( 69.1%)    99.1%
+ T-DIPOLE    0.1954        O  1 --  H  2          +49.8% ( 68.7%)    99.0%
+ TRAVEL      0.1181
+ RED. MASS   0.4886
+ EFF. MASS   1.2128
+
+           FORCE CONSTANT IN CARTESIAN COORDINATES (Millidynes/A)
+
+    ATOM   CHEMICAL       X               Y               Z
+   NUMBER   SYMBOL  FORCE CONSTANT  FORCE CONSTANT  FORCE CONSTANT
+
+      1       O       10.708246        7.062075        0.014396
+      2       H        6.312668        3.195273        0.004851
+      3       H        6.314293        3.193825        0.004526
+
+          JOB ENDED NORMALLY
+
+
+
+ TOTAL JOB TIME:             0.02 SECONDS
+
+ == MOPAC DONE ==

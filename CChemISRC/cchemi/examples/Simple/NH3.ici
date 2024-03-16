@@ -1,0 +1,25 @@
+RunType=Freq
+Model=MM
+
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseOutOfPlane=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldVanderWals=6-12
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=0
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+4 0 1
+ N NT N1 GAMA 0 -0.4 2 1 0.000000 -0.000008 -0.252142 3  2 1 3 1 4 1
+ H H H1 GAMA 0 0.100000 2 1 0.000000 0.912411 0.084011 1  1 1
+ H H H2 GAMA 0 0.100000 2 1 0.824806 -0.476201 0.084065 1  1 1
+ H H H3 GAMA 0 0.100000 2 1 -0.824806 -0.476201 0.084065 1  1 1

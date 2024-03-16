@@ -1,0 +1,17 @@
+#RunType=Gradient
+RunType=GenerateQFF2MRFiles
+#RunType=ComputeQFF2MRFromFiles
+Model=OpenBabel
+openBabelCommand=obgradient -ff mmff94
+
+dx=0.01
+
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+
+Geometry
+h2oFreq.gab
+

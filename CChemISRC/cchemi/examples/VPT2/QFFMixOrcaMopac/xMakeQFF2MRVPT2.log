@@ -1,0 +1,34 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=ENERGY
+model=MOPAC
+----------------------------------------------------------
+
+type 12
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+nFreqs = 9
+Freq calc from Hessian = 0.00000 Freq from orca = 1642.79242
+Freq calc from Hessian = 0.00000 Freq from orca = 3833.99751
+Freq calc from Hessian = 0.00000 Freq from orca = 3943.95412
+Freq calc from Hessian = 0.00000 Freq from orca = 11.17815
+Freq calc from Hessian = 0.00000 Freq from orca = 61.01283
+Freq calc from Hessian = 0.00000 Freq from orca = 65.30972
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79242
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99751
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95412
+#Number of free coordinates =3 
+energy = -53.23904000000000(kcal/mol)
+Geometry saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMixOrcaMopac/h2oV.gab file
+Save molecule in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMixOrcaMopac/h2oV.gab
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=MOPAC
+----------------------------------------------------------
+
+Sorry I cannot open /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMixOrcaMopac/h2oVQFF_0.gab file

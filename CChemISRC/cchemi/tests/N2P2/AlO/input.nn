@@ -1,0 +1,341 @@
+# Length unit     : Bohr
+# Energy unit     : Ha
+# Reference method: RPBE-D3
+###############################################################################
+
+###############################################################################
+# DATA SET NORMALIZATION
+###############################################################################
+# This section was automatically added by nnp-norm.
+#mean_energy  -2.5521343547039809E+01
+#conv_energy   2.4265748255366972E+02
+#conv_length   5.8038448995319847E+00
+###############################################################################
+
+###############################################################################
+# GENERAL NNP SETTINGS
+###############################################################################
+number_of_elements              2              # Number of elements.
+elements                        Al O            # Specification of elements.
+cutoff_type                     2              # Cutoff type.
+#scale_symmetry_functions                       # Scale all symmetry functions with min/max values.
+#scale_symmetry_functions_sigma                 # Scale all symmetry functions with sigma.
+#scale_min_short                 0.0            # Minimum value for scaling.
+#scale_max_short                 1.0            # Maximum value for scaling.
+#center_symmetry_functions                      # Center all symmetry functions, i.e. subtract mean value.
+global_hidden_layers_short      2              # Number of hidden layers.
+global_nodes_short              20 20              # Number of nodes in each hidden layer.
+global_activation_short         t t l          # Activation function for each hidden layer and output layer.
+#normalize_nodes                                # Normalize input of nodes.
+
+###############################################################################
+# ADDITIONAL SETTINGS FOR TRAINING
+###############################################################################
+epochs                          5000             # Number of training epochs.
+updater_type                    1              # Weight update method (0 = Gradient Descent, 1 = Kalman filter).
+parallel_mode                   4              # Training parallelization used (0 = Serial, 1 = Multi-stream, 2 = MS with PMO).
+update_strategy                 0              # Update strategy (0 = Combined, 1 = Per-element).
+selection_mode                  2              # Update candidate selection mode (0 = Random, 1 = Sort, 2 = Threshold).
+memorize_symfunc_results                       # Keep symmetry function results in memory.
+random_seed 2
+test_fraction                   0.1            # Fraction of structures kept for testing.
+use_short_forces                               # Use forces for training.
+force_weight                    0.5           # Weight of force updates relative to energy updates.
+short_energy_fraction           1.000          # Fraction of energy updates per epoch.
+short_force_fraction            0.010          # Fraction of force updates per epoch.
+short_energy_error_threshold    1.00           # RMSE threshold for energy update candidates.
+short_force_error_threshold     1.00           # RMSE threshold for force update candidates.
+rmse_threshold_trials           3              # Maximum number of RMSE threshold trials.
+#repeated_energy_update                         # After force update perform energy update for corresponding structure.
+#use_old_weights_short                          # Restart fitting with old weight parameters.
+weights_min                     -1.0           # Minimum value for initial random weights.
+weights_max                     1.0            # Maximum value for initial random weights.
+#precondition_weights                           # Precondition weights with initial energies.
+#nguyen_widrow_weights_short                    # Initialize neural network weights according to Nguyen-Widrow scheme.
+write_trainpoints               25             # Write energy comparison.
+write_trainforces               25             # Write force comparison.
+write_weights_epoch                            # Write weights.
+write_neuronstats               5 10           # Write neuron statistics.
+write_trainlog                                 # Write training log file.
+####################
+# GRADIENT DESCENT #
+####################
+gradient_type                   0              # Gradient descent type (0 = Fixed step size).
+gradient_eta                    1.0E-6         # Gradient descent parameter eta (fixed step size).
+############################
+# KALMAN FILTER (STANDARD) #
+############################
+kalman_type                     0              # Kalman filter type (0 = Standard, 1 = Fading memory).
+kalman_epsilon                  1.0E-3         # General Kalman filter parameter epsilon (sigmoidal: 0.01, linear: 0.001).
+kalman_q0                       0.001           # General Kalman filter parameter q0 ("large").
+kalman_qtau                     2.302          # General Kalman filter parameter qtau (2.302 => 1 order of magnitude per epoch).
+kalman_qmin                     1.0E-6         # General Kalman filter parameter qmin (typ. 1.0E-6).
+kalman_eta                      0.01           # Standard Kalman filter parameter eta (0.001-1.0).
+kalman_etatau                   2.302          # Standard Kalman filter parameter etatau (2.302 => 1 order of magnitude per epoch).
+kalman_etamax                   1.0            # Standard Kalman filter parameter etamax (1.0+).
+###############################################################################
+# SYMMETRY FUNCTIONS
+###############################################################################
+
+# Radial symmetry function (type 2):
+#symfunction_short <element-central> 2 <element-neighbor> <eta> <rshift> <rcutoff>
+
+# Narrow Angular symmetry function (type 3):
+#symfunction_short <element-central> 3 <element-neighbor1> <element-neighbor2> <eta> <lambda> <zeta> <rcutoff> <<rshift>
+
+# Wide Angular symmetry function (type 9):
+#symfunction_short <element-central> 9 <element-neighbor1> <element-neighbor2> <eta> <lambda> <zeta> <rcutoff> <<rshift>
+
+# Generating radial symmetry function set:
+# mode  = shift    
+# r_0   = 1.500E+00
+# r_c   = 1.200E+01
+# r_N   = 1.150E+01
+# N     =        20
+# grid  = 1.5 2.026315789473684 2.552631578947368 3.0789473684210527 3.6052631578947367 4.131578947368421 4.657894736842105 5.184210526315789 5.7105263157894735 6.2368421052631575 6.763157894736842 7.289473684210526 7.815789473684211 8.342105263157894 8.868421052631579 9.394736842105264 9.921052631578947 10.447368421052632 10.973684210526315 11.5
+# Radial symmetry functions for element Al
+symfunction_short Al 2 Al 1.805E+00 1.500E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 2.026E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 2.553E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 3.079E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 3.605E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 4.132E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 4.658E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 5.184E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 5.711E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 6.237E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 6.763E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 7.289E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 7.816E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 8.342E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 8.868E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 9.395E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 9.921E+00 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 1.045E+01 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 1.097E+01 1.200E+01
+symfunction_short Al 2 Al 1.805E+00 1.150E+01 1.200E+01
+
+symfunction_short Al 2 O  1.805E+00 1.500E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 2.026E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 2.553E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 3.079E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 3.605E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 4.132E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 4.658E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 5.184E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 5.711E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 6.237E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 6.763E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 7.289E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 7.816E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 8.342E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 8.868E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 9.395E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 9.921E+00 1.200E+01
+symfunction_short Al 2 O  1.805E+00 1.045E+01 1.200E+01
+symfunction_short Al 2 O  1.805E+00 1.097E+01 1.200E+01
+symfunction_short Al 2 O  1.805E+00 1.150E+01 1.200E+01
+
+# Radial symmetry functions for element O 
+symfunction_short O  2 Al 1.805E+00 1.500E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 2.026E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 2.553E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 3.079E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 3.605E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 4.132E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 4.658E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 5.184E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 5.711E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 6.237E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 6.763E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 7.289E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 7.816E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 8.342E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 8.868E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 9.395E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 9.921E+00 1.200E+01
+symfunction_short O  2 Al 1.805E+00 1.045E+01 1.200E+01
+symfunction_short O  2 Al 1.805E+00 1.097E+01 1.200E+01
+symfunction_short O  2 Al 1.805E+00 1.150E+01 1.200E+01
+
+symfunction_short O  2 O  1.805E+00 1.500E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 2.026E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 2.553E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 3.079E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 3.605E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 4.132E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 4.658E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 5.184E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 5.711E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 6.237E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 6.763E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 7.289E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 7.816E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 8.342E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 8.868E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 9.395E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 9.921E+00 1.200E+01
+symfunction_short O  2 O  1.805E+00 1.045E+01 1.200E+01
+symfunction_short O  2 O  1.805E+00 1.097E+01 1.200E+01
+symfunction_short O  2 O  1.805E+00 1.150E+01 1.200E+01
+
+# Generating wide angular symmetry function set:
+# mode  = center   
+# r_0   = 1.500E+00
+# r_c   = 1.200E+01
+# r_N   = 1.150E+01
+# N     =         6
+# grid  = 1.5 3.5 5.5 7.5 9.5 11.5
+# zetas = 13.0 8.0
+# Wide angular symmetry functions for element Al
+symfunction_short Al 9 Al Al 2.222E-01 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 2.222E-01  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 2.222E-01 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 2.222E-01  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 4.082E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 4.082E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 4.082E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 4.082E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 1.653E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 1.653E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 1.653E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 1.653E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 8.889E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 8.889E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 8.889E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 8.889E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 5.540E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 5.540E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 5.540E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 5.540E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 3.781E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 3.781E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 3.781E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al Al 3.781E-03  1 8.000E+00 1.200E+01 0.000E+00
+
+symfunction_short Al 9 Al O  2.222E-01 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  2.222E-01  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  2.222E-01 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  2.222E-01  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  4.082E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  4.082E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  4.082E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  4.082E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  1.653E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  1.653E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  1.653E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  1.653E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  8.889E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  8.889E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  8.889E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  8.889E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  5.540E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  5.540E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  5.540E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  5.540E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  3.781E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  3.781E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  3.781E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 Al O  3.781E-03  1 8.000E+00 1.200E+01 0.000E+00
+
+symfunction_short Al 9 O  O  2.222E-01 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  2.222E-01  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  2.222E-01 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  2.222E-01  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  4.082E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  4.082E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  4.082E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  4.082E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  1.653E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  1.653E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  1.653E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  1.653E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  8.889E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  8.889E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  8.889E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  8.889E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  5.540E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  5.540E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  5.540E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  5.540E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  3.781E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  3.781E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  3.781E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short Al 9 O  O  3.781E-03  1 8.000E+00 1.200E+01 0.000E+00
+
+# Wide angular symmetry functions for element O 
+symfunction_short O  9 Al Al 2.222E-01 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 2.222E-01  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 2.222E-01 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 2.222E-01  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 4.082E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 4.082E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 4.082E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 4.082E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 1.653E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 1.653E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 1.653E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 1.653E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 8.889E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 8.889E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 8.889E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 8.889E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 5.540E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 5.540E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 5.540E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 5.540E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 3.781E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 3.781E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 3.781E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al Al 3.781E-03  1 8.000E+00 1.200E+01 0.000E+00
+
+symfunction_short O  9 Al O  2.222E-01 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  2.222E-01  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  2.222E-01 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  2.222E-01  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  4.082E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  4.082E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  4.082E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  4.082E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  1.653E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  1.653E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  1.653E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  1.653E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  8.889E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  8.889E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  8.889E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  8.889E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  5.540E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  5.540E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  5.540E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  5.540E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  3.781E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  3.781E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  3.781E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 Al O  3.781E-03  1 8.000E+00 1.200E+01 0.000E+00
+
+symfunction_short O  9 O  O  2.222E-01 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  2.222E-01  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  2.222E-01 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  2.222E-01  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  4.082E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  4.082E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  4.082E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  4.082E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  1.653E-02 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  1.653E-02  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  1.653E-02 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  1.653E-02  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  8.889E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  8.889E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  8.889E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  8.889E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  5.540E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  5.540E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  5.540E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  5.540E-03  1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  3.781E-03 -1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  3.781E-03  1 1.300E+01 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  3.781E-03 -1 8.000E+00 1.200E+01 0.000E+00
+symfunction_short O  9 O  O  3.781E-03  1 8.000E+00 1.200E+01 0.000E+00
+

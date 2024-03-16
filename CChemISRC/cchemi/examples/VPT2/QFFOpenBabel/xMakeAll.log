@@ -1,0 +1,116 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=OPTFREQ
+model=OPENBABEL
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+We use the internal optimizer
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+Minimization by QuasiNewton method
+Gradient = 131.29085009588337 energy = 5.66999272703712 
+Gradient = 4684.19919907187978 Energy(kcal/mol) = 932.05189468651179 
+Gradient = 119.76115830804237 Energy(kcal/mol) = 4.57337949509252 
+Gradient = 28.89306059893128 Energy(kcal/mol) = 0.24723051708895 
+Gradient = 5.26424180317447 Energy(kcal/mol) = 0.03865774109088 
+Gradient = 4.34497447508147 Energy(kcal/mol) = 0.02670889529465 
+Gradient = 1.75480412110857 Energy(kcal/mol) = 0.00079590834266 
+Gradient = 0.72130709704065 Energy(kcal/mol) = 0.00011705763705 
+Gradient = 0.00871588370625 Energy(kcal/mol) = 0.00000004655076 
+Gradient = 0.00056214700678 Energy(kcal/mol) = 0.00000000009861 
+Gradient = 0.00001062067732 Energy(kcal/mol) = 0.00000000000003 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000000073281 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000019992007 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000027553473 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029449705 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029865480 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029954624 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029972860 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029976282 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Line search failed. See documentation of routine mcsrch.
+ Error return of line search: info = 3 Possible causes:
+ function or gradient are incorrect, or incorrect tolerances.
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000029977442 Energy(kcal/mol) = 0.00000000000000 
+Optimized geometry saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOpenBabel/h2oOpt.gab file
+Save molecule in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOpenBabel/h2oOpt.gab
+Gradient Norm  = 0.00000029977442 energy = 0.00000000000000(kcal/mol)
+#Number of free coordinates =3 
+Computing of IR spectra... Please wait
+nAtoms = 3
+Gradient Norm  = 0.00000029906122 energy = 0.00000000000000(kcal/mol)
+Frequencies and modes in the /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOpenBabel/h2oFreq.gab file
+Save molecule in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOpenBabel/h2oFreq.gab
+Save molecule in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOpenBabel/h2oFreq.gab
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+========================================================================================================================
+# Geometry and velocities
+# Fixed normal modes (ground, n=0) and scaled to T = 300.000000
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+3 0 1
+ H HW HW1 HOH 1 0.417000000000 2 1 0.582742299219 -0.417897715150 -0.220886353614 1  3 1
+ H HW HW2 HOH 1 0.417000000000 2 1 0.092465989239 0.949226508457 -0.740952602939 1  3 1
+ O OW OW HOH 1 -0.134000000000 2 1 0.601560810489 0.468036806101 0.096278563999 2  1 1 2 1
+# Velocities, vx(Ang/AKMA-time) vy(Ang/AKMA-time) vz(Ang/AKMA-time): 1fs = 0.020455 AKMA
+Velocities
+-2.022994099284e-01 1.230299909159e+00 -3.602060834762e-03
+-2.980294012704e-02 -3.693527568001e-01 -1.749113070582e-01
+1.462455811248e-02 -5.424749753048e-02 1.124796505500e-02
+========================================================================================================================
+
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+type 5
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+nAtoms = 3
+numberOfFrequencies = 3
+QFF parameters saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOpenBabel/h2oVQFF.txt file
+

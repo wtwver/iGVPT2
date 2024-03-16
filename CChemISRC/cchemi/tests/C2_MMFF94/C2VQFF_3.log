@@ -1,0 +1,22 @@
+===================
+run C2VQFF_3.ici ......
+===================
+dir =  /tmp/cchemi_20160/C2VQFF_3 ......
+===================
+seed = -1
+----------------------------------------------------------
+runType=ENERGY
+model=OPENBABEL
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =1 
+energy = 0.79619945686125(kcal/mol)
+Geometry saved in /tmp/cchemi_20160/C2VQFF_3/C2VQFF_3.gab file
+Save molecule in /tmp/cchemi_20160/C2VQFF_3/C2VQFF_3.gab
+
+======================

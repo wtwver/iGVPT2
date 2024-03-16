@@ -1,0 +1,105 @@
+#RunType = Energy, Optimization, MD, MDConfo, REMDConfo
+#RunType=Optimization
+#RunType=MDConfo
+#RunType=OptFreq
+RunType=MDConfo
+#RunType=Optimization
+#RunType=OptFreq
+#RunType=Energy
+#RunType=MDConfo
+#OptimizerType=External
+#OptimizerType=Quasi
+#Model = MM , Mopac , Orca or FireFly
+#Model=Mopac
+#Model=Orca
+Model=OpenBabel
+#QMKeys=PM6
+#QMKeys=PM3
+#addH4Corrections=Default
+#addH4Corrections=H4.txt
+#addD3Corrections=TRUE
+#mopacCommand=/home/allouche/Softwares/MOPAC2009/MOPAC2009.exe
+#orcaCommand=orca
+#fireflyCommand=firefly
+
+dx=1e-2
+
+omegaMax = 16000
+Nf=50
+
+#Confo
+gaussianCommand=g03
+openBabelCommand=obgradient -ff mmff94
+fireflyCommand=firefly
+numberOfGeometries=30
+tolEnergy=0.5
+tolDistance=0.4
+#ConfoOptMM=TRUE
+ConfoOptOpenBabel=TRUE
+#ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM6 GNORM=0.001
+ConfoOptFireFly=FALSE
+# remove # if post processing required
+#mopacKeywordsPost=PM6
+gaussianKeywordsPost=B3LYP/aug-cc-pvdz
+lascmdKeywordsPost=B3LYP/aug-cc-pvdz
+orcaKeywordsPost=AM1 Opt
+fireflyKeywordsPost=GBASIS=PM3
+mopacKeywordsPost=PM6
+#fireflyKeywordsPost=AM1
+
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=TRUE
+#ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldUseVanderWals=TRUE
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=0
+
+#MD
+updateFrequency=1
+#Time in ps
+heatTime = 0
+equiTime = 0.1
+runTime = 0.1
+coolTime = 0
+timeExchange = 1.0
+heatTemp = 0
+runTemp = 30
+runTempMax = 200
+nTemperatures = 10
+#in fs
+stepSize = 0.5
+#  VERLET = 0, BEEMAN = 1, STOCHASTIC = 2, LANGEVIN = 3, QTB = 4
+integrator = 0
+#  NONE = 0, ANDERSEN = 1, BERENDSEN = 2, BUSSI = 3, NH = 4
+thermostat = 3
+friction=40
+collide = 20
+
+#QuasiNewton
+quasiNewtonMaxIterations = 2000
+quasiNewtonUpdateFrequency = 1
+quasiNewtonEpsilon  = 1e-10
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  25
+
+#ConjugateGradient
+conjugateGradientGradientNorm = 1e-3
+conjugateGradientMaxIterations = 100
+conjugateGradientUpdateFrequency = 1
+conjugateGradientMaxLines = 25
+conjugateGradientInitialStep = 0.001
+# 1 : Hestenes Stiefel,  2 : Fletcher Reeves, 3 : Polak Ribiere, 4 : Wolf Powell
+conjugateGradientMethod = 1
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+g1Opt.gab

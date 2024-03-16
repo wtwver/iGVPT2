@@ -1,0 +1,22 @@
+===================
+run h2oVQFF_33.ici ......
+===================
+dir =  /tmp/cchemi_10088/h2oVQFF_33 ......
+===================
+seed = -1
+----------------------------------------------------------
+runType=ENERGY
+model=MOPAC
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =3 
+energy = -46.69272000000000(kcal/mol)
+Geometry saved in /tmp/cchemi_10088/h2oVQFF_33/h2oVQFF_33.gab file
+Save molecule in /tmp/cchemi_10088/h2oVQFF_33/h2oVQFF_33.gab
+
+======================

@@ -1,0 +1,22 @@
+RunType= Energy
+Model= Orca
+QMKeys= NORI Def2-TZVPP B2PLYP TightSCF Grid5 FinalGrid6 
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+
+#Mode: Freq= 3913.994154359969 Mass= 1.073788902659 Q= Qeq + 0.084627708419 akI=0.404176
+
+#Geometry, nAtoms, charge, spin multiplicity.
+#For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+6 0 1
+O O O DUM 0 0.000000000000 2 0 0.002527501043 -1.418303615290 0.000000217465 0
+H H H DUM 0 0.000000000000 2 0 -0.481978586603 -1.744285511776 0.762789001607 0
+O O O DUM 0 0.000000000000 2 0 -0.005752382939 1.488798710090 -0.000000001053 0
+H H H DUM 0 0.000000000000 2 0 0.076815164141 0.540883667942 0.000000071730 0
+H H H DUM 0 0.000000000000 2 0 0.938323833333 1.828785827685 0.000000144857 0
+H H H DUM 0 0.000000000000 2 0 -0.481980699757 -1.744286948163 -0.762792271308 0
+

@@ -1,0 +1,91 @@
+#RunType = Energy, Optimization, MD, MDConfo, REMDConfo
+RunType=MDConfo
+#RunType=RDConfo
+#RunType=Optimization
+#RunType=OptFreq
+#RunType=Freq
+#RunType=Energy
+#Model = MM , Mopac , Orca or FireFly
+Model=Mopac
+#Model=MM
+QMKeys=PM7 NOMM
+#SEKeys=PM3
+mopacCommand=mopac
+orcaCommand=orca
+fireflyCommand=firefly
+
+#Confo
+gaussianCommand=g09
+fireflyCommand=firefly
+numberOfGeometries=10
+tolEnergy=0.5
+tolDistance=0.2
+ConfoOptMM=TRUE
+ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM7 NOMM GNORM=0.001
+ConfoOptFireFly=FALSE
+# remove # if post processing required
+#mopacKeywordsPost=PM6
+gaussianKeywordsPost=B3LYP/6-31G* scf=(XQC,tight) nosym Opt(Tight) 
+#fireflyKeywordsPost=AM1
+
+Wall=1000 10 6
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldUseVanderWals=TRUE
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=1
+
+#MD
+updateFrequency=5
+#Time in ps
+heatTime = 0.1
+equiTime = 0.1
+runTime = 0.5
+coolTime = 0
+timeExchange = 0.01
+runTemp = 3000
+runTempMax = 3000
+nTemperatures = 10
+#in fs
+stepSize = 0.5
+#  VERLET = 0, BEEMAN = 1, STOCHASTIC = 2
+integrator = 0
+#  NONE = 0, ANDERSEN = 1, BERENDSEN = 2, BUSSI = 3
+thermostat = 0
+friction=40
+collide = 20
+
+#QuasiNewton
+useQuasiNewton = TRUE
+quasiNewtonMaxIterations = 20000
+quasiNewtonUpdateFrequency = 100
+quasiNewtonEpsilon  = 0.0001
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  25
+
+#ConjugateGradient
+useConjugateGradient = FALSE
+conjugateGradientGradientNorm = 1e-3
+conjugateGradientMaxIterations = 100
+conjugateGradientUpdateFrequency = 1
+conjugateGradientMaxLines = 25
+conjugateGradientInitialStep = 0.001
+# 1 : Hestenes Stiefel,  2 : Fletcher Reeves, 3 : Polak Ribiere, 4 : Wolf Powell
+conjugateGradientMethod = 1
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+4 1 1
+ H HW HW1 HOH 1 0.417000 2 1 0.594297 -0.428285 -0.201710 1  3 1
+ H HW HW2 HOH 1 0.417000 2 1 0.130625 0.934104 -0.671603 1  3 1
+ O OW OW HOH 1 -0.134000 2 1 0.575078 0.494182 0.053078 2  1 1 2 1
+ Li Li Li Li 1  0.134000 2 1 0.575078 0.494182 1.053078 0

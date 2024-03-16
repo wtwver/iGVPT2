@@ -1,0 +1,24 @@
+#RunType=Gradient
+RunType=Energy
+#RunType=ComputeQFF2MRFromFiles
+Model=OpenBabel
+openBabelCommand=obgradient -ff mmff94
+
+dx=0.01
+
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+
+
+
+#Mode: Freq= 2116.501790000000 Mass= 12.000000000000 Q= Qeq - 0.034425652452 akI=-1.369961
+
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+2 0 1
+ C C C DUM 0 0.000000000000 2 1 0.000000000000 0.000000000000 0.608881559317 1  2 3
+ C C C DUM 0 0.000000000000 2 1 0.000000000000 0.000000000000 -0.608881559317 1  1 3

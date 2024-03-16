@@ -1,0 +1,7 @@
+#!/bin/bash
+echo " Begin QFF2MR-VPT2 calculation">  $0.log
+CCHEMI=../../../cchemi
+# Opt+ Freq => h2oFreq.gab
+$CCHEMI h2o.ici
+echo " Remove the 6 first modes , from h2oFreq.gab file "
+

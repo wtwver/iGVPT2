@@ -1,0 +1,8 @@
+simple : VPT2.ici contains all derivatives. cchemi compute anharmonic properties
+QFFMM : xMakeAll : compute derivatives +  anharmonic properties using MM potential
+QFFMopac : xMakeAll : compute derivatives +  anharmonic properties using MOPAC/PM3 potential
+QFFOrcaPM3 : xMakeAll : compute derivatives +  anharmonic properties using Orca/PM3 potential
+QFFOpenBabel : xMakeAll : compute derivatives +  anharmonic properties using OpenBabel/mmff94 potential
+QFFOrcaParallel : xMakeAll : compute derivatives +  anharmonic properties using Orca/RIB2PLYP potential. The parallel util is used to compute
+in parallel, energies required to compute the derivatives
+QFFMixOrcaMopac : xMakeAll : harmonic computed using Orca/RIB2PLYP, others derivatives using Mopac/PM3. cchemi compute finally anharmonic properties 

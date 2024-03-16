@@ -1,0 +1,78 @@
+#RunType=OptFreq
+#RunType=Freq
+#RunType=GenerateFilesForFreq
+#RunType=ComputeFrequenciesFromFiles
+
+#RunType=GenerateFilesOneStepForFreq
+#RunType=ComputeFrequenciesOneStepFromFiles
+
+#RunType=GenerateGradFilesForFreq
+#RunType=ComputeFrequenciesFromGradFiles
+
+#RunType=GenerateGradFilesOneStepForFreq
+#RunType=ComputeFrequenciesOneStepFromGradFiles
+
+RunType=Energy
+#RunType=ComputeQFF2MRFromFiles
+
+Model=Mopac
+QMKeys=PM3 
+dx=0.01
+#addH4Corrections=TRUE
+#addD3Corrections=TRUE
+mopacCommand=mopac
+orcaCommand=orca
+fireflyCommand=firefly
+
+#Confo
+gaussianCommand=g03
+fireflyCommand=firefly
+numberOfGeometries=3
+tolEnergy=0.1
+tolDistance=0.1
+ConfoOptMM=TRUE
+#ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM6 GNORM=0.001
+ConfoOptFireFly=FALSE
+
+
+[FREQ]
+1741.854442
+3868.010345
+3988.537853
+[INT]
+12.096053 
+6.188255 
+7.472284 
+[MASS]
+1.089525
+1.085024
+1.038807
+[FR-COORD]
+ O -0.000019 -0.719915 0.000000
+ H 1.451245 0.340144 0.000000
+ H -1.451169 0.340084 0.000000
+[FR-NORM-COORD]
+vibration 1
+-0.000046 0.073833 -0.000001 
+0.392283 -0.586509 0.000026 
+-0.391816 -0.585790 0.000013 
+vibration 2
+0.071771 0.000134 -0.000000 
+-0.571174 -0.416980 0.000034 
+-0.567888 0.415018 -0.000035 
+vibration 3
+0.000190 -0.045466 0.000000 
+0.605815 0.359689 -0.000031 
+-0.608797 0.361817 -0.000036 
+
+# Mode1: f1= 3988.537853000000 m1= 1.038807000000 Q1=Qeq+0.085233010882
+# Mode2: f2= 1741.854442000000 m2= 1.089525000000 Q2=Qeq-0.125938232229 
+
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+3 0 1
+ O OW OW HOH 0 -0.834000000000 2 1 0.000001605247 -0.387933609704 0.000000066644 2  2 1 3 1
+ H HW HW1 HOH 0 0.417000000000 2 1 0.769146778256 0.235306620797 -0.000003130939 1  1 1
+ H HW HW2 HOH 0 0.417000000000 2 1 -0.769272419077 0.235322813983 -0.000002490089 1  1 1

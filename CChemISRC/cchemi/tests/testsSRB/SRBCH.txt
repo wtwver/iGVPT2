@@ -1,0 +1,4 @@
+SRB Correction Parameters:
+Method=BLYP/6-31G**
+C H -0.07 0.101
+End

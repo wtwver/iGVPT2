@@ -1,0 +1,24 @@
+#RunType=Optimization
+#RunType=Gradient
+RunType=Frequencies
+OptimizerType=Quasi
+
+#Model=OpenBabel
+Model=Mopac
+QMKeys=PM3
+dx=0.01
+openBabelCommand=obgradient -ff mmff94
+mopacCommand=mopac
+orcaCommand=orca
+fireflyCommand=firefly
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+gg1Opt.gab
+
+
+3 0 1
+ O O  O  HOH 0 -0.834000000000 2 1 0.000052274724 -0.482806408943 0.000000000000 2  2 1 3 1 
+ H H  H  HOH 0 0.417000000000 2 1 0.836956783527 0.230885836836 0.000000000000 1  1 1 
+ H H  H  HOH 0 0.417000000000 2 1 -0.836979420169 0.230903810616 0.000000000000 1  1 1
+

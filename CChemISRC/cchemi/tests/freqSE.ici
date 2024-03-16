@@ -1,0 +1,98 @@
+#RunType = Energy, Optimization, MD, MDConfo, REMDConfo
+#RunType=MDConfo
+#RunType=MD
+#RunType=Optimization
+RunType=Frequencies
+#RunType=Energy
+#RunType=MDConfo
+OptimizerType=External
+#Model = MM , Mopac , Orca or FireFly
+Model=Mopac
+#Model=Orca
+#Model=MM
+#QMKeys=PM6
+QMKeys=PM3 SCFCRT=0.0000001
+#addH4Corrections=TRUE
+#addD3Corrections=TRUE
+mopacCommand=/home/allouche/Softwares/MOPAC2009/MOPAC2009.exe
+orcaCommand=orca
+fireflyCommand=firefly
+
+#Confo
+gaussianCommand=g03
+fireflyCommand=firefly
+numberOfGeometries=3
+tolEnergy=0.1
+tolDistance=0.1
+ConfoOptMM=TRUE
+#ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM6 GNORM=0.001
+ConfoOptFireFly=FALSE
+# remove # if post processing required
+#mopacKeywordsPost=PM6
+gaussianKeywordsPost=B3LYP/aug-cc-pvdz
+lascmdKeywordsPost=B3LYP/aug-cc-pvdz
+orcaKeywordsPost=AM1 Opt
+fireflyKeywordsPost=GBASIS=PM3
+mopacKeywordsPost=PM6
+#fireflyKeywordsPost=AM1
+
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldUseVanderWals=TRUE
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=0
+
+#omegaMax in cm^-1
+omegaMax=10000
+Nf=100
+#MD
+updateFrequency=1
+#Time in ps
+heatTime = 0.0
+equiTime = 50.0
+runTime = 50.
+coolTime = 0
+timeExchange = 1.0
+heatTemp = 0
+runTemp = 3
+runTempMax = 300
+nTemperatures = 10
+#in fs
+stepSize = 0.5
+#  VERLET = 0, BEEMAN = 1, STOCHASTIC = 2, LANGEVIN = 3, QTB = 4
+integrator = 4
+#  NONE = 0, ANDERSEN = 1, BERENDSEN = 2, BUSSI = 3, NH = 4
+thermostat = 0
+friction=40
+collide = 20
+
+#QuasiNewton
+quasiNewtonMaxIterations = 2000
+quasiNewtonUpdateFrequency = 1
+quasiNewtonEpsilon  = 0.001
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  25
+
+#ConjugateGradient
+conjugateGradientGradientNorm = 1e-3
+conjugateGradientMaxIterations = 100
+conjugateGradientUpdateFrequency = 1
+conjugateGradientMaxLines = 25
+conjugateGradientInitialStep = 0.001
+# 1 : Hestenes Stiefel,  2 : Fletcher Reeves, 3 : Polak Ribiere, 4 : Wolf Powell
+conjugateGradientMethod = 1
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+2 0 1
+ C CA CA HOH 1 0.000000 2 1 0.000000 0.000000 0.683500 1  2 1
+ C CA CA HOH 1 0.000000 2 1 0.000000 0.000000 -0.683500 1  1 1

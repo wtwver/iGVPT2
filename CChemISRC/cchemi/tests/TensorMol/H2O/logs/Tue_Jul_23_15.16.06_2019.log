@@ -1,0 +1,424 @@
+2019-07-23 15:16:06,897 - TensorMol - INFO - Searching for Installed Optional Packages...
+2019-07-23 15:16:06,898 - TensorMol - INFO - Pyscf is not installed -- no ab-initio sampling
+2019-07-23 15:16:06,899 - TensorMol - DEBUG - MolEmb has been found.
+2019-07-23 15:16:06,899 - TensorMol - DEBUG - Tensorflow version 1.13.1 has been found
+2019-07-23 15:16:06,899 - TensorMol - DEBUG - Found 8 CPUs to thread over... 
+2019-07-23 15:16:06,899 - TensorMol - DEBUG - TensorMol ready...
+2019-07-23 15:16:06,899 - TensorMol - DEBUG - TMPARAMS----------
+2019-07-23 15:16:06,899 - TensorMol - DEBUG - GIT_REVISION:
+CheckLevel:1
+PrintTMTimer:False
+MAX_ATOMIC_NUMBER:10
+RBFS:[[ 0.35000000  0.35000000]
+ [ 0.70000000  0.35000000]
+ [ 1.05000000  0.35000000]
+ [ 1.40000000  0.35000000]
+ [ 1.75000000  0.35000000]
+ [ 2.10000000  0.35000000]
+ [ 2.45000000  0.35000000]
+ [ 2.80000000  0.35000000]
+ [ 3.15000000  0.35000000]
+ [ 3.50000000  0.35000000]
+ [ 3.85000000  0.35000000]
+ [ 4.20000000  0.35000000]
+ [ 4.55000000  0.35000000]
+ [ 4.90000000  0.35000000]]
+ANES:[ 2.20000000  1.00000000  1.00000000  1.00000000  1.00000000  2.55000000
+  3.04000000  3.44000000]
+SRBF:[[ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]
+ [ 0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000  0.00000000  0.00000000  0.00000000  0.00000000
+   0.00000000  0.00000000]]
+SH_LMAX:4
+SH_NRAD:14
+SH_ORTH:1
+SH_rot_invar:False
+SH_MAXNR:14
+AN1_r_Rc:4.6
+AN1_a_Rc:3.1
+AN1_eta:4.0
+AN1_zeta:8.0
+AN1_num_r_Rs:32
+AN1_num_a_Rs:8
+AN1_num_a_As:8
+AN1_r_Rs:[ 0.00000000  0.14375000  0.28750000  0.43125000  0.57500000  0.71875000
+  0.86250000  1.00625000  1.15000000  1.29375000  1.43750000  1.58125000
+  1.72500000  1.86875000  2.01250000  2.15625000  2.30000000  2.44375000
+  2.58750000  2.73125000  2.87500000  3.01875000  3.16250000  3.30625000
+  3.45000000  3.59375000  3.73750000  3.88125000  4.02500000  4.16875000
+  4.31250000  4.45625000]
+AN1_a_Rs:[ 0.00000000  0.38750000  0.77500000  1.16250000  1.55000000  1.93750000
+  2.32500000  2.71250000]
+AN1_a_As:[ 0.00000000  0.78539816  1.57079633  2.35619449  3.14159265  3.92699082
+  4.71238898  5.49778714]
+GradScalar:0.05
+DipoleScalar:1.0
+RotateSet:0
+TransformSet:1
+NModePts:10
+NDistorts:5
+GoK:0.05
+dig_ngrid:20
+dig_SamplingType:Smooth
+BlurRadius:0.05
+Classify:False
+Embedded_Charge_Order:2
+MBE_ORDER:3
+MonitorSet:None
+NetNameSuffix:
+NeuronType:relu
+tf_prec:tf.float64
+learning_rate:0.001
+learning_rate_dipole:0.0001
+learning_rate_energy:1e-05
+momentum:0.9
+max_steps:1001
+batch_size:1000
+test_freq:10
+HiddenLayers:[200, 200, 200]
+hidden1:512
+hidden2:512
+hidden3:512
+GradWeight:0.01
+TestRatio:0.2
+Profiling:False
+max_checkpoints:1
+KeepProb:0.7
+weight_decay:0.001
+ConvFilter:[32, 64]
+ConvKernelSize:[[8, 1], [4, 1]]
+ConvStrides:[[8, 1], [4, 1]]
+sigmoid_alpha:100.0
+EnergyScalar:1.0
+DipoleScaler:1.0
+InNormRoutine:None
+OutNormRoutine:None
+RandomizeData:True
+MxTimePerElement:36000
+MxMemPerElement:16000
+ChopTo:None
+RotAvOutputs:1
+OctahedralAveraging:0
+train_gradients:True
+train_dipole:True
+train_quadrupole:False
+train_rotation:True
+OptMaxCycles:50
+OptThresh:0.0001
+OptMaxStep:0.1
+OptStepSize:0.1
+OptMomentum:0.5
+OptMomentumDecay:0.8
+OptPrintLvl:1
+OptLatticeStep:0.05
+GSSearchAlpha:0.05
+SDStep:0.05
+MaxBFGS:7
+NebSolver:Verlet
+NebNumBeads:18
+NebK:0.07
+NebKMax:1.0
+NebClimbingImage:True
+DiisSize:20
+RemoveInvariant:True
+MDMaxStep:20000
+MDdt:0.2
+MDTemp:300.0
+MDV0:Random
+MDThermostat:None
+MDLogTrajectory:True
+MDUpdateCharges:True
+MDIrForceMin:False
+MDAnnealT0:20.0
+MDAnnealTF:300.0
+MDAnnealKickBack:1.0
+MDAnnealSteps:1000
+MDFieldVec:[ 1.00000000  0.00000000  0.00000000]
+MDFieldAmp:0.0
+MDFieldFreq:0.8333333333333334
+MDFieldTau:1.2
+MDFieldT0:3.0
+MetaBumpTime:15.0
+MetaBowlK:0.0
+MetaMaxBumps:500
+MetaMDBumpHeight:0.05
+MetaMDBumpWidth:0.1
+AddEcc:True
+OPR12:Poly
+Poly_Width:4.6
+Elu_Width:4.6
+EEOn:True
+EESwitchFunc:CosLR
+EEVdw:True
+EEOrder:2
+EEdr:1.0
+EECutoff:5.0
+EECutoffOn:4.4
+EECutoffOff:15.0
+Erf_Width:0.2
+DSFAlpha:0.18
+tm_root:.
+sets_dir:./datasets/
+networks_directory:./networks/
+output_root:.
+results_dir:./results/
+dens_dir:./densities/
+log_dir:./logs/
+Qchem_RIMP2_Block:$rem
+   jobtype   sp
+   method   rimp2
+   MAX_SCF_CYCLES  200
+   basis   cc-pvtz
+   aux_basis rimp2-cc-pvtz
+   symmetry   false
+   INCFOCK 0
+   thresh 12
+   SCF_CONVERGENCE 12
+$end
+
+
+2019-07-23 15:16:06,902 - TensorMol - DEBUG - TMPARAMS~~~~~~~~~~
+2019-07-23 15:16:06,910 - TensorMol - DEBUG - TMTimed NeighborList::init[0.0, 0]
+2019-07-23 15:16:06,911 - TensorMol - DEBUG - TMTimed NeighborList::BuildPairs[0.0, 0]
+2019-07-23 15:16:06,911 - TensorMol - DEBUG - TMTimed NLSetUpdate[0.0, 0]
+2019-07-23 15:16:06,911 - TensorMol - DEBUG - TMTimed SetbuildPairsAndTriples[0.0, 0]
+2019-07-23 15:16:06,911 - TensorMol - DEBUG - TMTimed buildPairsWithBothEleIndex[0.0, 0]
+2019-07-23 15:16:06,911 - TensorMol - DEBUG - TMTimed buildPairsAndTriplesWithEleIndexPeriodic[0.0, 0]
+2019-07-23 15:16:06,923 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-23 15:16:06,923 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-23 15:16:06,923 - TensorMol - DEBUG - TMTimed energy_inference[0.0, 0]
+2019-07-23 15:16:06,923 - TensorMol - DEBUG - TMTimed EvalPrepare[0.0, 0]
+2019-07-23 15:16:06,924 - TensorMol - DEBUG - TMTimed energy_inference[0.0, 0]
+2019-07-23 15:16:06,924 - TensorMol - DEBUG - TMTimed dipole_inference[0.0, 0]
+2019-07-23 15:16:06,927 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-23 15:16:06,927 - TensorMol - DEBUG - TMTimed EvalPeriodic[0.0, 0]
+2019-07-23 15:16:06,929 - TensorMol - DEBUG - TMTimed EvalBPDirectEEUpdateSingle[0.0, 0]
+2019-07-23 15:16:06,929 - TensorMol - DEBUG - TMTimed EvalBPDirectEEUpdateSinglePeriodic[0.0, 0]
+2019-07-23 15:16:06,929 - TensorMol - DEBUG - TMTimed TFMolMangePrepare[0.0, 0]
+2019-07-23 15:16:06,944 - TensorMol - DEBUG - TensorMol import complete.
+2019-07-23 15:16:06,944 - TensorMol - INFO - Saving set to: Test.pdb 
+2019-07-23 15:16:06,947 - TensorMol - INFO - Loaded, 1 molecules 3 Atoms total [1 8] Types 
+2019-07-23 15:16:06,947 - TensorMol - INFO - TensorMolData.type: mol
+2019-07-23 15:16:06,947 - TensorMol - INFO - TensorMolData.dig.name: ANI1_Sym_Direct
+2019-07-23 15:16:06,947 - TensorMol - INFO - NMols in TensorMolData.set: 1
+2019-07-23 15:16:06,949 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:06,950 - TensorMol - INFO - raised network: ./networks/Mol_a0_t_0.01_ANI1_Sym_Direct_RawBP_EE_SymFunction_training_H2O
+2019-07-23 15:16:06,950 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:06,951 - TensorMol - INFO - MolInstance.inshape None MolInstance.outshape None
+2019-07-23 15:16:06,953 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:11,885 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,278 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,278 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,285 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,285 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,289 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,289 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,293 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,293 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,298 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,298 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,302 - TensorMol - INFO - OptLogstep: 0 energy: -0.35219 rmsgrad: 0.00081 rmsdisp: 0.00004 
+2019-07-23 15:16:13,303 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,303 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,308 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,308 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,312 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,312 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,316 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,317 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,328 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,328 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,335 - TensorMol - INFO - OptLogstep: 1 energy: -0.35219 rmsgrad: 0.00069 rmsdisp: 0.00006 
+2019-07-23 15:16:13,336 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,336 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,343 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,343 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,349 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,349 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,355 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,355 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,360 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,360 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,366 - TensorMol - INFO - OptLogstep: 2 energy: -0.35219 rmsgrad: 0.00051 rmsdisp: 0.00007 
+2019-07-23 15:16:13,367 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,367 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,374 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,374 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,380 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,380 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,386 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,386 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,399 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,399 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,403 - TensorMol - INFO - OptLogstep: 3 energy: -0.35219 rmsgrad: 0.00031 rmsdisp: 0.00008 
+2019-07-23 15:16:13,404 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,404 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,410 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,410 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,414 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,415 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,419 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,419 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,429 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,429 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,437 - TensorMol - INFO - OptLogstep: 4 energy: -0.35219 rmsgrad: 0.00019 rmsdisp: 0.00009 
+2019-07-23 15:16:13,438 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,438 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,444 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,444 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,449 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,449 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,454 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,454 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,459 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,459 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,463 - TensorMol - INFO - OptLogstep: 5 energy: -0.35219 rmsgrad: 0.00014 rmsdisp: 0.00012 
+2019-07-23 15:16:13,464 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,464 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,471 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,471 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,479 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,479 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,487 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,488 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,495 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,496 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,506 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,507 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,514 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,515 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,522 - TensorMol - INFO - OptLogstep: 6 energy: -0.35219 rmsgrad: 0.00008 rmsdisp: 0.00009 
+2019-07-23 15:16:13,524 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,525 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,535 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,535 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,549 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,550 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,558 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,558 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,589 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,589 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,595 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,595 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,601 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,601 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,607 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,607 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,613 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,613 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,618 - TensorMol - INFO - OptLogstep: 7 energy: -0.35219 rmsgrad: 0.00009 rmsdisp: 0.00004 
+2019-07-23 15:16:13,620 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,620 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,627 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,628 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,635 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,635 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,647 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,647 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,660 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,660 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,669 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,669 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,678 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,679 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,687 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,687 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,707 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,707 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,730 - TensorMol - INFO - OptLogstep: 8 energy: -0.35219 rmsgrad: 0.00003 rmsdisp: 0.00001 
+2019-07-23 15:16:13,732 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,732 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,738 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,738 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,743 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,743 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,749 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,749 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,769 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,770 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,778 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,779 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,787 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,787 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,796 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,797 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,805 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,806 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,813 - TensorMol - INFO - OptLogstep: 9 energy: -0.35219 rmsgrad: 0.00002 rmsdisp: 0.00000 
+2019-07-23 15:16:13,815 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,815 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,825 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,825 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,832 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,833 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,841 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,841 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,849 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,850 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,859 - TensorMol - INFO - OptLogstep: 10 energy: -0.35219 rmsgrad: 0.00003 rmsdisp: 0.00001 
+2019-07-23 15:16:13,861 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,861 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,869 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,870 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,878 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,878 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,885 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,886 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,894 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,894 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,902 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,903 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,910 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,911 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,918 - TensorMol - INFO - OptLogstep: 11 energy: -0.35219 rmsgrad: 0.00000 rmsdisp: 0.00000 
+2019-07-23 15:16:13,920 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,920 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,928 - TensorMol - DEBUG - Assigning Activation... sigmoid_with_param
+2019-07-23 15:16:13,929 - TensorMol - DEBUG - nmol: 1
+2019-07-23 15:16:13,936 - TensorMol - INFO - =======    Accumulated Time Information    =======
+2019-07-23 15:16:13,936 - TensorMol - INFO - Category   |||   Time Per Call   |||   Total Elapsed     
+2019-07-23 15:16:13,937 - TensorMol - INFO - NeighborList::init ||| 0.00001 ||| 0.00171 
+2019-07-23 15:16:13,937 - TensorMol - INFO - NeighborList::BuildPairs ||| 0.00003 ||| 0.00201 
+2019-07-23 15:16:13,937 - TensorMol - INFO - SetbuildPairsAndTriples ||| 0.00010 ||| 0.00793 
+2019-07-23 15:16:13,937 - TensorMol - INFO - buildPairsAndTriplesWithEleIndexPeriodic ||| 0.00066 ||| 0.05222 
+2019-07-23 15:16:13,937 - TensorMol - INFO - TFMolMangePrepare ||| 0.00342 ||| 0.00342 
+2019-07-23 15:16:13,937 - TensorMol - INFO - Total Time : 7.03518 s
+2019-07-23 15:16:13,938 - TensorMol - INFO - ~ Adios Homeshake ~

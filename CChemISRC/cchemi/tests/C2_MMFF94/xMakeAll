@@ -1,0 +1,41 @@
+#!/bin/bash
+echo " Begin QFF2MR-VPT2 calculation">  $0.log
+
+CCHEMI=/home/theochem/allouche/tmp/CChemI-050116/cchemi/cchemi
+export PATH=$PATH:/home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94
+
+# Opt+ Freq => C2Freq.gab
+$CCHEMI C2.ici >> $0.log 2>  $0.err
+
+# generate QFF energies files
+/bin/rm -f C2VQFF_*.ici
+/bin/rm -f C2VQFF_*.gab
+$CCHEMI C2V.ici >> $0.log 2>  $0.err
+ls C2VQFF_* > xp
+sed -i 's/C2VQFF/rCC C2VQFF/' xp
+#cat xp
+chmod u+x xp
+./xp >>  $0.log 2>> $0.err
+sed -i 's/RunType=GenerateQFF2MRFiles/#RunType=GenerateQFF2MRFiles/g' C2V.ici
+sed -i 's/#RunType=ComputeQFF2MRFromFiles/RunType=ComputeQFF2MRFromFiles/g' C2V.ici
+
+# generate txt data for VPT2 calculation
+$CCHEMI C2V.ici  >>  $0.log 2>> $0.err
+
+sed -i 's/#RunType=GenerateQFF2MRFiles/RunType=GenerateQFF2MRFiles/g' C2V.ici
+sed -i 's/RunType=ComputeQFF2MRFromFiles/#RunType=ComputeQFF2MRFromFiles/g' C2V.ici
+
+# make ici  file for VPT2 calculation
+echo 'RunType=VPT2' > C2VQFF.ici
+cat C2VQFF.txt >> C2VQFF.ici
+
+# generate txt data for VPT2 calculation
+$CCHEMI C2VQFF.ici  >  $0.out 2>> $0.err
+
+
+#/bin/rm xp
+#/bin/rm C2VQFF_*.ici
+#/bin/rm C2VQFF_*.gab
+echo "==========================================================================="
+echo "See $0.out , $0.log and $0.err files "
+echo "==========================================================================="

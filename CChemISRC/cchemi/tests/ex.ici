@@ -1,0 +1,122 @@
+#RunType = Energy, Optimization, MD, MDConfo, REMDConfo
+#RunType=MDConfo
+#RunType=Optimization
+#RunType=Energy
+RunType=MDConfo
+#RunType=Freq
+#OptimizerType=QuasiNewton
+#Model = MM , Mopac , Orca or FireFly
+#Model=Mopac
+#Model=Orca
+Model=MM
+#QMKeys=PM6
+QMKeys=AM1
+mopacCommand=/home/allouche/Softwares/MOPAC2009/MOPAC2009.exe
+orcaCommand=orca
+fireflyCommand=firefly
+
+#Confo
+gaussianCommand=g03
+fireflyCommand=firefly
+numberOfGeometries=3
+tolEnergy=0.1
+tolDistance=0.1
+ConfoOptMM=TRUE
+#ConfoOptMopac=TRUE
+ConfoOptMopacMethod=PM6 GNORM=0.001
+ConfoOptFireFly=FALSE
+# remove # if post processing required
+#mopacKeywordsPost=PM6
+gaussianKeywordsPost=B3LYP/aug-cc-pvdz
+lascmdKeywordsPost=MDConfo
+orcaKeywordsPost=AM1
+fireflyKeywordsPost=GBASIS=PM3
+mopacKeywordsPost=PM6
+
+#MM
+# AMBER, UFF(not implemented), PAIRWISE
+ForceFieldType=0
+ForceFieldUseBond=TRUE
+ForceFieldUseBend=TRUE
+ForceFieldUseDihedral=TRUE
+ForceFieldUseImproper=FALSE
+ForceFieldUseNonBonded=TRUE
+ForceFieldUseHydrogenBonded=FALSE
+ForceFieldUsecoulomb=TRUE
+ForceFieldUseVanderWals=TRUE
+#  NOCONSTRAINTS = 0, BONDSCONSTRAINTS = 1, BONDSANGLESCONSTRAINTS = 2
+Constraints=1
+
+#MD
+updateFrequency=1
+#Time in ps
+heatTime = 1
+equiTime = 10
+runTime = 10
+coolTime = 0
+timeExchange = 1.0
+heatTemp = 0
+runTemp = 20
+runTempMax = 2000
+nTemperatures = 10
+#in fs
+stepSize = 0.5
+#  VERLET = 0, BEEMAN = 1, STOCHASTIC = 2, LANGEVIN = 3, QTB = 4
+integrator = 4
+#  NONE = 0, ANDERSEN = 1, BERENDSEN = 2, BUSSI = 3
+thermostat = 0
+friction=40
+collide = 20
+
+#QuasiNewton
+quasiNewtonMaxIterations = 2000
+quasiNewtonUpdateFrequency = 1
+quasiNewtonEpsilon  = 0.1
+quasiNewtonTolerence = 1e-16
+quasiNewtonMaxLines =  40
+
+#ConjugateGradient
+conjugateGradientGradientNorm = 1e-3
+conjugateGradientMaxIterations = 100
+conjugateGradientUpdateFrequency = 1
+conjugateGradientMaxLines = 25
+conjugateGradientInitialStep = 0.001
+# 1 : Hestenes Stiefel,  2 : Fletcher Reeves, 3 : Polak Ribiere, 4 : Wolf Powell
+conjugateGradientMethod = 1
+
+#Geometry, nAtoms, charge, spin multiplicity. For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+33 1 2
+ H HC HH31 ACE 0 0.112300 2 1 2.963814 -1.796352 -4.056331 1  2 1
+ C CT CH3 ACE 0 -0.366200 2 1 2.853283 -0.743478 -3.805138 4  1 1 3 1 4 1 5 1
+ H HC HH32 ACE 0 0.112300 2 1 3.831811 -0.263700 -3.812083 1  2 1
+ H HC HH33 ACE 0 0.112300 2 1 2.205590 -0.252953 -4.529275 1  2 1
+ C C C ACE 0 0.597200 2 1 2.252106 -0.613242 -2.424500 3  2 1 6 2 7 1
+ O O O ACE 0 -0.567900 2 1 2.880857 -0.059703 -1.533422 1  5 2
+ N N N TRP 1 -0.415700 2 1 1.069001 -1.195773 -2.232254 3  5 1 8 1 9 1
+ H H H TRP 1 0.271900 2 1 0.624587 -1.630742 -3.024197 1  7 1
+ C CT CA TRP 1 -0.027500 2 1 0.293931 -1.113252 -0.985421 4  7 1 10 1 11 1 13 1
+ H H1 HA TRP 1 0.112300 2 1 0.976553 -0.883892 -0.165839 1  9 1
+ C C C TRP 1 0.597300 2 1 -0.369700 -2.457764 -0.638030 3  9 1 12 2 31 1
+ O O O TRP 1 -0.567900 2 1 -1.561693 -2.665407 -0.838996 1  11 2
+ C CT CB TRP 1 -0.005000 2 1 -0.704719 0.048362 -1.070868 4  9 1 14 1 15 1 16 1
+ H HC HB1 TRP 1 0.033900 2 1 -0.179297 0.934728 -1.427699 1  13 1
+ H HC HB2 TRP 1 0.033900 2 1 -1.479037 -0.191642 -1.800503 1  13 1
+ C C* CG TRP 1 -0.141500 2 1 -1.349220 0.405365 0.231940 3  13 1 17 2 19 1
+ C CW CD1 TRP 1 -0.163800 2 1 -2.601563 -0.107625 0.700868 3  16 2 18 1 20 1
+ H H4 HD1 TRP 1 0.206200 2 1 -3.210480 -0.818508 0.152729 1  17 1
+ C CB CD2 TRP 1 0.124300 2 1 -0.807889 1.351291 1.343143 3  16 1 22 2 23 1
+ N NA NE1 TRP 1 -0.341800 2 1 -2.916599 0.447415 2.037930 3  17 1 21 1 22 1
+ H H HE1 TRP 1 0.341200 2 1 -3.744936 0.221043 2.568088 1  20 1
+ C CN CE2 TRP 1 0.138000 2 1 -1.829789 1.349193 2.461045 3  19 2 20 1 25 1
+ C CA CE3 TRP 1 -0.238700 2 1 0.349555 2.141779 1.528634 3  19 1 24 1 27 2
+ H HA HE3 TRP 1 0.170000 2 1 1.106372 2.160520 0.757033 1  23 1
+ C CA CZ2 TRP 1 -0.260100 2 1 -1.626683 2.113859 3.623208 3  22 1 26 1 29 2
+ H HA HZ2 TRP 1 0.157200 2 1 -2.360344 2.107268 4.414500 1  25 1
+ C CA CZ3 TRP 1 -0.197200 2 1 0.519976 2.897933 2.711473 3  23 2 28 1 29 1
+ H HA HZ3 TRP 1 0.144700 2 1 1.412224 3.496837 2.833102 1  27 1
+ C CA CH2 TRP 1 -0.113400 2 1 -0.450781 2.886318 3.740247 3  25 2 27 1 30 1
+ H HA HH2 TRP 1 0.141700 2 1 -0.286577 3.476768 4.631245 1  29 1
+ N N N NHE 2 -0.463000 2 1 0.449225 -3.492480 -0.507873 3  11 1 32 1 33 1
+ H H H1 NHE 2 0.231500 2 1 1.443803 -3.342819 -0.468843 1  31 1
+ H H H2 NHE 2 0.231500 2 1 0.046622 -4.409349 -0.413914 1  31 1

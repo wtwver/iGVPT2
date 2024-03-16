@@ -1,0 +1,8 @@
+DEFDIR=/home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP
+/tmp/16302
+Begin h2oB2PLYP
+End h2oB2PLYP
+mpiexec -machinefile /var/spool/torque/aux//7478.master0 parallel /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xp
+===========================================================================
+See ./xMakeAll_Par.out , ./xMakeAll_Par.log and ./xMakeAll_Par.err files 
+===========================================================================

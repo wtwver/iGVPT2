@@ -1,0 +1,24 @@
+===================
+run h2o.ici ......
+===================
+dir =  /home/allouche/tmp/cchemi_20492/h2o ......
+===================
+/home/allouche/tmp/7616
+Begin /home/allouche/tmp/cchemi_20492/h2o/One0
+End /home/allouche/tmp/cchemi_20492/h2o/One0
+seed = -1
+----------------------------------------------------------
+runType=GRADIENT
+model=ORCA
+----------------------------------------------------------
+
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+Number of free coordinates =3 
+Gradient Norm  = 16.06285472871395 energy = -47666.28755733236903(kcal/mol)
+Geometry saved in /home/allouche/tmp/cchemi_20492/h2o/h2o.gab file
+Save molecule in /home/allouche/tmp/cchemi_20492/h2o/h2o.gab
+
+======================

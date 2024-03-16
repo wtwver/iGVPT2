@@ -1,0 +1,20 @@
+RunType= Energy
+Model= Orca
+QMKeys= NORI Def2-TZVPP B2PLYP TightSCF Grid5 FinalGrid6 
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+#Equilibrium geometry, made in Gabedit
+#Geometry, nAtoms, charge, spin multiplicity.
+#For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+Geometry
+6 0 1
+O O O DUM 0 0.000000000000 2 0 0.002472845336 -1.418342697256 0.000000000000 0
+H H H DUM 0 0.000000000000 2 0 -0.481556598373 -1.744015845909 0.761970274333 0
+O O O DUM 0 0.000000000000 2 0 -0.003375092564 1.490572218182 -0.000000000000 0
+H H H DUM 0 0.000000000000 2 0 0.079007752450 0.528229503527 0.000000000000 0
+H H H DUM 0 0.000000000000 2 0 0.898420218356 1.813370346782 0.000000000000 0
+H H H DUM 0 0.000000000000 2 0 -0.481556598373 -1.744015845909 -0.761970274333 0
+

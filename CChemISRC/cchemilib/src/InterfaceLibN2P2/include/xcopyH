@@ -1,0 +1,2 @@
+N2P2DIR=../../../../../n2p2Derivatives
+cp $N2P2DIR/include/*.h .

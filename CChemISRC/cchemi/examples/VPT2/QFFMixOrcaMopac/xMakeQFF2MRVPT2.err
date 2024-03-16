@@ -1,0 +1,493 @@
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+cp: cannot stat `/home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaMopac/*.gab': No such file or directory
+
+
+          MOPAC Job: "/tmp/cchemi_9666_h2oVQFF_20/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_5161_h2oVQFF_49/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_29255_h2oVQFF_54/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_10861_h2oVQFF_38/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_28229_h2oVQFF_24/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_28945_h2oVQFF_46/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_5668_h2oVQFF_0/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_23724_h2oVQFF_13/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_10342_h2oVQFF_31/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_10277_h2oVQFF_17/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_32719_h2oVQFF_43/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_26794_h2oVQFF_40/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_24452_h2oVQFF_28/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_11743_h2oVQFF_51/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_7456_h2oVQFF_7/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_3853_h2oVQFF_35/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m1.982s
+user	0m0.012s
+sys	0m0.024s
+
+real	0m1.926s
+user	0m0.014s
+sys	0m0.026s
+
+real	0m1.927s
+user	0m0.011s
+sys	0m0.026s
+
+real	0m1.927s
+user	0m0.009s
+sys	0m0.032s
+
+real	0m1.991s
+user	0m0.013s
+sys	0m0.028s
+
+real	0m1.991s
+user	0m0.009s
+sys	0m0.025s
+
+real	0m1.991s
+user	0m0.009s
+sys	0m0.031s
+
+real	0m1.927s
+user	0m0.011s
+sys	0m0.031s
+
+real	0m1.991s
+user	0m0.010s
+sys	0m0.024s
+
+real	0m1.927s
+user	0m0.012s
+sys	0m0.029s
+
+real	0m1.984s
+user	0m0.010s
+sys	0m0.031s
+
+real	0m1.973s
+user	0m0.006s
+sys	0m0.028s
+
+real	0m1.992s
+user	0m0.009s
+sys	0m0.022s
+
+real	0m1.929s
+user	0m0.008s
+sys	0m0.023s
+
+real	0m1.928s
+user	0m0.010s
+sys	0m0.029s
+
+real	0m1.977s
+user	0m0.010s
+sys	0m0.029s
+
+
+          MOPAC Job: "/tmp/cchemi_4670_h2oVQFF_32/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_31910_h2oVQFF_14/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_6834_h2oVQFF_29/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.038s
+user	0m0.008s
+sys	0m0.010s
+
+real	0m0.038s
+user	0m0.012s
+sys	0m0.005s
+
+
+          MOPAC Job: "/tmp/cchemi_18450_h2oVQFF_4/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.037s
+user	0m0.012s
+sys	0m0.004s
+
+real	0m0.038s
+user	0m0.016s
+sys	0m0.003s
+
+
+          MOPAC Job: "/tmp/cchemi_16004_h2oVQFF_10/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.040s
+user	0m0.013s
+sys	0m0.005s
+
+
+          MOPAC Job: "/tmp/cchemi_22097_h2oVQFF_39/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_18111_h2oVQFF_8/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.047s
+user	0m0.012s
+sys	0m0.006s
+
+real	0m0.048s
+user	0m0.013s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/cchemi_6753_h2oVQFF_18/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.057s
+user	0m0.013s
+sys	0m0.006s
+
+
+          MOPAC Job: "/tmp/cchemi_13313_h2oVQFF_21/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_13637_h2oVQFF_36/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_101_h2oVQFF_41/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_27536_h2oVQFF_44/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.054s
+user	0m0.015s
+sys	0m0.003s
+
+real	0m0.057s
+user	0m0.011s
+sys	0m0.007s
+
+real	0m0.054s
+user	0m0.012s
+sys	0m0.006s
+
+real	0m0.068s
+user	0m0.013s
+sys	0m0.005s
+
+
+          MOPAC Job: "/tmp/cchemi_5745_h2oVQFF_52/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_7996_h2oVQFF_47/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.084s
+user	0m0.013s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/cchemi_22378_h2oVQFF_5/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.089s
+user	0m0.010s
+sys	0m0.007s
+
+real	0m0.086s
+user	0m0.014s
+sys	0m0.003s
+
+
+          MOPAC Job: "/tmp/cchemi_666_h2oVQFF_25/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.162s
+user	0m0.010s
+sys	0m0.007s
+
+
+          MOPAC Job: "/tmp/cchemi_10044_h2oVQFF_15/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_9918_h2oVQFF_33/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.045s
+user	0m0.010s
+sys	0m0.007s
+
+real	0m0.047s
+user	0m0.009s
+sys	0m0.006s
+
+
+          MOPAC Job: "/tmp/cchemi_9078_h2oVQFF_2/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.053s
+user	0m0.013s
+sys	0m0.003s
+
+
+          MOPAC Job: "/tmp/cchemi_9078_h2oVQFF_50/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.057s
+user	0m0.012s
+sys	0m0.006s
+
+
+          MOPAC Job: "/tmp/cchemi_22016_h2oVQFF_11/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.064s
+user	0m0.012s
+sys	0m0.005s
+
+
+          MOPAC Job: "/tmp/cchemi_13718_h2oVQFF_9/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.081s
+user	0m0.014s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/cchemi_5498_h2oVQFF_3/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_3102_h2oVQFF_19/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.101s
+user	0m0.013s
+sys	0m0.005s
+
+real	0m0.092s
+user	0m0.014s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/cchemi_19758_h2oVQFF_22/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_23837_h2oVQFF_37/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.117s
+user	0m0.011s
+sys	0m0.005s
+
+real	0m0.114s
+user	0m0.013s
+sys	0m0.005s
+
+
+          MOPAC Job: "/tmp/cchemi_14731_h2oVQFF_45/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+
+          MOPAC Job: "/tmp/cchemi_12257_h2oVQFF_42/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.130s
+user	0m0.015s
+sys	0m0.003s
+
+real	0m0.128s
+user	0m0.011s
+sys	0m0.007s
+
+
+          MOPAC Job: "/tmp/cchemi_18961_h2oVQFF_48/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.155s
+user	0m0.015s
+sys	0m0.003s
+
+
+          MOPAC Job: "/tmp/cchemi_8088_h2oVQFF_53/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.149s
+user	0m0.015s
+sys	0m0.002s
+
+
+          MOPAC Job: "/tmp/cchemi_11765_h2oVQFF_26/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.188s
+user	0m0.015s
+sys	0m0.002s
+
+
+          MOPAC Job: "/tmp/cchemi_16108_h2oVQFF_6/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.281s
+user	0m0.013s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/cchemi_23167_h2oVQFF_16/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.028s
+user	0m0.012s
+sys	0m0.005s
+
+
+          MOPAC Job: "/tmp/cchemi_2477_h2oVQFF_34/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.027s
+user	0m0.012s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/cchemi_9740_h2oVQFF_30/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.027s
+user	0m0.011s
+sys	0m0.004s
+
+
+          MOPAC Job: "/tmp/cchemi_32016_h2oVQFF_12/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.034s
+user	0m0.013s
+sys	0m0.002s
+
+
+          MOPAC Job: "/tmp/cchemi_22346_h2oVQFF_1/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.045s
+user	0m0.011s
+sys	0m0.007s
+
+
+          MOPAC Job: "/tmp/cchemi_23101_h2oVQFF_23/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.057s
+user	0m0.013s
+sys	0m0.002s
+
+
+          MOPAC Job: "/tmp/cchemi_21748_h2oVQFF_27/One0.mop" ended normally on Dec 20, 2015, at 14:57.
+
+
+real	0m0.090s
+user	0m0.009s
+sys	0m0.008s
+./xMakeQFF2MRVPT2: ligne 14: /home/theochem/allouche/bin/cchemi/cchemi: N'est pas un dossier
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: /home_nfs/ilm/allouche/Softwares/bin/parallel
+Node: master0
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+./xMakeQFF2MRVPT2: ligne 34: /home/theochem/allouche/bin/cchemi/cchemi: N'est pas un dossier
+./xMakeQFF2MRVPT2: ligne 44: /home/theochem/allouche/bin/cchemi/cchemi: N'est pas un dossier
+./xMakeQFF2MRVPT2: ligne 14: /home/theochem/allouche/bin/cchemi/cchemi: N'est pas un dossier
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: /home_nfs/ilm/allouche/Softwares/bin/parallel
+Node: master0
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+./xMakeQFF2MRVPT2: ligne 33: /home/theochem/allouche/bin/cchemi/cchemi: N'est pas un dossier
+./xMakeQFF2MRVPT2: ligne 43: /home/theochem/allouche/bin/cchemi/cchemi: N'est pas un dossier
+
+
+          MOPAC Job: "/home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFMixOrcaMopac/One0.mop" ended normally on Dec 21, 2015, at 10:42.
+
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: /home_nfs/ilm/allouche/Softwares/bin/parallel
+Node: master0
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------

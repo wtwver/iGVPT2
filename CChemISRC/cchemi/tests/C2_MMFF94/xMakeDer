@@ -1,0 +1,15 @@
+#!/bin/bash
+echo " Begin QFF2MR-VPT2 calculation">  $0.log
+
+CCHEMI=/home/theochem/allouche/tmp/CChemI-050115/cchemi/cchemi
+export PATH=$PATH:/home/theochem/allouche/tmp/CChemI-050115/cchemi/tests/C2_MMFF94
+
+sed -i 's/RunType=GenerateQFF2MRFiles/#RunType=GenerateQFF2MRFiles/g' C2V.ici
+sed -i 's/#RunType=ComputeQFF2MRFromFiles/RunType=ComputeQFF2MRFromFiles/g' C2V.ici
+
+# generate txt data for VPT2 calculation
+$CCHEMI C2V.ici  >>  $0.log 2>> $0.err
+
+sed -i 's/#RunType=GenerateQFF2MRFiles/RunType=GenerateQFF2MRFiles/g' C2V.ici
+sed -i 's/RunType=ComputeQFF2MRFromFiles/#RunType=ComputeQFF2MRFromFiles/g' C2V.ici
+

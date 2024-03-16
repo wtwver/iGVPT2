@@ -1,0 +1,5 @@
+DEFDIR=/home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP
+mpiexec -machinefile /var/spool/torque/aux//7476.master0 parallel /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xp
+===========================================================================
+See ./xMakeQFF2MRVPT2.out , ./xMakeQFF2MRVPT2.log and ./xMakeQFF2MRVPT2.err files 
+===========================================================================

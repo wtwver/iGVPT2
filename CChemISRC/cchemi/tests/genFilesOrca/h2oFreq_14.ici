@@ -1,0 +1,34 @@
+#RunType=OptFreq
+#RunType=Freq
+#RunType=ComputeFrequenciesFromFiles
+#RunType=GenerateFilesForFreq
+
+#RunType=ComputeFrequenciesOneStepFromFiles
+#RunType=GenerateFilesOneStepForFreq
+
+#RunType=ComputeFrequenciesFromGradFiles
+RunType=Gradient
+
+#RunType=ComputeFrequenciesOneStepFromGradFiles
+#RunType=GenerateGradFilesOneStepForFreq
+
+#RunType=Gradient
+
+Model= Orca
+QMKeys= NORI Def2-SVP HF
+dx=0.01
+
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+#For each atom : symbol, MMType, pdbType, residueName, numResidue, charge, layer, x(Ang),y,z, nconn, num1, type1, num2, type2,...
+
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+3 0 1
+ O OW OW HOH 0 -0.834000000000 2 1 0.000014000000 -0.389929000000 0.000000000000 2  2 1 3 1
+ H HW HW1 HOH 0 0.417000000000 2 1 0.750356000000 0.184470000000 0.000000000000 1  1 1
+ H HW HW2 HOH 0 0.417000000000 2 1 -0.750340000000 0.194456000000 0.000000000000 1  1 1

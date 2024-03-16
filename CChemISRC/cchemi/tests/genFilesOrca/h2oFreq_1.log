@@ -1,0 +1,24 @@
+===================
+run h2oFreq_1.ici ......
+===================
+dir =  /home/allouche/tmp/cchemi_23502/h2oFreq_1 ......
+===================
+/home/allouche/tmp/8894
+Begin /home/allouche/tmp/cchemi_23502/h2oFreq_1/One0
+End /home/allouche/tmp/cchemi_23502/h2oFreq_1/One0
+seed = -1
+----------------------------------------------------------
+runType=GRADIENT
+model=ORCA
+----------------------------------------------------------
+
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+Number of free coordinates =3 
+Gradient Norm  = 24.10307295609957 energy = -47666.37498370788671(kcal/mol)
+Geometry saved in /home/allouche/tmp/cchemi_23502/h2oFreq_1/h2oFreq_1.gab file
+Save molecule in /home/allouche/tmp/cchemi_23502/h2oFreq_1/h2oFreq_1.gab
+
+======================

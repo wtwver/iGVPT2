@@ -1,0 +1,18 @@
+#RunType=Gradient
+RunType=GenerateQFF2MRFiles
+#RunType=ComputeQFF2MRFromFiles
+Model= MM
+QFFnModes=3
+
+
+dx=0.01
+
+mopacCommand=mopac
+orcaCommand=runOrca
+fireflyCommand=firefly
+gaussianCommand=runGauss
+genericCommand=runGeneric
+
+Geometry
+h2oFreq.gab
+

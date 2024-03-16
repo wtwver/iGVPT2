@@ -1,0 +1,1 @@
+./xTMCChemI /home/allouche/MySoftwares/CChemI/CChemI-22072019/cchemi/tests/TensorMol/H2O/h2oGenericTMOptOne.inp /home/allouche/MySoftwares/CChemI/CChemI-22072019/cchemi/tests/TensorMol/H2O/h2oGenericTMOptOne.out

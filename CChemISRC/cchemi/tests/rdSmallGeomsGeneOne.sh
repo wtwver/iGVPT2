@@ -1,0 +1,1 @@
+/home/allouche/bin/MMEnergy -g /home/allouche/MySoftwares/CChemI/CChemI-30122017/cchemi/tests/rdSmallGeomsOne.inp /home/allouche/MySoftwares/CChemI/CChemI-30122017/cchemi/tests/rdSmallGeomsOne.out

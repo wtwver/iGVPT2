@@ -1,0 +1,13 @@
+ls *Freq*_?.ici > p
+ls *Freq*_??.ici >> p
+ls *Freq*_???.ici >> p
+ls *Freq*_????.ici >> p
+ls *Freq*_?????.ici >> p
+
+awk '{printf("runCChemI %s\n",$1);}' p > xrun
+
+rm p
+
+chmod u+x xrun
+echo "see xrun "
+

@@ -1,0 +1,1 @@
+sed -i 's/g_realloc/realloc/g' *PDB*.*

@@ -1,0 +1,27 @@
+DEFDIR=/home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP
+===========================================================================
+See /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xMakeQFF2MRVPT2.out , /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xMakeQFF2MRVPT2.log and /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/xMakeQFF2MRVPT2.err files 
+===========================================================================
+om orca = 3833.99751
+Freq calc from Hessian = 0.00000 Freq from orca = 3943.95412
+Freq calc from Hessian = 0.00000 Freq from orca = 11.17815
+Freq calc from Hessian = 0.00000 Freq from orca = 61.01283
+Freq calc from Hessian = 0.00000 Freq from orca = 65.30972
+Freq calc from Hessian = 1642.76000 Freq from orca = 1642.79242
+Freq calc from Hessian = 3833.93000 Freq from orca = 3833.99751
+Freq calc from Hessian = 3943.88000 Freq from orca = 3943.95412
+delta = 0.500000 reducedCoordiantes
+nAtoms = 3
+nModes = 3
+see h2oV.iciQFF_*.ici generated files
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=ORCA
+----------------------------------------------------------
+
+nAtoms = 3
+numberOfFrequencies = 3
+QFF parameters saved in /home/theochem/allouche/tmp/CChemI-211215/cchemi/examples/VPT2/QFFOrcaRIB2PLYP/h2oVQFF.txt file
+

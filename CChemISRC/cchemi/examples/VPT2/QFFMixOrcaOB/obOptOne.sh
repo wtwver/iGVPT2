@@ -1,0 +1,1 @@
+obopt -ff mmff94  /home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaOB/obOptOne.hin > /home_nfs/ilm/allouche/tmp/CChemI-201215/cchemi/examples/VPT2/QFFMixOrcaOB/obOptOne.out 2>/dev/null

@@ -1,0 +1,24 @@
+[Gabedit Format]
+[GEOCONV]
+energy
+-0.003153
+max-force
+0.000000
+rms-force
+0.000000
+
+[GEOMETRIES]
+2
+
+ Ba 0.000000 0.000000 0.805608
+ Ba 0.000000 0.000000 5.194392
+
+[GEOMS] 1
+1 2
+energy kcal/mol 1
+deltaE K 1
+-0.003153
+0
+2 0 1
+ Ba Ba Ba GAMA 0 0.000000 2 1 0.000000 0.000000 0.805608 0 
+ Ba Ba Ba GAMA 0 0.000000 2 1 0.000000 0.000000 5.194392 0 

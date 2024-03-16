@@ -1,0 +1,6 @@
+grep -c 'E(' BOMD_*.log | grep :1 > xd
+sed -i 's/:1//g' xd
+sed -i 's/BOMD_/xLogML BOMD_/g' xd
+chmod u+x xd
+./xd > input.data
+echo see input.data file

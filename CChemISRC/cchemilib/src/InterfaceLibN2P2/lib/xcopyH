@@ -1,0 +1,3 @@
+N2P2DIR=../../../../../n2p2Derivatives
+cp $N2P2DIR/lib/libnnp.a .
+cp $N2P2DIR/lib/libdftd3.a .

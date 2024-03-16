@@ -1,0 +1,101 @@
+ 2 January 2020
+   N2P2 including charge&dipole
+
+ 2 Mai 2019
+ RemoveSimilarConfo as a runType
+
+ 29 April 2019
+ HDNN supported
+
+ 01 January 2018
+ Conformation search using the genectic algorithm
+ 	RunType=GAConfo
+	maxGeneration (default 100)
+	nChilds (default 1)
+	CrossType (default Plane) cut and splice : cut by plane
+	mutationType (default Local)
+	popSize (default -1) : if -1 => geometries of the population read from
+	the input file. if popSize > 2 : => random geometries
+	nTimesGeoms (default 1) : if > 1 and popSize>2 : =>
+	nTimesGeoms*popsize geometries generated, take heterogen popSize
+	molecules (based on the inertia values)
+
+ 31 December 2017
+ remove geometries with similar Inertia: 
+ 	removeSimilarInertia (default FALSE)
+ 	inertiaTol (default 0.04)
+ remove geometries with similar bonds: 
+ 	removeSimilarBonds (default FALSE)
+ 	sTol  (default 0.02)
+ 	distMaxTol  (default 0.7 Ang)
+ remove fragmented molecules :  removeFragmented (default FALSE)
+ remove geometries with small distance :  removeSmallDistance (default FALSE)
+
+ 21 December 2015
+ Interface to OpenBabel using obgradient and obopt (modified version of OpenBabel). One can compute frequencies (harmonic and anharmonic), 
+ minimize the geometry and make MD (or MDConfo,...) simulation using mmff94, UFF and Ghemical force field. 
+ New example files, including with mixed Quantum Mechanic/Semi-Empirical/Molecular Mechanics calculations
+
+ 17 December 2015
+ GVPT2 implemented : use runType=VPT2 
+ CChemI can now read geometry + harmonic modes from Gabedit, Gaussian, Gamess, Orca, Mopac (aux) files
+ CChemI reset connections using the geometry, if needed
+
+ 11 December 2015
+ new RunType options :
+ RunType=Gradient                                => compute energy, gradient and dipole
+ RunType=ComputeFrequenciesFromFiles             => compute harmonic frequencies from gabedit single point files to be used with RunType=GenerateFilesForFreq : two steps differentiation
+ RunType=GenerateFilesForFreq                    => generate cchemi single point files to compute energies and dipoles, to be used with RunType=ComputeFrequenciesFromFiles : two steps differentiation
+ RunType=ComputeFrequenciesOneStepFromFiles      => compute harmonic frequencies from gabedit single point files to be used with RunType=GenerateFilesOneStepForFreq : one step differentiation
+ RunType=GenerateFilesOneStepForFreq             => generate cchemi single point files to compute energies and dipoles, to be used with RunType=ComputeFrequenciesOneStepFromFiles : one step differentiation
+ RunType=ComputeFrequenciesFromGradFiles         => compute harmonic frequencies from gabedit GRADIENT single point files  to be used with RunType=GenerateGradFilesForFreq : two steps differentiation
+ RunType=GenerateGradFilesForFreq                => generate cchemi GRADIENT single point files to compute energies and dipoles, to be used with RunType=ComputeFrequenciesFromGradFiles : two steps differentiation
+ RunType=ComputeFrequenciesOneStepFromGradFiles  => compute harmonic frequencies from gabedit single point files to be used with RunType=GenerateGradFilesOneStepForFreq : one step differentiation
+ RunType=GenerateGradFilesOneStepForFreq         => generate cchemi single point files to compute energies and dipoles, to be used with RunType=GenerateGradFilesOneStepForFreq : one step differentiation
+ RunType=ComputeQFF2MRFromFiles                  => compute harmonic frequencies and other derivative via 2MR differenciation, from gabedit single point files
+ Bugs fixed.
+
+ 09 September 2015
+ Bugs fixed.
+
+ 03 June 2015
+ More options for MM calculations :
+ Stretch and bend can now contain  cubic, quartic, quentic and sextic terms
+ Stretch-Bending coupling added 
+ Stretch can be Morse or harmonic+correction
+ More options for hydrogen-bond inteaction
+ Improper Dihedral implemented
+ Out of plane potential implemented
+ ACKH2 charges
+ EEM charges
+ Coulomb factor set to 1.0 for non-bonded and 0.57 to 3-bonded cases
+ See the MolecularMechanics.prm file for more informations, and .ici files in tests directory.
+
+
+ 03 May 2014
+ Implementation of a generic external energy/gradient program. Test with a DFTB+ external script
+ Hydrogen Bond corrections can be read from a external file
+
+ 12 December 2013
+ Update read mopac geometry (from MOPAC2012New)
+
+ 10 May 2013
+ Implementation of Random Conformation search
+
+ 15 May 2012
+ Implementation of H4 (Hydrogen bond correction of Rezco)
+ Implementation of D3 (Dispersion correction of Grimme)
+ A internal optimizer for the quantum chemistry interface
+
+ 16 May 2012
+ Implementation of Quantum thermal bath with a semi-empirical potential
+
+ 17 May 2012
+ Heating : scale velocities
+ Equilibrium : At the same Running condition
+
+ 21 May 2012
+ Frequencies+IR intensities with MM or Semi-Empircial or Semi-Empirical/Empirical
+
+ 25 May 2012
+ Implementation of Martyna&Tuckerman integrator but it is not work ! (problem with vj)

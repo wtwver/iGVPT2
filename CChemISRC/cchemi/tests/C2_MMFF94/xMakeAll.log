@@ -1,0 +1,325 @@
+ Begin QFF2MR-VPT2 calculation
+seed = -1
+----------------------------------------------------------
+runType=OPTFREQ
+model=OPENBABEL
+----------------------------------------------------------
+
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+We use the internal optimizer
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =1 
+Minimization by QuasiNewton method
+Gradient = 167.99639857660932 energy = 3.97268976972905 
+Gradient = 30188.39563485311737 Energy(kcal/mol) = 6745.07354383551956 
+Gradient = 162.83192125908383 Energy(kcal/mol) = 3.69829398597737 
+Gradient = 3.72350670115371 Energy(kcal/mol) = 0.00151442544850 
+Gradient = 0.75845072633442 Energy(kcal/mol) = 0.00006318417252 
+Gradient = 0.00261890394211 Energy(kcal/mol) = 0.00000000075264 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000000000000 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000123443473 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000170173756 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000181882117 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000184453205 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185000917 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185116884 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185142640 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Line search failed. See documentation of routine mcsrch.
+ Error return of line search: info = 3 Possible causes:
+ function or gradient are incorrect, or incorrect tolerances.
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Gradient = 0.00000185149077 Energy(kcal/mol) = 0.00000000000000 
+Optimized geometry saved in /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2Opt.gab file
+Save molecule in /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2Opt.gab
+Gradient Norm  = 0.00000185149077 energy = 0.00000000000000(kcal/mol)
+#Number of free coordinates =1 
+Computing of IR spectra... Please wait
+nAtoms = 2
+Gradient Norm  = 0.00000184936460 energy = 0.00000000000000(kcal/mol)
+Frequencies and modes in the /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2Freq.gab file
+Save molecule in /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2Freq.gab
+Save molecule in /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2Freq.gab
+type 1
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+#Number of free coordinates =1 
+========================================================================================================================
+# Geometry and velocities
+# Fixed normal modes (ground, n=0) and scaled to T = 300.000000
+# Geometry, nAtoms, charge, spin multiplicity.
+# symbol, MMType, pdbType, residueName, numResidue, charge, layer, variable, x(Ang),y,z, nconn, num1, typ1, num2, typ2,...
+Geometry
+2 0 1
+ C C C DUM 0 0.000000000000 2 1 0.000000000000 0.000000000000 0.644909332716 1  2 3
+ C C C DUM 0 0.000000000000 2 1 0.000000000000 0.000000000000 -0.644909332716 1  1 3
+# Velocities, vx(Ang/AKMA-time) vy(Ang/AKMA-time) vz(Ang/AKMA-time): 1fs = 0.020455 AKMA
+Velocities
+0.000000000000e+00 0.000000000000e+00 -1.576067654005e-01
+0.000000000000e+00 0.000000000000e+00 1.576067654005e-01
+========================================================================================================================
+
+seed = -1
+----------------------------------------------------------
+runType=GENERATEQFF2MRFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+type 5
+Establishing connectivity : 2 connections...
+Establishing connectivity : 3 connections...
+Establishing connectivity : 4 connections...
+Establishing connectivity : non bonded ...
+delta = 0.500000 reducedCoordiantes
+nAtoms = 2
+nModes = 1
+see C2V.iciQFF_*.ici generated files
+
+seed = -1
+----------------------------------------------------------
+runType=COMPUTEQFF2MRFROMFILES
+model=OPENBABEL
+----------------------------------------------------------
+
+Reading molecule from /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_0.gab file
+nAtoms = 2
+fileName = /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_1.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=OpenBabel
+
+buffer = openBabelCommand=obgradient -ff mmff94
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2116.501790000000 Mass= 12.000000000000 Q= Qeq + 0.103276957357 akI=-1.369961
+
+fileName = /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_2.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=OpenBabel
+
+buffer = openBabelCommand=obgradient -ff mmff94
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2116.501790000000 Mass= 12.000000000000 Q= Qeq + 0.068851304905 akI=-1.369961
+
+fileName = /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_3.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=OpenBabel
+
+buffer = openBabelCommand=obgradient -ff mmff94
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2116.501790000000 Mass= 12.000000000000 Q= Qeq + 0.034425652452 akI=-1.369961
+
+fileName = /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_4.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=OpenBabel
+
+buffer = openBabelCommand=obgradient -ff mmff94
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2116.501790000000 Mass= 12.000000000000 Q= Qeq - 0.034425652452 akI=-1.369961
+
+fileName = /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_5.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=OpenBabel
+
+buffer = openBabelCommand=obgradient -ff mmff94
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2116.501790000000 Mass= 12.000000000000 Q= Qeq - 0.068851304905 akI=-1.369961
+
+fileName = /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_6.ici
+buffer = #RunType=Gradient
+
+buffer = RunType=Energy
+
+buffer = #RunType=ComputeQFF2MRFromFiles
+
+buffer = Model=OpenBabel
+
+buffer = openBabelCommand=obgradient -ff mmff94
+
+buffer = 
+
+buffer = dx=0.01
+
+buffer = 
+
+buffer = mopacCommand=mopac
+
+buffer = orcaCommand=runOrca
+
+buffer = fireflyCommand=firefly
+
+buffer = gaussianCommand=runGauss
+
+buffer = genericCommand=runGeneric
+
+buffer = 
+
+buffer = 
+
+buffer = 
+
+buffer = #Mode: Freq= 2116.501790000000 Mass= 12.000000000000 Q= Qeq - 0.103276957357 akI=-1.369961
+
+fileName = /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF_7.ici
+numberOfFrequencies = 1
+QFF parameters saved in /home/theochem/allouche/tmp/CChemI-050116/cchemi/tests/C2_MMFF94/C2VQFF.txt file
+
