@@ -1,0 +1,337 @@
+
+
+           ************************************************************
+           *        Program running with 8 parallel MPI-processes     *
+           *              working on a common directory               *
+           ************************************************************
+
+------------------------------------------------------------------------------
+                                ORCA  MP2 
+------------------------------------------------------------------------------
+
+Freezing NCore=14 chemical core electrons
+
+   <<< Use J-auxbasis for calculation of Separable RI-J derivative contributions (Dim=182) >>> 
+
+
+----------------------
+RI-MP2 ENERGY+GRADIENT
+----------------------
+Dimension of the basis                    ...  146
+Memory devoted to MP2                     ...  256 MB   
+Data format for buffers                   ... DOUBLE
+Compression type for matrix containers    ... UNCOMPRESSED
+Overall scaling of the MP2 energy         ...   2.700e-01
+Calculating two index integrals           ... done (    0.004 sec)
+Cholesky decomposition of the V-matrix    ... done
+Cholesky decomposition of V**-1           ... done (    0.224 sec)
+
+-----------------
+RI-TRANSFORMATION (AUX index driven)
+-----------------
+
+Dimension of the orbital-basis         ... 146
+Dimension of the aux-basis             ... 365
+Transformation of internal MOs         ...    0-  15
+Transformation of internal/external MOs...    0-  15 to   16- 145
+Number Format for Storage              ... Double (8 Byte)
+Integral mode                          ... Direct
+
+First Phase: integral generation and transformation of MO indices
+  Aux angular momentum 0               ... done (    0.002 sec)
+  Aux angular momentum 1               ... done (    0.003 sec)
+  Aux angular momentum 2               ... done (    0.004 sec)
+  Aux angular momentum 3               ... done (    0.003 sec)
+  Aux angular momentum 4               ... done (    0.004 sec)
+Closing buffer VIJ ( 0.00 GB; CompressionRatio= 0.99)
+Closing buffer VIA ( 0.01 GB; CompressionRatio= 1.00)
+  Phase 1 completed in     0.115 sec
+Second Phase: sorting and transformation of aux index
+
+IJ-Transformation
+Memory available                       ... 213 MB 
+Max. # MO pairs treated in a batch     ... 2    
+# of internal orbitals                 ... 16
+# batches for internal orbitals        ... 1
+Closing buffer IJV ( 0.00 GB; CompressionRatio= 1.00)
+(ij|v) transformation done in     0.014 sec
+
+IA-Transformation
+Memory available                       ... 213 MB 
+Max. # MO pairs treated in a batch     ... 2    
+# of internal orbitals                 ... 16
+# batches for internal orbitals        ... 1
+Closing buffer IAV ( 0.01 GB; CompressionRatio= 1.00)
+(ia|v) transformation done in     0.013 sec
+
+  Phase 2 completed in     0.061 sec
+RI-Integral transformation completed in     0.180 sec
+Opening buffers                              ... done
+Frozen core precalculation                   ... done
+
+Starting loop over batches of integrals:
+
+Operator 0  - window                       ... (  7- 15)x( 16-145)
+Operator 0  - Memory available             ...   256 MB
+Operator 0  - Memory needed per MO         ...   0.7 MB
+Operator 0  - Number of orbitals per batch ... 2
+Operator 0  - Number of batches            ... 1
+
+OPERATOR  0   PASS   0:  MOs     7 ...    8 +    9 ...   10 +   11 ...   12 +   13 ...   14
+                            +   15 ...   15
+  Reading integrals       ... ok
+Closing buffer GIPV ( 0.00 GB; CompressionRatio= 1.00)
+Time spent in pair loops =     0.237 sec
+Deleting buffer (Ka|jb)[aa] ...done
+
+-----------------------------------------------
+ RI-MP2 CORRELATION ENERGY:     -0.169932796 Eh
+-----------------------------------------------
+
+
+---------------------
+MP2 DENSITY FORMATION
+---------------------
+
+Completing the external part of the density      ... done
+Storing the unrelaxed density                    ... done
+
+Calculating the xc-kernel                        ... done
+Calculating G(D)                                 ... done
+Completing the Lagrangian                        ... done
+Solving the Z-vector equations                   ... 
+
+------------------------------------------------------------------------------
+                           ORCA CP-SCF CALCULATION
+------------------------------------------------------------------------------
+
+Input orbitals are from        ... ClC=C.gbw
+Input Perturbation             ... ClC=C.pin.tmp
+Wavefunction output            ... ClC=C.pout.tmp
+Perturbation mode              ... Real perturbation (singlet)
+Solver                         ... POPLE
+Max. number of iterations      ... 128
+Convergence tolerance          ... 1.000e-04
+Integral handling              ... Direct
+DFT GridXC                     ... 1
+COSX GridX                     ... 1
+COSX IntAccX                   ... 3.067
+COSX Algorithm                 ... Auto
+Number of perturbations        ... 1
+Number of operators            ... 1
+Orbital ranges used for CP-SCF:
+ Operator 0:  Orbitals   0... 15  to  16...145
+Variables per perturbation     ... 2080
+DFT calculation                         ... on
+XC functional terms                     ... on
+Exchange functional (SCF)               ... B88
+Exchange functional (CP-SCF)            ... B88
+   X-Alpha parameter    XAlpha (SCF)    ...  0.666667
+   X-Alpha parameter    XAlpha (CP-SCF) ...  0.666667
+   Becke's b parameter  XBeta (SCF)     ...  0.004200
+   Becke's b parameter  XBeta (CP-SCF)  ...  0.004200
+Correlation functional (SCF)            ... LYP
+Correlation functional (CP-SCF)         ... LYP
+ LDA part of GGA corr.  LDAOpt (SCF)    ... VWN-3
+ LDA part of GGA corr.  LDAOpt (CP-SCF) ... VWN-3
+Hybrid DFT                              ... on
+   Exchange mixing (SCF)                ...  0.530
+   Exchange mixing (CP-SCF)             ...  0.530
+   GGA exch. scaling(SCF)               ...  0.470
+   GGA exch. scaling (CP-SCF)           ...  0.470
+   GGA corr. scaling (SCF)              ...  0.730
+   GGA corr. scaling (CP-SCF)           ...  0.730
+
+CP-SCF GRID
+-----------
+
+General Integration Accuracy     IntAcc      ... 3.467
+Radial Grid Type                 RadialGrid  ... OptM3 with GC (2021)
+Angular Grid (max. ang.)         AngularGrid ... 1 (Lebedev-50)
+Angular grid pruning method      GridPruning ... 4 (adaptive)
+Weight generation scheme         WeightScheme... Becke
+Basis function cutoff            BFCut       ... 1.0000e-11
+Integration weight cutoff        WCut        ... 1.0000e-14
+Angular grids for H and He will be reduced by one unit
+Partially contracted basis set               ... off
+Rotationally invariant grid construction     ... off
+
+Total number of grid points                  ...     4252
+Total number of batches                      ...       69
+Average number of points per batch           ...       61
+Average number of grid points per atom       ...      709
+
+CP-SCF GRIDX
+------------
+
+General Integration Accuracy     IntAcc      ... 3.067
+Radial Grid Type                 RadialGrid  ... OptM3 with GC (2021)
+Angular Grid (max. ang.)         AngularGrid ... 1 (Lebedev-50)
+Angular grid pruning method      GridPruning ... 4 (adaptive)
+Weight generation scheme         WeightScheme... Becke
+Basis function cutoff            BFCut       ... 1.0000e-11
+Integration weight cutoff        WCut        ... 1.0000e-14
+Angular grids for H and He will be reduced by one unit
+Partially contracted basis set               ... on
+Rotationally invariant grid construction     ... off
+
+Total number of grid points                  ...     1998
+Total number of batches                      ...       35
+Average number of points per batch           ...       57
+Average number of grid points per atom       ...      333
+
+Recalculating density on grid  ... done
+Calculating the xc-kernel      ... done
+Memory available               ... 975.8 MB
+Memory needed per perturbation ...   1.5 MB
+Perturbations treated per batch... 1
+Number of batches              ... 1
+     CP-SCF ITERATION   0:   2.6980e-02 (   0.2 sec)
+     CP-SCF ITERATION   1:   5.1334e-03 (   0.4 sec)
+     CP-SCF ITERATION   2:   2.3837e-03 (   0.2 sec)
+     CP-SCF ITERATION   3:   6.9937e-04 (   0.2 sec)
+     CP-SCF ITERATION   4:   1.9574e-04 (   0.2 sec)
+     CP-SCF ITERATION   5:   6.4438e-05 (   0.2 sec)
+                    *** THE CP-SCF HAS CONVERGED ***
+done
+Finalizing the relaxed density                   ... done
+Transforming P to the AO basis                   ... done
+Storing the relaxed density                      ... done
+
+------------------------------------
+ENERGY WEIGHTED DENSITY FINALIZATION
+------------------------------------
+
+Gathering the parts of the W-matrix              ... done
+Forming the Z-density                            ... done
+Transforming Z to the AO basis                   ... done
+Calculating G(Z)                                 ... done
+Finalizing the W-matrix                          ... done
+Transforming W to the AO basis and storing       ... done
+Entering the RIJONX and RIJCOSX sections
+
+ <<< Calculate the Separable Gradient (Coulomb contribution) with J-auxbasis >>> 
+
+Starting the three-index derivative integrals:
+
+ <<< Calculate the Non-Separable Gradient with C-auxbasis >>>
+
+Starting the three-index derivative integrals:
+Operator 0  - Memory available             ...   256 MB
+Operator 0  - Memory needed per MO         ...   0.8 MB
+Operator 0  - Number of orbitals per batch ... 2
+Operator 0  - Number of batches            ... 1
+
+OPERATOR  0   PASS   0:  MOs     7 ...    8 +    9 ...   10 +   11 ...   12 +   13 ...   14
+                            +   15 ...   15
+
+----------------------------------
+MP2 DERIVATIVE INTEGRAL GENERATION
+----------------------------------
+
+
+Input Correlated Electron Density   ... ClC=C.pmp2re
+Input Energy Weighted Density       ... ClC=C.wmp2.tmp
+Input SCF Electron Density          ... ClC=C.scfp
+
+One-Electron Terms    ...
+                        ... One-Electron Terms done
+
+-----------------------------------------------------------
+MP2 COSX Grid Generation
+-----------------------------------------------------------
+
+General Integration Accuracy     IntAcc      ... 4.871
+Radial Grid Type                 RadialGrid  ... OptM3 with GC (2021)
+Angular Grid (max. ang.)         AngularGrid ... 4 (Lebedev-302)
+Angular grid pruning method      GridPruning ... 4 (adaptive)
+Weight generation scheme         WeightScheme... Becke
+Basis function cutoff            BFCut       ... 1.0000e-11
+Integration weight cutoff        WCut        ... 1.0000e-14
+Angular grids for H and He will be reduced by one unit
+Partially contracted basis set               ... on
+Rotationally invariant grid construction     ... off
+
+Total number of grid points                  ...    35179
+Total number of batches                      ...      554
+Average number of points per batch           ...       63
+Average number of grid points per atom       ...     5863
+UseSFitting                                  ... on
+Two electron COSX terms .... 
+                          .... COSX two electron terms done
+Exchange-correlation gradient    ... done
+Dispersion correction            ... done
+
+-------
+TIMINGS
+-------
+
+Total time                :    6.222 sec
+Integral trafo            :    0.189 sec (  3.0%)
+FC preparation            :    0.066 sec (  1.1%)
+I/O of integrals          :    0.001 sec (  0.0%)
+K(i,j) Operators          :    0.009 sec (  0.1%)
+T(i,j) pair energies      :    0.002 sec (  0.0%)
+V-calculation             :    0.004 sec (  0.1%)
+V**(-1/2)                 :    0.224 sec (  3.6%)
+Gamma(ia|P)               :    0.010 sec (  0.2%)
+Gamma-Trafo               :    0.002 sec (  0.0%)
+D(virtual)                :    0.002 sec (  0.0%)
+D(internal)               :    0.007 sec (  0.1%)
+W(virtual)                :    0.003 sec (  0.0%)
+W(internal)               :    0.003 sec (  0.0%)
+L(virtual)                :    0.149 sec (  2.4%)
+L(internal)               :    0.002 sec (  0.0%)
+G(D)                      :    0.548 sec (  8.8%)
+G(Z)                      :    0.408 sec (  6.6%)
+Z-Vector Solution         :    1.623 sec ( 26.1%)
+3-Index Derivative        :    0.416 sec (  6.7%)
+2-Index Derivative        :    0.001 sec (  0.0%)
+Separable Gradient (RIJ)  :    0.192 sec (  3.1%)
+Separable Gradient (COSX) :    2.076 sec ( 33.4%)
+
+
+---------------------------------------
+MP2 TOTAL ENERGY:     -538.029843021 Eh
+---------------------------------------
+
+The final MP2 gradient
+  0:  -0.00008264   0.00002715   0.00009065
+  1:  -0.00006988  -0.00000464   0.00002653
+  2:  -0.00000913  -0.00000582   0.00000571
+  3:  -0.00003508   0.00000319   0.00003060
+  4:  -0.00000915  -0.00000879  -0.00003703
+  5:  -0.00005049   0.00000828  -0.00000186
+
+-----------------------------------
+NORM OF THE MP2 GRADIENT:  0.000167
+-----------------------------------
+
+Maximum memory used throughout the entire MP2-calculation: 147.7 MB
+
+
+-------------------------------------------------------------------------------
+                          DFT DISPERSION CORRECTION                            
+                                                                               
+                              DFTD3 V3.1  Rev 1                                
+                          USING Becke-Johnson damping                          
+-------------------------------------------------------------------------------
+The B2PLYP functional is recognized
+Active option DFTDOPT                   ...         4   
+
+molecular C6(AA) [au] = 619.280940 
+
+
+            DFT-D V3
+ parameters
+ s6 scaling factor         :     0.6400 
+ a1 scaling factor         :     0.3065 
+ s8 scaling factor         :     0.9147 
+ a2 scaling factor         :     5.0570 
+ ad hoc parameters k1-k3   :    16.0000     1.3333    -4.0000 
+
+ Edisp/kcal,au: -1.846411138905  -0.002942443132 
+ E6   /kcal   :  -0.996738179 
+ E8   /kcal   :  -0.849672960 
+ % E8         :  46.017538681 
+

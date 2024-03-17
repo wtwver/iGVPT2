@@ -1,0 +1,27 @@
+
+------------------------------------------------------------------------------
+                                ORCA  MP2 
+------------------------------------------------------------------------------
+
+Freezing NCore=14 chemical core electrons
+
+   <<< Use J-auxbasis for calculation of Separable RI-J derivative contributions (Dim=182) >>> 
+
+
+----------------------
+RI-MP2 ENERGY+GRADIENT
+----------------------
+Dimension of the basis                    ...  146
+Memory devoted to MP2                     ...  256 MB   
+Data format for buffers                   ... DOUBLE
+Compression type for matrix containers    ... UNCOMPRESSED
+Overall scaling of the MP2 energy         ...   2.700e-01
+Calculating two index integrals           ... done (    0.001 sec)
+Cholesky decomposition of the V-matrix    ... done
+Cholesky decomposition of V**-1           ... 
+
+WARNING (ORCA_TOOLS): BLAS_CholeskyDecomposition2 returned with error 1
+                      Potentially linear dependencies in the aux basis!
+
+[file orca_mp2/mp2rigrad.cpp, line 1680]: Error (ORCA_MP2/RI): Cholesky decomposition of V**-1 failed!
+
