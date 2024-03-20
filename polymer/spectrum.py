@@ -17,22 +17,30 @@ data = {
     7380.32774933: 0.00570194,
 }
 
-# for wavenumber, intensity in data.items():
-#   result = A(0, wavenumber, intensity )
-#   print(result)
+with open("PET.out", "r") as f:
+    lines = f.readlines()
+    result = False
+    result_ls = []
+    for idx, line in enumerate(lines, 1):
+        if "Results With intensities" in line:
+            result = not result
+        if result:
+            line = line.strip().split(" ")
+            line = [elem for elem in line if elem.strip()]
+            result_ls.append(line)
 
-# exit()
+
+result_dict = {float(i[1]): float(i[3]) for i in result_ls[5:-3]}
+
 
 ls = [0]*10001
-for wavenumber, intensity in data.items():
+for wavenumber, intensity in result_dict.items():
   for i in range(10000):
     result = A(i,wavenumber,intensity)
     ls[i] = ls[i] + result
-    if abs(i-wavenumber) < 1 :
-      print(i, wavenumber, intensity, result, ls[i])
+    #if abs(i-wavenumber) < 1 :
+      #print(i, wavenumber, intensity, result, ls[i])
 
-
-print(ls)
 
 import matplotlib.pyplot as plt
 
