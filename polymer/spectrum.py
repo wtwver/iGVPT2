@@ -1,5 +1,8 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
+# result pair is discret wavenumber and intensity
+# function A calculate how much of each result pair affect out interested wavenumber
 #  a1 and a3 are, respectively, the intensity and wavenumber,obtained in the quantum chemical calculations.
 # The remaining shape parameters, a2 and a4, were set as 0.075 and 0.015, following the best agreement with the experimental bandshapes.
 def A(v, a3 , a1, a2=0.075, a4=0.015):
@@ -29,22 +32,31 @@ with open("PET.out", "r") as f:
             line = [elem for elem in line if elem.strip()]
             result_ls.append(line)
 
+def print_all_wavenumber():
+    intensity_cm1 = [0]*10000
+    for wavenumber, intensity in result_dict.items(): 
+      for i in range(1,10000): # this cover all the wavenumber simulation covers
+        result = A(i,wavenumber,intensity)
+        intensity_cm1[i] = intensity_cm1[i] + result
+    plt.plot(intensity_cm1)
 
 result_dict = {float(i[1]): float(i[3]) for i in result_ls[5:-3]}
 
 
-ls = [0]*10001
-for wavenumber, intensity in result_dict.items():
-  for i in range(10000):
-    result = A(i,wavenumber,intensity)
-    ls[i] = ls[i] + result
-    #if abs(i-wavenumber) < 1 :
-      #print(i, wavenumber, intensity, result, ls[i])
+print_all_wavenumber()
 
+interested_wavelength = list(range(1500,1900))
+interested_wavenumber = [ 10000000/i for i in interested_wavelength ]
+intensity_nm = [0] * len(interested_wavenumber)
 
-import matplotlib.pyplot as plt
+for wavenumber, intensity in result_dict.items(): 
+  for i in range(len(interested_wavenumber)):
+    result = A(interested_wavenumber[i],wavenumber,intensity)
+    intensity_nm[i] = intensity_nm[i] + result
+flip = [ 1-i for i in intensity_nm ]
 
-plt.plot(ls)
+plt.plot(interested_wavelength, flip)
 plt.xlabel('Index')
 plt.ylabel('Intensity')
+plt.savefig('spectrum1.png')
 plt.show()
